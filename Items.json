@@ -1,0 +1,6518 @@
+{
+// accr : armor, critical chance, and resistance
+"constants":[{
+		"level": 1,
+		"basehp": { "WAR":120, "SW":68, "RNG":95, "DWF":68 },
+		"basedmg": { "WAR":3, "SW":4, "RNG":4, "DWF":4 },
+		"accr": 80,
+		"blockrate": 40,
+		"blockeddmg": 20
+	},{
+		"level": 2,
+		"basehp": { "WAR":157, "SW":89, "RNG":124, "DWF":89 },
+		"basedmg": { "WAR":4, "SW":5, "RNG":5, "DWF":5 },
+		"accr": 104.8,
+		"blockrate": 52.4,
+		"blockeddmg": 26.2
+	},{
+		"level": 3,
+		"basehp": { "WAR":194, "SW":110, "RNG":154, "DWF":110 },
+		"basedmg": { "WAR":5, "SW":6, "RNG":6, "DWF":6 },
+		"accr": 129.888,
+		"blockrate": 64.944,
+		"blockeddmg": 32.472
+	},{
+		"level": 4,
+		"basehp": { "WAR":233, "SW":132, "RNG":184, "DWF":132 },
+		"basedmg": { "WAR":6, "SW":8, "RNG":8, "DWF":8 },
+		"accr": 155.281,
+		"blockrate": 77.64,
+		"blockeddmg": 38.82
+	},{
+		"level": 5,
+		"basehp": { "WAR":271, "SW":154, "RNG":215, "DWF":154 },
+		"basedmg": { "WAR":7, "SW":9, "RNG":9, "DWF":9 },
+		"accr": 180.998,
+		"blockrate": 90.499,
+		"blockeddmg": 45.2495
+	},{
+		"level": 6,
+		"basehp": { "WAR":311, "SW":176, "RNG":246, "DWF":176 },
+		"basedmg": { "WAR":8, "SW":10, "RNG":10, "DWF":10 },
+		"accr": 207.058,
+		"blockrate": 103.529,
+		"blockeddmg": 51.7645
+	},{
+		"level": 7,
+		"basehp": { "WAR":350, "SW":199, "RNG":277, "DWF":199 },
+		"basedmg": { "WAR":9, "SW":12, "RNG":12, "DWF":12 },
+		"accr": 233.48,
+		"blockrate": 116.74,
+		"blockeddmg": 58.37
+	},{
+		"level": 8,
+		"basehp": { "WAR":390, "SW":222, "RNG":309, "DWF":222 },
+		"basedmg": { "WAR":10, "SW":13, "RNG":13, "DWF":13 },
+		"accr": 260.29,
+		"blockrate": 130.145,
+		"blockeddmg": 65.0726
+	},{
+		"level": 9,
+		"basehp": { "WAR":431, "SW":245, "RNG":341, "DWF":245 },
+		"basedmg": { "WAR":11, "SW":14, "RNG":14, "DWF":14 },
+		"accr": 287.5,
+		"blockrate": 143.75,
+		"blockeddmg": 71.877
+	},{
+		"level": 10,
+		"basehp": { "WAR":473, "SW":268, "RNG":374, "DWF":268 },
+		"basedmg": { "WAR":12, "SW":16, "RNG":16, "DWF":16 },
+		"accr": 315.158,
+		"blockrate": 157.579,
+		"blockeddmg": 78.79
+	},{
+		"level": 11,
+		"basehp": { "WAR":515, "SW":292, "RNG":408, "DWF":292 },
+		"basedmg": { "WAR":13, "SW":17, "RNG":17, "DWF":17 },
+		"accr": 343.267822265625,
+		"blockrate": 171.6339,
+		"blockeddmg": 85.8169
+	},{
+		"level": 12,
+		"basehp": { "WAR":558, "SW":317, "RNG":442, "DWF":317 },
+		"basedmg": { "WAR":15, "SW":19, "RNG":19, "DWF":19 },
+		"accr": 371.864,
+		"blockrate": 185.93,
+		"blockeddmg": 92.966
+	},{
+		"level": 13,
+		"basehp": { "WAR":601, "SW":342, "RNG":476, "DWF":342 },
+		"basedmg": { "WAR":16, "SW":20, "RNG":20, "DWF":20 },
+		"accr": 400.9757,
+		"blockrate": 200.488,
+		"blockeddmg": 100.244
+	},{
+		"level": 14,
+		"basehp": { "WAR":646, "SW":367, "RNG":511, "DWF":367 },
+		"basedmg": { "WAR":17, "SW":22, "RNG":22, "DWF":22 },
+		"accr": 430.634,
+		"blockrate": 215.32,
+		"blockeddmg": 107.66
+	},{
+		"level": 15,
+		"basehp": { "WAR":691, "SW":393, "RNG":547, "DWF":393 },
+		"basedmg": { "WAR":18, "SW":23, "RNG":23, "DWF":23 },
+		"accr": 460.87,
+		"blockrate": 230.436,
+		"blockeddmg": 115.22
+	},{
+		"level": 16,
+		"basehp": { "WAR":738, "SW":419, "RNG":584, "DWF":419 },
+		"basedmg": { "WAR":19, "SW":25, "RNG":25, "DWF":25 },
+		"accr": 491.7,
+		"blockrate": 245.86,
+		"blockeddmg": 122.9
+	},{
+		"level": 17,
+		"basehp": { "WAR":785, "SW":446, "RNG":621, "DWF":446 },
+		"basedmg": { "WAR":21, "SW":27, "RNG":27, "DWF":27 },
+		"accr": 523.228,
+		"blockrate": 261.6,
+		"blockeddmg": 130.8
+	},{
+		"level": 18,
+		"basehp": { "WAR":833, "SW":473, "RNG":660, "DWF":473 },
+		"basedmg": { "WAR":22, "SW":28, "RNG":28, "DWF":28 },
+		"accr": 555.42,
+		"blockrate": 277.71,
+		"blockeddmg": 138.855
+	},{
+		"level": 19,
+		"basehp": { "WAR":882, "SW":501, "RNG":699, "DWF":501 },
+		"basedmg": { "WAR":23, "SW":30, "RNG":30, "DWF":30 },
+		"accr": 588.347,
+		"blockrate": 294.174,
+		"blockeddmg": 147
+	},{
+		"level": 20,
+		"basehp": { "WAR":934, "SW":530, "RNG":739, "DWF":530 },
+		"basedmg": { "WAR":25, "SW":32, "RNG":32, "DWF":32 },
+		"accr": 622,
+		"blockrate": 311,
+		"blockeddmg": 155.5
+	},{
+		"level": 21,
+		"basehp": { "WAR":985, "SW":560, "RNG":780, "DWF":560 },
+		"basedmg": { "WAR":26, "SW":33, "RNG":33, "DWF":33 },
+		"accr": 656.57,
+		"blockrate": 328.3,
+		"blockeddmg": 164.14
+	},{
+		"level": 22,
+		"basehp": { "WAR":1038, "SW":590, "RNG":822, "DWF":590 },
+		"basedmg": { "WAR":27, "SW":35, "RNG":35, "DWF":35 },
+		"accr": 691.965,
+		"blockrate": 345.98,
+		"blockeddmg": 172.99
+	},{
+		"level": 23,
+		"basehp": { "WAR":1092, "SW":621, "RNG":865, "DWF":621 },
+		"basedmg": { "WAR":29, "SW":37, "RNG":37, "DWF":37 },
+		"accr": 728.283020019531,
+		"blockrate": 364.14,
+		"blockeddmg": 182
+	},{
+		"level": 24,
+		"basehp": { "WAR":1148, "SW":653, "RNG":909, "DWF":653 },
+		"basedmg": { "WAR":30, "SW":39, "RNG":39, "DWF":39 },
+		"accr": 765.58,
+		"blockrate": 382.79,
+		"blockeddmg": 191.395
+	},{
+		"level": 25,
+		"basehp": { "WAR":1206, "SW":685, "RNG":955, "DWF":685 },
+		"basedmg": { "WAR":32, "SW":41, "RNG":41, "DWF":41 },
+		"accr": 803.915,
+		"blockrate": 401.957,
+		"blockeddmg": 200.98
+	},{
+		"level": 26,
+		"basehp": { "WAR":1265, "SW":719, "RNG":1001, "DWF":719 },
+		"basedmg": { "WAR":34, "SW":43, "RNG":43, "DWF":43 },
+		"accr": 843.35,
+		"blockrate": 421.675,
+		"blockeddmg": 210.837
+	},{
+		"level": 27,
+		"basehp": { "WAR":1326, "SW":754, "RNG":1050, "DWF":754 },
+		"basedmg": { "WAR":35, "SW":45, "RNG":45, "DWF":45 },
+		"accr": 883.950622558593,
+		"blockrate": 441.975,
+		"blockeddmg": 220.987
+	},{
+		"level": 28,
+		"basehp": { "WAR":1388, "SW":789, "RNG":1099, "DWF":789 },
+		"basedmg": { "WAR":37, "SW":47, "RNG":47, "DWF":47 },
+		"accr": 925.787658691406,
+		"blockrate": 462.89,
+		"blockeddmg": 231.447
+	},{
+		"level": 29,
+		"basehp": { "WAR":1453, "SW":826, "RNG":1151, "DWF":826 },
+		"basedmg": { "WAR":39, "SW":50, "RNG":50, "DWF":50 },
+		"accr": 968.934936523437,
+		"blockrate": 484.47,
+		"blockeddmg": 242.234
+	},{
+		"level": 30,
+		"basehp": { "WAR":1520, "SW":864, "RNG":1203, "DWF":864 },
+		"basedmg": { "WAR":40, "SW":52, "RNG":52, "DWF":52 },
+		"accr": 1013.47,
+		"blockrate": 506.7355,
+		"blockeddmg": 253.368
+	},{
+		"level": 31,
+		"basehp": { "WAR":1589, "SW":903, "RNG":1258, "DWF":903 },
+		"basedmg": { "WAR":42, "SW":54, "RNG":54, "DWF":54 },
+		"accr": 1059.48,
+		"blockrate": 529.74,
+		"blockeddmg": 264.87
+	},{
+		"level": 32,
+		"basehp": { "WAR":1661, "SW":944, "RNG":1315, "DWF":944 },
+		"basedmg": { "WAR":44, "SW":57, "RNG":57, "DWF":57 },
+		"accr": 1107,
+		"blockrate": 553.5,
+		"blockeddmg": 276.76
+	},{
+		"level": 33,
+		"basehp": { "WAR":1734, "SW":986, "RNG":1373, "DWF":986 },
+		"basedmg": { "WAR":46, "SW":59, "RNG":59, "DWF":59 },
+		"accr": 1156.27,
+		"blockrate": 578.135,
+		"blockeddmg": 289
+	},{
+		"level": 34,
+		"basehp": { "WAR":1811, "SW":1029, "RNG":1434, "DWF":1029 },
+		"basedmg": { "WAR":48, "SW":62, "RNG":62, "DWF":62 },
+		"accr": 1207.25,
+		"blockrate": 603.624,
+		"blockeddmg": 301.812
+	},{
+		"level": 35,
+		"basehp": { "WAR":1890, "SW":1075, "RNG":1496, "DWF":1075 },
+		"basedmg": { "WAR":50, "SW":65, "RNG":65, "DWF":65 },
+		"accr": 1260,
+		"blockrate": 630,
+		"blockeddmg": 315
+	},{
+		"level": 36,
+		"basehp": { "WAR":1973, "SW":1121, "RNG":1561, "DWF":1121 },
+		"basedmg": { "WAR":53, "SW":67, "RNG":67, "DWF":67 },
+		"accr": 1314.887,
+		"blockrate": 657.443,
+		"blockeddmg": 328.72
+	},{
+		"level": 37,
+		"basehp": { "WAR":2058, "SW":1170, "RNG":1629, "DWF":1170 },
+		"basedmg": { "WAR":55, "SW":70, "RNG":70, "DWF":70 },
+		"accr": 1371.78,
+		"blockrate": 685.89,
+		"blockeddmg": 342.945
+	},{
+		"level": 38,
+		"basehp": { "WAR":2147, "SW":1220, "RNG":1699, "DWF":1220 },
+		"basedmg": { "WAR":57, "SW":73, "RNG":73, "DWF":73 },
+		"accr": 1430.887,
+		"blockrate": 715.44,
+		"blockeddmg": 357.72
+	},{
+		"level": 39,
+		"basehp": { "WAR":2238, "SW":1273, "RNG":1772, "DWF":1273 },
+		"basedmg": { "WAR":60, "SW":77, "RNG":77, "DWF":77 },
+		"accr": 1492.34,
+		"blockrate": 746.17,
+		"blockeddmg": 373
+	},{
+		"level": 40,
+		"basehp": { "WAR":2334, "SW":1327, "RNG":1848, "DWF":1327 },
+		"basedmg": { "WAR":62, "SW":80, "RNG":80, "DWF":80 },
+		"accr": 1556.28,
+		"blockrate": 778.14,
+		"blockeddmg": 389
+	},{
+		"level": 41,
+		"basehp": { "WAR":2434, "SW":1384, "RNG":1927, "DWF":1384 },
+		"basedmg": { "WAR":65, "SW":84, "RNG":84, "DWF":84 },
+		"accr": 1622.86,
+		"blockrate": 811.43,
+		"blockeddmg": 405.7
+	},{
+		"level": 42,
+		"basehp": { "WAR":2538, "SW":1443, "RNG":2010, "DWF":1443 },
+		"basedmg": { "WAR":68, "SW":87, "RNG":87, "DWF":87 },
+		"accr": 1692.23,
+		"blockrate": 846.114,
+		"blockeddmg": 423.057
+	},{
+		"level": 43,
+		"basehp": { "WAR":2647, "SW":1505, "RNG":2095, "DWF":1505 },
+		"basedmg": { "WAR":71, "SW":91, "RNG":91, "DWF":91 },
+		"accr": 1764.56,
+		"blockrate": 882.28,
+		"blockeddmg": 441.14
+	},{
+		"level": 44,
+		"basehp": { "WAR":2760, "SW":1569, "RNG":2185, "DWF":1569 },
+		"basedmg": { "WAR":74, "SW":95, "RNG":95, "DWF":95 },
+		"accr": 1840,
+		"blockrate": 920,
+		"blockeddmg": 460
+	},{
+		"level": 45,
+		"basehp": { "WAR":2878, "SW":1637, "RNG":2279, "DWF":1637 },
+		"basedmg": { "WAR":78, "SW":99, "RNG":99, "DWF":99 },
+		"accr": 1918.84,
+		"blockrate": 959.42,
+		"blockeddmg": 479.71
+	}],
+
+"amulets":[{
+		"id": "amu37",
+		"langid": "amu37",
+		"job": "WAR, SW, DWF",
+		"level": 37,
+		"icon": "amulets37"
+	},{
+		"id": "amu37rng",
+		"langid": "amu37rng",
+		"job": "RNG",
+		"level": 37,
+		"icon": "amulets37"
+	},{
+		"id": "amu45war",
+		"langid": "amu45war",
+		"job": "WAR",
+		"level": 45,
+		"icon": "amulets45WAR"
+	},{
+		"id": "amu45sw",
+		"langid": "amu45sw",
+		"job": "SW",
+		"level": 45,
+		"icon": "amulets45SW"
+	},{
+		"id": "amu45rng",
+		"langid": "amu45rng",
+		"job": "RNG",
+		"level": 45,
+		"icon": "amulets45RNG"
+	},{
+		"id": "amu45dwf",
+		"langid": "amu45dwf",
+		"job": "DWF",
+		"level": 45,
+		"icon": "amulets45RNG"
+	},{
+		"unic": true,
+		"id": "HeliosGoldAmulet",
+		"langid": "HeliosGoldAmulet",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 1,
+		"icon": "HeliosGoldAmulet",
+		"damage": 15,
+		"speed": 0.1
+	},{
+		"unic": true,
+		"id": "KnowledgeAmulet_war",
+		"langid": "KnowledgeAmulet",
+		"job": "WAR",
+		"level": 10,
+		"icon": "KnowledgeAmulet",
+		"life": 50
+	},{
+		"unic": true,
+		"id": "KnowledgeAmulet_sw",
+		"langid": "KnowledgeAmulet",
+		"job": "SW",
+		"level": 10,
+		"icon": "KnowledgeAmulet",
+		"life": 30
+	},{
+		"unic": true,
+		"id": "KnowledgeAmulet_rng",
+		"langid": "KnowledgeAmulet",
+		"job": "RNG",
+		"level": 10,
+		"icon": "KnowledgeAmulet",
+		"life": 40
+	},{
+		"unic": true,
+		"id": "KnowledgeAmulet_dwf",
+		"langid": "KnowledgeAmulet_dwf",
+		"job": "DWF",
+		"level": 10,
+		"icon": "KnowledgeAmuletDWF",
+		"life": 30
+	},{
+		"unic": true,
+		"id": "DefenderAmulet_war",
+		"langid": "DefenderAmulet",
+		"job": "WAR",
+		"level": 45,
+		"icon": "DefenderAmulet",
+		"life": "",
+		"critboost": "-0.05|-0.15"
+	},{
+		"unic": true,
+		"id": "DefenderAmulet",
+		"langid": "DefenderAmulet",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "DefenderAmulet",
+		"life": "",
+		"critboost": "-0.05|-0.15"
+	},{
+		"unic": true,
+		"id": "DefenderAmulet_rng",
+		"langid": "DefenderAmulet",
+		"job": "RNG",
+		"level": 45,
+		"icon": "DefenderAmulet",
+		"life": "",
+		"critboost": "-0.05|-0.15"
+	},{
+		"unic": true,
+		"id": "DeepSeaAmulet",
+		"langid": "DeepSeaAmulet",
+		"job": "WAR,SW,RNG,DWF",
+		"level": 40,
+		"icon": "DeepSeaAmulet",
+		"life": 200,
+		"armor": 200
+	},{
+		"unic": true,
+		"id": "MedusaEye",
+		"langid": "MedusaEye",
+		"job": "WAR,SW,RNG,DWF",
+		"level": 40,
+		"icon": "MedusaEye",
+		"life": 300,
+		"poison": 350
+	},{
+		"unic": true,
+		"id": "DeathAmulet_war",
+		"langid": "DeathAmulet",
+		"job": "WAR",
+		"level": 40,
+		"icon": "MortisAmulet",
+		"life": 200,
+		"armor": 250,
+		"critrate": 250
+	},{
+		"unic": true,
+		"id": "DeathAmulet_sw",
+		"langid": "DeathAmulet",
+		"job": "SW",
+		"level": 40,
+		"icon": "MortisAmulet",
+		"damage": 45
+	},{
+		"unic": true,
+		"id": "DeathAmulet_rng",
+		"langid": "DeathAmulet",
+		"job": "RNG",
+		"level": 40,
+		"icon": "MortisAmulet",
+		"lifeboost": 0.1,
+		"damagemax": 40
+	},{
+		"unic": true,
+		"id": "DeathAmulet_dwf",
+		"langid": "DeathAmulet",
+		"job": "DWF",
+		"level": 40,
+		"icon": "MortisAmuletDWF",
+		"damage": 45
+	},{
+		"unic": true,
+		"id": "SteamAmulet",
+		"langid": "SteamAmulet",
+		"job": "WAR",
+		"level": 43,
+		"icon": "SteamAmulet",
+		"critboost": 0.3
+	},{
+		"unic": true,
+		"id": "AutomatedAmulet",
+		"langid": "AutomatedAmulet",
+		"job": "SW",
+		"level": 43,
+		"icon": "AutomatedAmulet",
+		"critboost": 0.3
+	},{
+		"unic": true,
+		"id": "MechanicalAmulet",
+		"langid": "MechanicalAmulet",
+		"job": "RNG",
+		"level": 43,
+		"icon": "MechanicalAmulet",
+		"critboost": 0.3
+	},{
+		"unic": true,
+		"id": "MachineAmulet",
+		"langid": "MachineAmulet",
+		"job": "DWF",
+		"level": 43,
+		"icon": "MachineAmulet",
+		"critboost": 0.3
+	},{
+		"unic": true,
+		"id": "DestructionAmuletWAR",
+		"langid": "DestructionAmulet",
+		"job": "WAR",
+		"level": 45,
+		"icon": "DestructionAmuletWAR",
+		"damage": 25,
+		"critboost": 0.3
+	},{
+		"unic": true,
+		"id": "DestructionAmuletSW",
+		"langid": "DestructionAmulet",
+		"job": "SW",
+		"level": 45,
+		"icon": "DestructionAmuletSW",
+		"damage": 25,
+		"critboost": 0.3
+	},{
+		"unic": true,
+		"id": "DestructionAmuletRNG",
+		"langid": "DestructionAmulet",
+		"job": "RNG",
+		"level": 45,
+		"icon": "DestructionAmuletRNG",
+		"damage": 25,
+		"critboost": 0.3
+	},{
+		"unic": true,
+		"id": "DestructionAmuletDWF",
+		"langid": "DestructionAmulet",
+		"job": "DWF",
+		"level": 45,
+		"icon": "DestructionAmuletDWF",
+		"damage": 25,
+		"critboost": 0.3
+	},{
+		"unic": true,
+		"id": "SargonAmuletWAR",
+		"langid": "SargonAmulet",
+		"job": "WAR",
+		"level": 45,
+		"icon": "SargonAmulet",
+		"damage": 65,
+		"life": 500
+	},{
+		"unic": true,
+		"id": "SargonAmuletSW",
+		"langid": "SargonAmulet",
+		"job": "SW",
+		"level": 45,
+		"icon": "SargonAmulet",
+		"damage": 65,
+		"life": 500
+	},{
+		"unic": true,
+		"id": "SargonAmuletRNG",
+		"langid": "SargonAmulet",
+		"job": "RNG",
+		"level": 45,
+		"icon": "SargonAmulet",
+		"damage": 65,
+		"life": 500
+	},{
+		"unic": true,
+		"id": "SargonAmuletDWF",
+		"langid": "SargonAmulet",
+		"job": "DWF",
+		"level": 45,
+		"icon": "SargonAmulet",
+		"damage": 65,
+		"life": 500
+	},{
+		"unic": true,
+		"id": "DragonShackles",
+		"langid": "DragonShackles",
+		"job": "WAR,SW,RNG,DWF",
+		"level": 45,
+		"icon": "DragonShackles",
+		"armor": 500,
+		"fire":500,
+		"movspeed": 0.05
+	}],
+
+"waists":[{
+		"id": "waist37war",
+		"langid": "waist37war",
+		"job": "WAR",
+		"level": 37,
+		"icon": "waists37",
+		"armorbase": 18
+	},{
+		"id": "waist37sw",
+		"langid": "waist37sw",
+		"job": "SW",
+		"level": 37,
+		"icon": "waists37",
+		"armorbase": 7
+	},{
+		"id": "waist37rng",
+		"langid": "waist37rng",
+		"job": "RNG",
+		"level": 37,
+		"icon": "waists37",
+		"armorbase": 13
+	},{
+		"id": "waist37dwf",
+		"langid": "waist37dwf",
+		"job": "DWF",
+		"level": 37,
+		"icon": "waists37",
+		"armorbase": ""
+	},{
+		"id": "Waist45war",
+		"langid": "Waist45war",
+		"job": "WAR",
+		"level": 45,
+		"icon": "waists45",
+		"armorbase": 48
+	},{
+		"id": "Waist45sw",
+		"langid": "Waist45sw",
+		"job": "SW",
+		"level": 45,
+		"icon": "waists45",
+		"armorbase": 13
+	},{
+		"id": "Waist45rng",
+		"langid": "Waist45rng",
+		"job": "RNG",
+		"level": 45,
+		"icon": "waists45",
+		"armorbase": 15
+	},{
+		"id": "Waist45dwf",
+		"langid": "Waist45dwf",
+		"job": "DWF",
+		"level": 45,
+		"icon": "waists45",
+		"armorbase": 13
+	},{
+		"unic": true,
+		"id": "PrismaticHeroBelt_war",
+		"langid": "PrismaticHeroBelt",
+		"job": "WAR",
+		"level": 25,
+		"icon": "PrismaticHeroBelt",
+		"armorbase": 10,
+		"armor": 135,
+		"resistboost": 0.1
+	},{
+		"unic": true,
+		"id": "PrismaticHeroBelt_rng",
+		"langid": "PrismaticHeroBelt",
+		"job": "RNG",
+		"level": 25,
+		"icon": "PrismaticHeroBelt",
+		"armorbase": 10,
+		"armor": 120,
+		"resistboost": 0.1
+	},{
+		"unic": true,
+		"id": "ProtectionHeroBelt",
+		"langid": "ProtectionHeroBelt",
+		"job": "SW",
+		"level": 25,
+		"icon": "PrismaticHeroBelt",
+		"armorbase": 10,
+		"armor": 150
+	},{
+		"unic": true,
+		"id": "KeenPower",
+		"langid": "KeenPower",
+		"job": "WAR",
+		"level": 40,
+		"icon": "KeenPower",
+		"armorbase": 40,
+		"armor": 250,
+		"life": 350
+	},{
+		"unic": true,
+		"id": "RoshanCircle",
+		"langid": "RoshanCircle",
+		"job": "SW",
+		"level": 40,
+		"icon": "RoshanCircle",
+		"armorbase": 15,
+		"armor": 200,
+		"life": 250
+	},{
+		"unic": true,
+		"id": "YachakAwakening",
+		"langid": "YachakAwakening",
+		"job": "RNG",
+		"level": 40,
+		"icon": "YachakAwakening",
+		"armorbase": 20,
+		"armor": 200,
+		"life": 300
+	},{
+		"unic": true,
+		"id": "SparksBelt",
+		"langid": "SparksBelt",
+		"job": "DWF",
+		"level": 40,
+		"icon": "RoshanCircle",
+		"armorbase": 15,
+		"armor": 200,
+		"life": 250
+	},{
+		"unic": true,
+		"id": "SteamBelt",
+		"langid": "SteamBelt",
+		"job": "WAR",
+		"level": 43,
+		"icon": "SteamBelt",
+		"armorbase": 28,
+		"damage": 15,
+		"critrate": 200
+	},{
+		"unic": true,
+		"id": "AutomatedBelt",
+		"langid": "AutomatedBelt",
+		"job": "SW",
+		"level": 43,
+		"icon": "AutomatedBelt",
+		"armorbase": 11,
+		"armor": 390
+	},{
+		"unic": true,
+		"id": "MechanicalBelt",
+		"langid": "MechanicalBelt",
+		"job": "RNG",
+		"level": 43,
+		"icon": "MechanicalBelt",
+		"armorbase": 14,
+		"damage": 15,
+		"critrate": 200
+	},{
+		"unic": true,
+		"id": "MachineBelt",
+		"langid": "MachineBelt",
+		"job": "DWF",
+		"level": 43,
+		"icon": "MachineBelt",
+		"armorbase": 11,
+		"armor": 390
+	},{
+		"unic": true,
+		"id": "DefenderBelt_war",
+		"langid": "DefenderBelt",
+		"job": "WAR",
+		"level": 45,
+		"icon": "DefenderBelt",
+		"armorbase": 48,
+        "resist": 75,
+		"armor": 444,
+		"armorboost": 0.2
+	},{
+		"unic": true,
+		"id": "DefenderBelt",
+		"langid": "DefenderBelt",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "DefenderBelt",
+		"armorbase": 24,
+        "resist": 75,
+		"armor": 375,
+		"armorboost": 0.2
+	},{
+		"unic": true,
+		"id": "DefenderBelt_rng",
+		"langid": "DefenderBelt",
+		"job": "RNG",
+		"level": 45,
+		"icon": "DefenderBelt",
+		"armorbase": 24,
+        "resist": 75,
+		"armor": 400,
+		"armorboost": 0.2
+	}],
+
+"weapondecorations":[{
+		"id": "wdec40war",
+		"langid": "wdec40war",
+		"job": "WAR",
+		"level": 40,
+		"icon": "weapondecorations40WAR"
+	},{
+		"id": "wdec45war",
+		"langid": "wdec45war",
+		"job": "WAR",
+		"level": 45,
+		"icon": "weapondecorations45WAR"
+	},{
+		"id": "wdec40sw",
+		"langid": "wdec40sw",
+		"job": "SW",
+		"level": 40,
+		"icon": "weapondecorations40SW"
+	},{
+		"id": "wdec45sw",
+		"langid": "wdec45sw",
+		"job": "SW",
+		"level": 45,
+		"icon": "weapondecorations45SW"
+	},{
+		"id": "wdec40rng",
+		"langid": "wdec40rng",
+		"job": "RNG",
+		"level": 40,
+		"icon": "weapondecorations40RNG"
+	},{
+		"id": "wdec45rng",
+		"langid": "wdec45rng",
+		"job": "RNG",
+		"level": 45,
+		"icon": "weapondecorations45RNG"
+	},{
+		"id": "wdec45dwf",
+		"langid": "wdec45dwf",
+		"job": "DWF",
+		"level": 45,
+		"icon": "weapondecorations45DWF"
+	},{
+		"unic": true,
+		"id": "WeaponAdornmentPower",
+		"langid": "WeaponAdornmentPower",
+		"job": "WAR",
+		"level": 20,
+		"icon": "WeaponAdornmentPower",
+		"damage": 3,
+		"speed": 0.025,
+		"critrate": 50
+	},{
+		"unic": true,
+		"id": "WeaponAdornmentSplendor",
+		"langid": "WeaponAdornmentSplendor",
+		"job": "SW",
+		"level": 20,
+		"icon": "WeaponAdornmentSplendor",
+		"damage": 4,
+		"speed": 0.025,
+		"critrate": 50
+	},{
+		"unic": true,
+		"id": "WindArrow",
+		"langid": "WindArrow",
+		"job": "RNG",
+		"level": 20,
+		"icon": "WindArrow",
+		"damage": 4,
+		"speed": 0.025,
+		"critrate": 50
+	},{
+		"unic": true,
+		"id": "PyrotechnicCannonballs",
+		"langid": "PyrotechnicCannonballs",
+		"job": "DWF",
+		"level": 20,
+		"icon": "PyrotechnicCannonballs",
+		"damage": 4,
+		"speed": 0.025,
+		"critrate": 50
+	},{
+		"unic": true,
+		"id": "DefenderWDEC",
+		"langid": "DefenderWDEC",
+		"job": "WAR,SW,RNG,DWF",
+		"level": 45,
+		"icon": "DefenderWDEC",
+		"resist": "",
+		"damagepve": "0.1|0.2",
+		"damagepvp": "-0.05|-0.1"
+	},{
+		"unic": true,
+		"id": "DeepSeaTrophy",
+		"langid": "DeepSeaTrophy",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DeepSeaTrophy",
+		"damage": 20,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "DeepSeaPearl",
+		"langid": "DeepSeaPearl",
+		"job": "SW",
+		"level": 40,
+		"icon": "DeepSeaPearl",
+		"damage": 20,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "DeepSeaArrow",
+		"langid": "DeepSeaArrow",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DeepSeaArrow",
+		"damage": 20,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "DeepSeaBullet",
+		"langid": "DeepSeaBullet",
+		"job": "DWF",
+		"level": 40,
+		"icon": "DeepSeaBullet",
+		"damage": 20,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "SargonClaw",
+		"langid": "SargonClaw",
+		"job": "WAR",
+		"level": 40,
+		"icon": "SargonClaw",
+		"armorboost": -0.35,
+		"critrate": 813
+	},{
+		"unic": true,
+		"id": "SargonPowerfulClaw",
+		"langid": "SargonPowerfulClaw",
+		"job": "WAR",
+		"level": 45,
+		"icon": "SargonClaw",
+		"armorboost": -0.35,
+		"critrate": 1000
+	},{
+		"unic": true,
+		"id": "SargonCristal",
+		"langid": "SargonCristal",
+		"job": "SW",
+		"level": 40,
+		"icon": "SargonCristal",
+		"armorboost": -0.35,
+		"critrate": 813
+	},{
+		"unic": true,
+		"id": "SargonPowerfulCristal",
+		"langid": "SargonPowerfulCristal",
+		"job": "SW",
+		"level": 45,
+		"icon": "SargonCristal",
+		"armorboost": -0.35,
+		"critrate": 1000
+	},{
+		"unic": true,
+		"id": "SargonArrow",
+		"langid": "SargonArrow",
+		"job": "RNG",
+		"level": 40,
+		"icon": "SargonArrow",
+		"armorboost": -0.35,
+		"critrate": 813
+	},{
+		"unic": true,
+		"id": "SargonPowerfulArrow",
+		"langid": "SargonPowerfulArrow",
+		"job": "RNG",
+		"level": 45,
+		"icon": "SargonArrow",
+		"armorboost": -0.35,
+		"critrate": 1000
+	},{
+		"unic": true,
+		"id": "SargonPowerfulAmmo",
+		"langid": "SargonPowerfulAmmo",
+		"job": "DWF",
+		"level": 45,
+		"icon": "SargonAmmo",
+		"armorboost": -0.35,
+		"critrate": 1000
+	},{
+		"unic": true,
+		"id": "SteamWDEC",
+		"langid": "SteamWDEC",
+		"job": "WAR",
+		"level": 43,
+		"icon": "SteamWeaponDecoration",
+		"critboost": 0.15,
+		"critrate": 150
+	},{
+		"unic": true,
+		"id": "AutomatedWDEC",
+		"langid": "AutomatedWDEC",
+		"job": "SW",
+		"level": 43,
+		"icon": "AutomatedWeaponDecoration",
+		"critboost": 0.15,
+		"critrate": 150
+	},{
+		"unic": true,
+		"id": "MechanicalWDEC",
+		"langid": "MechanicalWDEC",
+		"job": "RNG",
+		"level": 43,
+		"icon": "MechanicalWeaponDecoration",
+		"critboost": 0.15,
+		"critrate": 150
+	},{
+		"unic": true,
+		"id": "MachineAmmo",
+		"langid": "MachineAmmo",
+		"job": "DWF",
+		"level": 43,
+		"icon": "MachineAmmo",
+		"critboost": 0.15,
+		"critrate": 150
+	}],
+
+"rings":[{
+		"id": "Ring38",
+		"langid": "Ring38",
+		"job": "WAR, SW",
+		"level": 38,
+		"icon": "rings38"
+	},{
+		"id": "Ring38rng",
+		"langid": "Ring38rng",
+		"job": "RNG",
+		"level": 38,
+		"icon": "rings38"
+	},{
+		"id": "Ring45war",
+		"langid": "Ring45war",
+		"job": "WAR",
+		"level": 45,
+		"icon": "rings45"
+	},{
+		"id": "Ring45sw",
+		"langid": "Ring45sw",
+		"job": "SW",
+		"level": 45,
+		"icon": "rings45"
+	},{
+		"id": "Ring45rng",
+		"langid": "Ring45rng",
+		"job": "RNG",
+		"level": 45,
+		"icon": "rings45"
+	},{
+		"id": "Ring45dwf",
+		"langid": "Ring45dwf",
+		"job": "DWF",
+		"level": 45,
+		"icon": "rings45"
+	},{
+		"unic": true,
+		"id": "WarriorArtsRing",
+		"langid": "WarriorArtsRing",
+		"job": "WAR",
+		"level": 15,
+		"icon": "Ring15",
+		"damage": 5,
+		"armorboost": 0.05
+	},{
+		"unic": true,
+		"id": "MagicRing",
+		"langid": "MagicRing",
+		"job": "SW",
+		"level": 15,
+		"icon": "Ring15",
+		"damage": 5
+	},{
+		"unic": true,
+		"id": "HunterRing",
+		"langid": "HunterRing",
+		"job": "RNG",
+		"level": 15,
+		"icon": "Ring15",
+		"damage": 5
+	},{
+		"unic": true,
+		"id": "DwarvenKinematicsRing",
+		"langid": "DwarvenKinematicsRing",
+		"job": "DWF",
+		"level": 15,
+		"icon": "DwarvenKinematicsRing",
+		"damage": 5
+	},{
+		"unic": true,
+		"id": "RingLifeOld_war",
+		"langid": "RingLifeOld",
+		"job": "WAR",
+		"level": 40,
+		"icon": "RingLife",
+		"life": 325
+	},{
+		"unic": true,
+		"id": "RingLifeOld",
+		"langid": "RingLifeOld",
+		"job": "SW,DWF",
+		"level": 40,
+		"icon": "RingLife",
+		"life": 200
+	},{
+		"unic": true,
+		"id": "RingLifeOld_rng",
+		"langid": "RingLifeOld",
+		"job": "RNG",
+		"level": 40,
+		"icon": "RingLife",
+		"life": 275
+	},{
+		"unic": true,
+		"id": "RingLife_war",
+		"langid": "RingLife",
+		"job": "WAR",
+		"level": 45,
+		"icon": "RingLife",
+		"life": 511,
+		"lifeboost": 0.03,
+		"regen": 27
+	},{
+		"unic": true,
+		"id": "RingLife_rng",
+		"langid": "RingLife",
+		"job": "RNG",
+		"level": 45,
+		"icon": "RingLife",
+		"life": 398,
+		"lifeboost": 0.03,
+		"regen": 23
+	},{
+		"unic": true,
+		"id": "RingLife",
+		"langid": "RingLife",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "RingLife",
+		"life": 293,
+		"lifeboost": 0.03,
+		"regen": 19
+	},{
+		"unic": true,
+		"id": "RingDeathOld",
+		"langid": "RingDeathOld",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 40,
+		"icon": "RingDeath",
+		"damage": 30
+	},{
+		"unic": true,
+		"id": "RingDeath",
+		"langid": "RingDeath",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 45,
+		"icon": "RingDeath",
+		"damageboost": 0.03,
+		"damage": 57,
+		"critboost": 0.1
+	},{
+		"unic": true,
+		"id": "SteamRing",
+		"langid": "SteamRing",
+		"job": "WAR",
+		"level": 43,
+		"icon": "AutoMechaSteamRing",
+		"damage": 45
+	},{
+		"unic": true,
+		"id": "AutoRing",
+		"langid": "AutoRing",
+		"job": "SW",
+		"level": 43,
+		"icon": "AutoMechaSteamRing",
+		"damage": 45
+	},{
+		"unic": true,
+		"id": "MechaRing",
+		"langid": "MechaRing",
+		"job": "RNG",
+		"level": 43,
+		"icon": "AutoMechaSteamRing",
+		"damage": 45
+	},{
+		"unic": true,
+		"id": "MachineRing",
+		"langid": "MachineRing",
+		"job": "DWF",
+		"level": 43,
+		"icon": "AutoMechaSteamRing",
+		"damage": 45
+	},{
+		"unic": true,
+		"id": "InnerFortitudeRing",
+		"langid": "InnerFortitudeRing",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 45,
+		"icon": "InnerFortitudeRing",
+		"speed": 0.1
+	},{
+		"unic": true,
+		"id": "DeepSeaRing",
+		"langid": "DeepSeaRing",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 40,
+		"icon": "DeepSeaRing",
+		"movspeed": 0.035,
+        "life": 200
+	},{
+		"unic": true,
+		"id": "DedicatedDefenderRing_war",
+		"langid": "DedicatedDefenderRing",
+		"job": "WAR",
+		"level": 45,
+		"icon": "DedicatedDefenderRing",
+		"resist": 75,
+		"armor": 166,
+		"life": 200,
+		"damage": 25
+	},{
+		"unic": true,
+		"id": "DedicatedDefenderRing",
+		"langid": "DedicatedDefenderRing",
+		"job": "SW, RNG, DWF",
+		"level": 45,
+		"icon": "DedicatedDefenderRing",
+		"resist": 75,
+		"armor": 140,
+		"life": 140,
+		"damage": 28
+	},{
+		"unic": true,
+		"id": "PunctualDefenderRing",
+		"langid": "PunctualDefenderRing",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 45,
+		"icon": "PunctualDefenderRing",
+        "damage": "",
+        "resist": "",
+        "resist": "0.05|0.1",
+        "critboost": "-0.05|-0.15"
+	},{
+		"unic": true,
+		"id": "TearHolder",
+		"langid": "TearHolder",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 45,
+		"icon": "TearHolder",
+		"damage": 40,
+		"speed": 0.075
+	},{
+		"unic": true,
+		"id": "BloodTooth",
+		"langid": "BloodTooth",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 45,
+		"icon": "BloodTooth",
+		"life": 500,
+		"critrateboost": 0.25
+	}],
+
+"headarmors":[{
+		"id": "HeadArmor40WAR",
+		"langid": "HeadArmor40WAR",
+		"job": "WAR",
+		"level": 40,
+		"icon": "headarmors40WAR",
+		"armorbase": 78
+	},{
+		"id": "HeadArmor45WAR",
+		"langid": "HeadArmor45WAR",
+		"job": "WAR",
+		"level": 45,
+		"icon": "headarmors45WAR",
+		"armorbase": 103
+	},{
+		"id": "HeadArmor40SW",
+		"langid": "HeadArmor40SW",
+		"job": "SW",
+		"level": 40,
+		"icon": "headarmors40SW",
+		"armorbase": 31
+	},{
+		"id": "HeadArmor45SW",
+		"langid": "HeadArmor45SW",
+		"job": "SW",
+		"level": 45,
+		"icon": "headarmors45SW",
+		"armorbase": 41
+	},{
+		"id": "HeadArmor40RNG",
+		"langid": "HeadArmor40RNG",
+		"job": "RNG",
+		"level": 40,
+		"icon": "headarmors40RNG",
+		"armorbase": 49
+	},{
+		"id": "HeadArmor45RNG",
+		"langid": "HeadArmor45RNG",
+		"job": "RNG",
+		"level": 45,
+		"icon": "headarmors45RNG",
+		"armorbase": 65
+	},{
+		"id": "HeadArmor45DWF",
+		"langid": "HeadArmor45DWF",
+		"job": "DWF",
+		"level": 45,
+		"icon": "headarmors45DWF",
+		"armorbase": 41
+	},{
+		"unic": true,
+		"id": "GoldenHorn_war",
+		"langid": "GoldenHorn",
+		"job": "WAR",
+		"level": 1,
+		"icon": "GoldenHorn",
+		"armorbase": 21,
+		"armor": 132
+	},{
+		"unic": true,
+		"id": "GoldenHorn_sw",
+		"langid": "GoldenHorn",
+		"job": "SW",
+		"level": 1,
+		"icon": "GoldenHorn",
+		"armorbase": 21,
+		"armor": 90
+	},{
+		"unic": true,
+		"id": "GoldenHorn_rng",
+		"langid": "GoldenHorn",
+		"job": "RNG",
+		"level": 1,
+		"icon": "GoldenHorn",
+		"armorbase": 21,
+		"armor": 14,
+		"life": 80
+	},{
+		"unic": true,
+		"id": "GoldenHorn_dwf",
+		"langid": "GoldenHorn",
+		"job": "DWF",
+		"level": 1,
+		"icon": "GoldenHorn",
+		"armorbase": 21,
+		"armor": 90
+	},{
+		"unic": true,
+		"id": "BerserkerHelmDWF",
+		"langid": "BerserkerHelm",
+		"job": "DWF",
+		"level": 15,
+		"icon": "BerserkerHelmDWF",
+		"armorbase": 8,
+		"armor": 25,
+		"life": 70
+	},{
+		"unic": true,
+		"id": "PraetorianHelm",
+		"langid": "PraetorianHelm",
+		"job": "WAR",
+		"level": 15,
+		"icon": "PretorianHelm",
+		"armorbase": 23,
+		"armor": 70,
+		"life": 80
+	},{
+		"unic": true,
+		"id": "BerserkerHelmWAR",
+		"langid": "BerserkerHelm",
+		"job": "WAR",
+		"level": 25,
+		"icon": "BerserkerHelmWAR",
+		"armorbase": 66,
+		"life": 102
+	},{
+		"unic": true,
+		"id": "FoxFurCap",
+		"langid": "FoxFurCap",
+		"job": "RNG",
+		"level": 25,
+		"icon": "FoxFurCap",
+		"armorbase": 30,
+		"armor": 50,
+		"life": 120
+	},{
+		"unic": true,
+		"id": "DarkHelm_war",
+		"langid": "DarkHelm",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DarkHelm",
+		"armorbase": 80,
+		"armor": 400,
+		"critrateboost": 0.35
+	},{
+		"unic": true,
+		"id": "DarkHelm_sw",
+		"langid": "DarkHelm",
+		"job": "SW,DWF",
+		"level": 40,
+		"icon": "DarkHelm",
+		"armorbase": 40,
+		"armor": 280,
+		"critrateboost": 0.35
+	},{
+		"unic": true,
+		"id": "DarkHelm_rng",
+		"langid": "DarkHelm",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DarkHelm",
+		"armorbase": 50,
+		"armor": 320,
+		"critrateboost": 0.35
+	},{
+		"unic": true,
+		"id": "KhalysHeadSW",
+		"langid": "KhalysHeadSW",
+		"job": "SW",
+		"level": 40,
+		"icon": "KhalysHeadSW",
+		"armorbase": 31,
+		"armor": 315,
+		"damage": 13
+	},{
+		"unic": true,
+		"id": "KhalysHeadRNG",
+		"langid": "KhalysHeadRNG",
+		"job": "RNG",
+		"level": 40,
+		"icon": "KhalysHeadRNG",
+		"armorbase": 50,
+		"life": 250,
+		"damage": 15
+	},{
+		"unic": true,
+		"id": "AmmonForgottenHeadWAR",
+		"langid": "AmmonForgottenHead",
+		"job": "WAR",
+		"level": 40,
+		"icon": "AmmonHeadWAR",
+		"armorbase": ""
+	},{
+		"unic": true,
+		"id": "AmmonForgottenHeadSW",
+		"langid": "AmmonForgottenHead",
+		"job": "SW",
+		"level": 40,
+		"icon": "AmmonHeadSW",
+		"armorbase": ""
+	},{
+		"unic": true,
+		"id": "AmmonForgottenHeadRNG",
+		"langid": "AmmonForgottenHead",
+		"job": "RNG",
+		"level": 40,
+		"icon": "AmmonHeadRNG",
+		"armorbase": ""
+	},{
+		"unic": true,
+		"id": "AmmonForgottenHeadDWF",
+		"langid": "AmmonForgottenHead",
+		"job": "DWF",
+		"level": 40,
+		"icon": "AmmonHeadDWF",
+		"armorbase": ""
+	},{
+		"unic": true,
+		"id": "AmmonHeadWAR",
+		"langid": "AmmonHead",
+		"job": "WAR",
+		"level": 45,
+		"icon": "AmmonHeadWAR",
+		"armorbase": 100,
+		"armor": 417,
+		"life": 201,
+		"critrate": 189
+	},{
+		"unic": true,
+		"id": "AmmonHeadSW",
+		"langid": "AmmonHead",
+		"job": "SW",
+		"level": 45,
+		"icon": "AmmonHeadSW",
+		"armorbase": 40,
+		"armor": 350,
+		"life": 115,
+		"critrate": 189
+	},{
+		"unic": true,
+		"id": "AmmonHeadRNG",
+		"langid": "AmmonHead",
+		"job": "RNG",
+		"level": 45,
+		"icon": "AmmonHeadRNG",
+		"armorbase": 62,
+		"armor": 360,
+		"life": 157,
+		"critrate": 189
+	},{
+		"unic": true,
+		"id": "AmmonHeadDWF",
+		"langid": "AmmonHead",
+		"job": "DWF",
+		"level": 45,
+		"icon": "AmmonHeadDWF",
+		"armorbase": 40,
+		"armor": 350,
+		"life": 115,
+		"critrate": 189
+	},{
+		"unic": true,
+		"id": "DeathCap",
+		"langid": "DeathCap",
+		"job": "SW",
+		"level": 40,
+		"icon": "MortisHeadSW",
+		"armorbase": 30,
+		"speed": 0.1,
+		"damage": 50
+	},{
+		"unic": true,
+		"id": "DeathHelmet",
+		"langid": "DeathHelmet",
+		"job": "WAR",
+		"level": 40,
+		"icon": "MortisHeadWAR",
+		"armorbase": 80,
+		"life": 430,
+		"armor": 270,
+		"damage": 50
+	},{
+		"unic": true,
+		"id": "DeathMask",
+		"langid": "DeathMask",
+		"job": "RNG",
+		"level": 40,
+		"icon": "MortisHeadRNG",
+		"armorbase": 50,
+		"life": 250,
+		"damage": 50
+	},{
+		"unic": true,
+		"id": "DeathMask",
+		"langid": "HorrorMask",
+		"job": "DWF",
+		"level": 40,
+		"icon": "MortisHeadDWF",
+		"armorbase": 30,
+		"speed": 0.1,
+		"damage": 50
+	},{
+		"unic": true,
+		"id": "SargonHeadWAR",
+		"langid": "SargonHead",
+		"job": "WAR",
+		"level": 40,
+		"icon": "SargonHeadWAR",
+		"armorbase": 80,
+		"armor": 111,
+		"life": 333,
+		"speed": 0.05,
+		"andermagic":333
+	},{
+		"unic": true,
+		"id": "SargonHeadSW",
+		"langid": "SargonHead",
+		"job": "SW",
+		"level": 40,
+		"icon": "SargonHeadSW",
+		"armorbase": 40,
+		"armor": 77,
+		"life": 222,
+		"speed": 0.05,
+		"andermagic":333
+	},{
+		"unic": true,
+		"id": "SargonHeadRNG",
+		"langid": "SargonHead",
+		"job": "RNG",
+		"level": 40,
+		"icon": "SargonHeadRNG",
+		"armorbase": 50,
+		"armor": 99,
+		"life": 277,
+		"speed": 0.05,
+		"andermagic":333
+	},{
+		"unic": true,
+		"id": "SargonHeadDWF",
+		"langid": "SargonHead",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SargonHeadDWF",
+		"armorbase": 40,
+		"armor": 77,
+		"life": 222,
+		"speed": 0.05,
+		"andermagic":333
+	},{
+		"unic": true,
+		"id": "SargonPowerfulHeadWAR",
+		"langid": "SargonPowerfulHead",
+		"job": "WAR",
+		"level": 45,
+		"icon": "SargonHeadWAR",
+		"armorbase": 109,
+		"armor": 141,
+		"life": 414,
+		"speed": 0.05,
+		"andermagic":333
+	},{
+		"unic": true,
+		"id": "SargonPowerfulHeadSW",
+		"langid": "SargonPowerfulHead",
+		"job": "SW",
+		"level": 45,
+		"icon": "SargonHeadSW",
+		"armorbase": 41,
+		"armor": 99,
+		"life": 333,
+		"speed": 0.05,
+		"andermagic":333
+	},{
+		"unic": true,
+		"id": "SargonPowerfulHeadRNG",
+		"langid": "SargonPowerfulHead",
+		"job": "RNG",
+		"level": 45,
+		"icon": "SargonHeadRNG",
+		"armorbase": 66,
+		"armor": 99,
+		"life": 333,
+		"speed": 0.05,
+		"andermagic":333
+	},{
+		"unic": true,
+		"id": "SargonPowerfulHeadDWF",
+		"langid": "SargonPowerfulHead",
+		"job": "DWF",
+		"level": 45,
+		"icon": "SargonHeadDWF",
+		"armorbase": 41,
+		"armor": 99,
+		"life": 333,
+		"speed": 0.05,
+		"andermagic":333
+	},{
+		"unic": true,
+		"id": "WerewolfHead_war",
+		"langid": "WerewolfHead_war",
+		"job": "WAR",
+		"level": 40,
+		"icon": "WerewolfHead",
+		"armorbase": 80,
+		"armor": 80,
+		"life": 600,
+		"critboost": 0.1
+	},{
+		"unic": true,
+		"id": "WerewolfHead_sw",
+		"langid": "WerewolfHead_sw",
+		"job": "SW",
+		"level": 40,
+		"icon": "WerewolfHead",
+		"armorbase": 30,
+		"armor": 30,
+		"life": 300,
+		"damage": 25
+	},{
+		"unic": true,
+		"id": "WerewolfHead_dwf",
+		"langid": "WerewolfHead_war",
+		"job": "DWF",
+		"level": 40,
+		"icon": "WerewolfHead",
+		"armorbase": 30,
+		"armor": 30,
+		"life": 300,
+		"damage": 25
+	},{
+		"unic": true,
+		"id": "WerewolfHead_rng",
+		"langid": "WerewolfHead_rng",
+		"job": "RNG",
+		"level": 40,
+		"icon": "WerewolfHead",
+		"armorbase": 50,
+		"armor": 50,
+		"life": 450,
+		"damage": 20
+	},{
+		"unic": true,
+		"id": "GarulfHead_war",
+		"langid": "GarulfHead_war",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WerewolfHead",
+		"armorbase": 109,
+		"life": 500,
+		"critboost": 0.15,
+		"ice":250
+	},{
+		"unic": true,
+		"id": "GarulfHead_sw",
+		"langid": "GarulfHead_sw",
+		"job": "SW",
+		"level": 45,
+		"icon": "WerewolfHead",
+		"armorbase": 42,
+		"life": 350,
+		"critboost": 0.15,
+		"ice":250
+	},{
+		"unic": true,
+		"id": "GarulfHead_rng",
+		"langid": "GarulfHead_rng",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WerewolfHead",
+		"armorbase": 45,
+		"life": 350,
+		"critboost": 0.15,
+		"ice":250
+	},{
+		"unic": true,
+		"id": "GarulfHead_dwf",
+		"langid": "GarulfHead_war",
+		"job": "DWF",
+		"level": 45,
+		"icon": "WerewolfHead",
+		"armorbase": 42,
+		"life": 350,
+		"critboost": 0.15,
+		"ice":250
+	},{
+		"unic": true,
+		"id": "WitchHunterHat_war",
+		"langid": "WitchHunterHat",
+		"job": "WAR",
+		"level": 40,
+		"icon": "WitchHunterHat",
+		"armorbase": 33,
+		"armor": 150,
+		"critrate": 325,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterHat",
+		"langid": "WitchHunterHat",
+		"job": "SW,DWF",
+		"level": 40,
+		"icon": "WitchHunterHat",
+		"armorbase": 33,
+		"armor": 125,
+		"critrate": 325,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterHat_rng",
+		"langid": "WitchHunterHat",
+		"job": "RNG",
+		"level": 40,
+		"icon": "WitchHunterHat",
+		"armorbase": 52,
+		"armor": 125,
+		"critrate": 325,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulHat_war",
+		"langid": "WitchHunterPowerfulHat",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WitchHunterHat",
+		"armorbase": 103,
+		"armor": 200,
+		"critrate": 400,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulHat",
+		"langid": "WitchHunterPowerfulHat",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "WitchHunterHat",
+		"armorbase": 41,
+		"armor": 180,
+		"critrate": 400,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulHat_rng",
+		"langid": "WitchHunterPowerfulHat",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WitchHunterHat",
+		"armorbase": 65,
+		"armor": 180,
+		"critrate": 400,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchChaserHat_war",
+		"langid": "WitchChaserHat",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WitchHunterHat",
+		"armorbase": 109,
+		"armor": 133,
+		"critrate": 333,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "WitchChaserHat",
+		"langid": "WitchChaserHat",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "WitchHunterHat",
+		"armorbase": 42,
+		"armor": 111,
+		"critrate": 333,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "WitchChaserHat_rng",
+		"langid": "WitchChaserHat",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WitchHunterHat",
+		"armorbase": 67,
+		"armor": 111,
+		"critrate": 333,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "BlackWarLordHeadWAR",
+		"langid": "BlackWarLordHead",
+		"job": "WAR",
+		"level": 45,
+		"icon": "BlackWarLordHead",
+		"armorbase": 109,
+		"armor": 250,
+		"life": 250,
+		"blockeddmgboost": 0.3
+	},{
+		"unic": true,
+		"id": "BlackWarLordHead",
+		"langid": "BlackWarLordHead",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "BlackWarLordHead",
+		"armorbase": 41,
+		"armor": 225,
+		"life": 225,
+		"blockeddmgboost": 0.3
+	},{
+		"unic": true,
+		"id": "BlackWarLordHeadRNG",
+		"langid": "BlackWarLordHead",
+		"job": "RNG",
+		"level": 45,
+		"icon": "BlackWarLordHead",
+		"armorbase": 66,
+		"armor": 225,
+		"life": 225,
+		"blockeddmgboost": 0.3
+	}],
+
+"shoulders":[{
+		"id": "shoulder40WAR",
+		"langid": "shoulder40WAR",
+		"job": "WAR",
+		"level": 40,
+		"icon": "shoulders40WAR",
+		"armorbase": 78
+	},{
+		"id": "shoulder45WAR",
+		"langid": "shoulder45WAR",
+		"job": "WAR",
+		"level": 45,
+		"icon": "shoulders45WAR",
+		"armorbase": 103
+	},{
+		"id": "shoulder40SW",
+		"langid": "shoulder40SW",
+		"job": "SW",
+		"level": 40,
+		"icon": "shoulders40SW",
+		"armorbase": 31
+	},{
+		"id": "shoulder45SW",
+		"langid": "shoulder45SW",
+		"job": "SW",
+		"level": 45,
+		"icon": "shoulders45SW",
+		"armorbase": 41
+	},{
+		"id": "shoulder40RNG",
+		"langid": "shoulder40RNG",
+		"job": "RNG",
+		"level": 40,
+		"icon": "shoulders40RNG",
+		"armorbase": 19
+	},{
+		"id": "shoulder45RNG",
+		"langid": "shoulder45RNG",
+		"job": "RNG",
+		"level": 45,
+		"icon": "shoulders45RNG",
+		"armorbase": 26
+	},{
+		"id": "shoulder45DWF",
+		"langid": "shoulder45DWF",
+		"job": "DWF",
+		"level": 45,
+		"icon": "shoulders45DWF",
+		"armorbase": 41
+	},{
+		"unic": true,
+		"id": "BonePauldronsRNG",
+		"langid": "BonePauldronsRNG",
+		"job": "RNG",
+		"level": 10,
+		"icon": "BonePauldronsRNG",
+		"armorbase": 6,
+		"armor": 25,
+		"life": 100
+	},{
+		"unic": true,
+		"id": "BonePauldronsSW",
+		"langid": "BonePauldronsSW",
+		"job": "SW",
+		"level": 15,
+		"icon": "BonePauldronsSW",
+		"armorbase": 10,
+		"armor": 50
+	},{
+		"unic": true,
+		"id": "ViperPauldrons",
+		"langid": "ViperPauldrons",
+		"job": "WAR",
+		"level": 40,
+		"icon": "KhalysPauldronsWAR",
+		"armorbase": 78,
+		"armor": 360,
+		"damage": 11
+	},{
+		"unic": true,
+		"id": "SnakePauldrons",
+		"langid": "SnakePauldrons",
+		"job": "DWF",
+		"level": 40,
+		"icon": "KhalysPauldronsDWF",
+		"armorbase": 31,
+		"armor": 315,
+		"damage": 13
+	},{
+		"unic": true,
+		"id": "AmmonForgottenWingsWAR",
+		"langid": "AmmonForgottenWings",
+		"job": "WAR",
+		"level": 40,
+		"icon": "AmmonWingsWAR",
+		"armorbase": 80,
+		"armor": 200,
+		"life": 250
+	},{
+		"unic": true,
+		"id": "AmmonForgottenWingsSW",
+		"langid": "AmmonForgottenWings",
+		"job": "SW",
+		"level": 40,
+		"icon": "AmmonWingsSW",
+		"armorbase": 30,
+		"armor": 165,
+		"life": 150
+	},{
+		"unic": true,
+		"id": "AmmonForgottenWingsRNG",
+		"langid": "AmmonForgottenWings",
+		"job": "RNG",
+		"level": 40,
+		"icon": "AmmonWingsRNG",
+		"armorbase": 50,
+		"armor": 175,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "AmmonWingsWAR",
+		"langid": "AmmonWings",
+		"job": "WAR",
+		"level": 45,
+		"icon": "AmmonWingsWAR",
+		"armorbase": 100,
+		"armor": 417,
+		"life": 201,
+		"damage": 21
+	},{
+		"unic": true,
+		"id": "AmmonWingsSW",
+		"langid": "AmmonWings",
+		"job": "SW",
+		"level": 45,
+		"icon": "AmmonWingsSW",
+		"armorbase": 40,
+		"armor": 350,
+		"life": 115,
+		"damage": 25
+	},{
+		"unic": true,
+		"id": "AmmonWingsRNG",
+		"langid": "AmmonWings",
+		"job": "RNG",
+		"level": 45,
+		"icon": "AmmonWingsRNG",
+		"armorbase": 25,
+		"armor": 360,
+		"life": 157,
+		"damage": 23
+	},{
+		"unic": true,
+		"id": "AmmonWingsDWF",
+		"langid": "AmmonWings",
+		"job": "DWF",
+		"level": 45,
+		"icon": "AmmonWingsDWF",
+		"armorbase": 40,
+		"armor": 350,
+		"life": 115,
+		"damage": 25
+	},{
+		"unic": true,
+		"id": "DarkWings_war",
+		"langid": "DarkWings",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DarkWings",
+		"armorbase": 80,
+		"armor": 250,
+		"critrate": 250
+	},{
+		"unic": true,
+		"id": "DarkWings",
+		"langid": "DarkWings",
+		"job": "SW,DWF",
+		"level": 40,
+		"icon": "DarkWings",
+		"armorbase": 40,
+		"armor": 175,
+		"critrate": 250
+	},{
+		"unic": true,
+		"id": "DarkWings_rng",
+		"langid": "DarkWings",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DarkWings",
+		"armorbase": 50,
+		"armor": 220,
+		"critrate": 250
+	},{
+		"unic": true,
+		"id": "WarlordPauldrons",
+		"langid": "WarlordPauldrons",
+		"job": "WAR",
+		"level": 30,
+		"icon": "WarlordPauldrons",
+		"armorbase": 38,
+		"critrate": 188,
+		"life": 188
+	},{
+		"unic": true,
+		"id": "MasterPauldrons",
+		"langid": "MasterPauldrons",
+		"job": "SW",
+		"level": 30,
+		"icon": "MasterPauldrons",
+		"armorbase": 15,
+		"armor": 90,
+		"speed": 0.05
+	},{
+		"unic": true,
+		"id": "DragonkillerGuards",
+		"langid": "DragonkillerGuards",
+		"job": "RNG",
+		"level": 30,
+		"icon": "DragonkillerGuards",
+		"armorbase": 10,
+		"armor": 120,
+		"damagemax": 22,
+		"speed": 0.05
+	},{
+		"unic": true,
+		"id": "MasterMachinistPauldrons",
+		"langid": "MasterMachinistPauldrons",
+		"job": "DWF",
+		"level": 30,
+		"icon": "MasterMachinistPauldrons",
+		"armorbase": 15,
+		"armor": 90,
+		"speed": 0.05
+	},{
+		"unic": true,
+		"id": "SargonPauldronsWAR",
+		"langid": "SargonPauldrons",
+		"job": "WAR",
+		"level": 40,
+		"icon": "SargonPauldronsWAR",
+		"armorbase": 80,
+		"armor": 111,
+		"life": 333,
+		"damage": 5
+	},{
+		"unic": true,
+		"id": "SargonPauldronsSW",
+		"langid": "SargonPauldrons",
+		"job": "SW",
+		"level": 40,
+		"icon": "SargonPauldronsSW",
+		"armorbase": 40,
+		"armor": 77,
+		"life": 222,
+		"damage": 5
+	},{
+		"unic": true,
+		"id": "SargonPauldronsRNG",
+		"langid": "SargonPauldrons",
+		"job": "RNG",
+		"level": 40,
+		"icon": "SargonPauldronsRNG",
+		"armorbase": 50,
+		"armor": 99,
+		"life": 277,
+		"damage": 5
+	},{
+		"unic": true,
+		"id": "SargonPauldronsDWF",
+		"langid": "SargonPauldrons",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SargonPauldronsDWF",
+		"armorbase": 40,
+		"armor": 77,
+		"life": 222,
+		"damage": 5
+	},{
+		"unic": true,
+		"id": "SargonPowerfulPauldronsWAR",
+		"langid": "SargonPowerfulPauldrons",
+		"job": "WAR",
+		"level": 45,
+		"icon": "SargonPauldronsWAR",
+		"armorbase": 109,
+		"armor": 141,
+		"life": 414,
+		"damage": 10
+	},{
+		"unic": true,
+		"id": "SargonPowerfulPauldronsSW",
+		"langid": "SargonPowerfulPauldrons",
+		"job": "SW",
+		"level": 45,
+		"icon": "SargonPauldronsSW",
+		"armorbase": 41,
+		"armor": 99,
+		"life": 333,
+		"damage": 10
+	},{
+		"unic": true,
+		"id": "SargonPowerfulPauldronsRNG",
+		"langid": "SargonPowerfulPauldrons",
+		"job": "RNG",
+		"level": 45,
+		"icon": "SargonPauldronsRNG",
+		"armorbase": 26,
+		"armor": 99,
+		"life": 333,
+		"damage": 10
+	},{
+		"unic": true,
+		"id": "SargonPowerfulPauldronsDWF",
+		"langid": "SargonPowerfulPauldrons",
+		"job": "DWF",
+		"level": 45,
+		"icon": "SargonPauldronsDWF",
+		"armorbase": 41,
+		"armor": 99,
+		"life": 333,
+		"damage": 10
+	},{
+		"unic": true,
+		"id": "WitchHunterShoulders_war",
+		"langid": "WitchHunterShoulders",
+		"job": "WAR",
+		"level": 40,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 84,
+		"armor": 150,
+		"resist": 160,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterShoulders",
+		"langid": "WitchHunterShoulders",
+		"job": "SW,DWF",
+		"level": 40,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 33,
+		"armor": 125,
+		"resist": 160,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterShoulders_rng",
+		"langid": "WitchHunterShoulders",
+		"job": "RNG",
+		"level": 40,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 21,
+		"armor": 125,
+		"resist": 160,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulShoulders_war",
+		"langid": "WitchHunterPowerfulShoulders",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 103,
+		"armor": 200,
+		"resist": 200,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulShoulders",
+		"langid": "WitchHunterPowerfulShoulders",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 41,
+		"armor": 180,
+		"resist": 200,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulShoulders_rng",
+		"langid": "WitchHunterPowerfulShoulders",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 26,
+		"armor": 180,
+		"resist": 200,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchChaserShoulders_war",
+		"langid": "WitchChaserShoulders",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 42,
+		"armor": 111,
+		"resist": 222,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "WitchChaserShoulders",
+		"langid": "WitchChaserShoulders",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 42,
+		"armor": 111,
+		"resist": 222,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "WitchChaserShoulders_rng",
+		"langid": "WitchChaserShoulders",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WitchHunterShoulders",
+		"armorbase": 42,
+		"armor": 111,
+		"resist": 222,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "BlackWarLordShouldersWAR",
+		"langid": "BlackWarLordShoulders",
+		"job": "WAR",
+		"level": 45,
+		"icon": "BlackWarLordShoulders",
+		"armorbase": 109,
+		"armor": 450,
+		"blockrate": 150,
+		"blockeddmg": 150
+	},{
+		"unic": true,
+		"id": "BlackWarLordShoulders",
+		"langid": "BlackWarLordShoulders",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "BlackWarLordShoulders",
+		"armorbase": 41,
+		"armor": 400,
+		"blockrate": 150,
+		"blockeddmg": 150
+	},{
+		"unic": true,
+		"id": "BlackWarLordShouldersRNG",
+		"langid": "BlackWarLordShoulders",
+		"job": "RNG",
+		"level": 45,
+		"icon": "BlackWarLordShoulders",
+		"armorbase": 26,
+		"armor": 400,
+		"blockrate": 150,
+		"blockeddmg": 150
+	},{
+		"unic": true,
+		"id": "EssenceShoulders",
+		"langid": "EssenceShoulders",
+		"job": "WAR,SW,DWF,RNG",
+		"level": 45,
+		"icon": "EssenceShoulders",
+		"armorbase": 30,
+		"armor": 260,
+		"life": 260,
+		"damage": 31
+	}],
+
+"torsos":[{
+		"id": "Torso40WAR",
+		"langid": "Torso40WAR",
+		"job": "WAR",
+		"level": 40,
+		"icon": "torsos40WAR",
+		"armorbase": 128
+	},{
+		"id": "Torso45WAR",
+		"langid": "Torso45WAR",
+		"job": "WAR",
+		"level": 45,
+		"icon": "torsos45WAR",
+		"armorbase": 170
+	},{
+		"id": "Torso40SW",
+		"langid": "Torso40SW",
+		"job": "SW",
+		"level": 40,
+		"icon": "torsos40SW",
+		"armorbase": 51
+	},{
+		"id": "Torso45SW",
+		"langid": "Torso45SW",
+		"job": "SW",
+		"level": 45,
+		"icon": "torsos45SW",
+		"armorbase": 68
+	},{
+		"id": "Torso40RNG",
+		"langid": "Torso40RNG",
+		"job": "RNG",
+		"level": 40,
+		"icon": "torsos40RNG",
+		"armorbase": 64
+	},{
+		"id": "Torso45RNG",
+		"langid": "Torso45RNG",
+		"job": "RNG",
+		"level": 45,
+		"icon": "torsos45RNG",
+		"armorbase": 85
+	},{
+		"id": "Torso45DWF",
+		"langid": "Torso45DWF",
+		"job": "DWF",
+		"level": 45,
+		"icon": "torsos45DWF",
+		"armorbase": 68
+	},{
+		"unic": true,
+		"id": "HermineCloak",
+		"langid": "HermineCloak",
+		"job": "SW",
+		"level": 25,
+		"icon": "HermineCloak",
+		"armorbase": 27,
+		"armor": 74
+	},{
+		"unic": true,
+		"id": "ReminHarness",
+		"langid": "ReminHarness",
+		"job": "SW",
+		"level": 25,
+		"icon": "ReminHarness",
+		"armorbase": 27,
+		"life": 113,
+		"damagemax": 25
+	},{
+		"unic": true,
+		"id": "Gladiator",
+		"langid": "Gladiator",
+		"job": "WAR",
+		"level": 25,
+		"icon": "Gladiator",
+		"armorbase": 33,
+		"armor": 163,
+		"damagemax": 18
+	},{
+		"unic": true,
+		"id": "SkutuHuntingCloak",
+		"langid": "SkutuHuntingCloak",
+		"job": "RNG",
+		"level": 25,
+		"icon": "SkutuHuntingCloak",
+		"armorbase": 33,
+		"damagemax": 25,
+		"critboost": 0.1
+	},{
+		"unic": true,
+		"id": "FireCompressor",
+		"langid": "FireCompressor",
+		"job": "DWF",
+		"level": 25,
+		"icon": "FireCompressor",
+		"armorbase": 27,
+		"damagemax": 25,
+		"life": 113
+	},{
+		"unic": true,
+		"id": "TeganArmor",
+		"langid": "TeganArmor",
+		"job": "WAR",
+		"level": 35,
+		"icon": "TeganArmor",
+		"armorbase": 104,
+		"armor": 250,
+		"life": 100
+	},{
+		"unic": true,
+		"id": "GrimmagRobe",
+		"langid": "GrimmagRobe",
+		"job": "SW",
+		"level": 35,
+		"icon": "GrimmagRobe",
+		"armorbase": 42,
+		"armor": 230
+	},{
+		"unic": true,
+		"id": "Cuchulain",
+		"langid": "Cuchulain",
+		"job": "RNG",
+		"level": 35,
+		"icon": "Cuchulain",
+		"armorbase": 52,
+		"armor": 100,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "SigrismarArmorWAR",
+		"langid": "SigrismarArmorWAR",
+		"job": "WAR",
+		"level": 40,
+		"icon": "SigrismarArmorWAR",
+		"armorbase": 100,
+		"life": 500
+	},{
+		"unic": true,
+		"id": "SigrismarArmorSW",
+		"langid": "SigrismarArmorSW",
+		"job": "SW",
+		"level": 40,
+		"icon": "SigrismarArmorSW",
+		"armorbase": 50,
+		"armor": 30,
+		"life": 300
+	},{
+		"unic": true,
+		"id": "SigrismarArmorRNG",
+		"langid": "SigrismarArmorRNG",
+		"job": "RNG",
+		"level": 40,
+		"icon": "SigrismarArmorRNG",
+		"armorbase": 75,
+		"armor": 200,
+		"damage": 20
+	},{
+		"unic": true,
+		"id": "SigrismarArmorDWF",
+		"langid": "SigrismarArmorDWF",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SigrismarArmorDWF",
+		"armorbase": 50,
+		"armor": 30,
+		"life": 300
+	},{
+		"unic": true,
+		"id": "AmmonForgottenTorsoWAR",
+		"langid": "AmmonForgottenTorso",
+		"job": "WAR",
+		"level": 40,
+		"icon": "AmmonTorsoWAR",
+		"armorbase": 120,
+        "armor": 380,
+        "fire": 200,
+        "ice": 200,
+        "lightning": 200
+	},{
+		"unic": true,
+		"id": "AmmonForgottenTorsoSW",
+		"langid": "AmmonForgottenTorso",
+		"job": "SW",
+		"level": 40,
+		"icon": "AmmonTorsoSW",
+		"armorbase": 45,
+        "armor": 255,
+        "fire": 200,
+        "ice": 200,
+        "lightning": 200
+	},{
+		"unic": true,
+		"id": "AmmonForgottenTorsoRNG",
+		"langid": "AmmonForgottenTorso",
+		"job": "RNG",
+		"level": 40,
+		"icon": "AmmonTorsoRNG",
+		"armorbase": 70,
+        "armor": 280,
+        "fire": 200,
+        "ice": 200,
+        "lightning": 200
+	},{
+		"unic": true,
+		"id": "AmmonForgottenTorsoDWF",
+		"langid": "AmmonForgottenTorso",
+		"job": "DWF",
+		"level": 40,
+		"icon": "AmmonTorsoDWF",
+		"armorbase": 45,
+        "armor": 255,
+        "fire": 200,
+        "ice": 200,
+        "lightning": 200
+	},{
+		"unic": true,
+		"id": "AmmonTorsoWAR",
+		"langid": "AmmonTorso",
+		"job": "WAR",
+		"level": 45,
+		"icon": "AmmonTorsoWAR",
+		"armorbase": 172,
+		"armor": 417,
+		"life": 201,
+		"fire":189,
+        "ice":189,
+        "lightning":189
+	},{
+		"unic": true,
+		"id": "AmmonTorsoSW",
+		"langid": "AmmonTorso",
+		"job": "SW",
+		"level": 45,
+		"icon": "AmmonTorsoSW",
+		"armorbase": 66,
+		"armor": 350,
+		"life": 115,
+		"fire":189,
+        "ice":189,
+        "lightning":189
+	},{
+		"unic": true,
+		"id": "AmmonTorsoRNG",
+		"langid": "AmmonTorso",
+		"job": "RNG",
+		"level": 45,
+		"icon": "AmmonTorsoRNG",
+		"armorbase": 83,
+		"armor": 360,
+		"life": 157,
+		"fire":189,
+        "ice":189,
+        "lightning":189
+	},{
+		"unic": true,
+		"id": "AmmonTorsoDWF",
+		"langid": "AmmonTorso",
+		"job": "DWF",
+		"level": 45,
+		"icon": "AmmonTorsoDWF",
+		"armorbase": 66,
+		"armor": 350,
+		"life": 115,
+		"fire":189,
+        "ice":189,
+        "lightning":189
+	},{
+		"unic": true,
+		"id": "DarkHeart_war",
+		"langid": "DarkHeart",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DarkHeart",
+		"armorbase": 130,
+		"armor": 500,
+		"critrate": 100
+	},{
+		"unic": true,
+		"id": "DarkHeart",
+		"langid": "DarkHeart",
+		"job": "SW,DWF",
+		"level": 40,
+		"icon": "DarkHeart",
+		"armorbase": 65,
+		"armor": 350,
+		"critrate": 100
+	},{
+		"unic": true,
+		"id": "DarkHeart_rng",
+		"langid": "DarkHeart",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DarkHeart",
+		"armorbase": 80,
+		"armor": 400,
+		"critrate": 100
+	},{
+		"unic": true,
+		"id": "SargonTorsoWAR",
+		"langid": "SargonTorso",
+		"job": "WAR",
+		"level": 40,
+		"icon": "SargonTorsoWAR",
+		"armorbase": 130,
+		"armor": 111,
+		"life": 333,
+		"regen": 5
+	},{
+		"unic": true,
+		"id": "SargonTorsoSW",
+		"langid": "SargonTorso",
+		"job": "SW",
+		"level": 40,
+		"icon": "SargonTorsoSW",
+		"armorbase": 65,
+		"armor": 77,
+		"life": 222,
+		"regen": 5
+	},{
+		"unic": true,
+		"id": "SargonTorsoRNG",
+		"langid": "SargonTorso",
+		"job": "RNG",
+		"level": 40,
+		"icon": "SargonTorsoRNG",
+		"armorbase": 80,
+		"armor": 99,
+		"life": 277,
+		"regen": 5
+	},{
+		"unic": true,
+		"id": "SargonTorsoDWF",
+		"langid": "SargonTorso",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SargonTorsoDWF",
+		"armorbase": 65,
+		"armor": 77,
+		"life": 222,
+		"regen": 5
+	},{
+		"unic": true,
+		"id": "SargonPowerfulTorsoWAR",
+		"langid": "SargonPowerfulTorso",
+		"job": "WAR",
+		"level": 45,
+		"icon": "SargonTorsoWAR",
+		"armorbase": 184,
+		"armor": 141,
+		"life": 414,
+		"regen": 15
+	},{
+		"unic": true,
+		"id": "SargonPowerfulTorsoSW",
+		"langid": "SargonPowerfulTorso",
+		"job": "SW",
+		"level": 45,
+		"icon": "SargonTorsoSW",
+		"armorbase": 71,
+		"armor": 99,
+		"life": 333,
+		"regen": 15
+	},{
+		"unic": true,
+		"id": "SargonPowerfulTorsoRNG",
+		"langid": "SargonPowerfulTorso",
+		"job": "RNG",
+		"level": 45,
+		"icon": "SargonTorsoRNG",
+		"armorbase": 86,
+		"armor": 99,
+		"life": 333,
+		"regen": 15
+	},{
+		"unic": true,
+		"id": "SargonPowerfulTorsoDWF",
+		"langid": "SargonPowerfulTorso",
+		"job": "DWF",
+		"level": 45,
+		"icon": "SargonTorsoDWF",
+		"armorbase": 71,
+		"armor": 99,
+		"life": 333,
+		"regen": 15
+	},{
+		"unic": true,
+		"id": "DestructionTorsoWAR",
+		"langid": "DestructionTorsoWAR",
+		"job": "WAR",
+		"level": 45,
+		"icon": "DestructionTorsoWAR",
+		"armorbase": 170,
+		"armor": 100,
+		"life": 500,
+		"speed": 0.1
+	},{
+		"unic": true,
+		"id": "DestructionTorsoSW",
+		"langid": "DestructionTorsoSW",
+		"job": "SW",
+		"level": 45,
+		"icon": "DestructionTorsoSW",
+		"armorbase": 68,
+		"armor": 100,
+		"life": 400,
+		"movspeed": 0.1
+	},{
+		"unic": true,
+		"id": "DestructionTorsoRNG",
+		"langid": "DestructionTorsoRNG",
+		"job": "RNG",
+		"level": 45,
+		"icon": "DestructionTorsoRNG",
+		"armorbase": 85,
+		"armor": 100,
+		"life": 400
+	},{
+		"unic": true,
+		"id": "DestructionTorsoDWF",
+		"langid": "DestructionTorsoDWF",
+		"job": "DWF",
+		"level": 45,
+		"icon": "DestructionTorsoDWF",
+		"armorbase": 68,
+		"armor": 100,
+		"life": 400,
+		"movspeed": 0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterTorso_war",
+		"langid": "WitchHunterTorso",
+		"job": "WAR",
+		"level": 40,
+		"icon": "WitchHunterTorso",
+		"armorbase": 138,
+		"armor": 150,
+		"life": 400,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterTorso",
+		"langid": "WitchHunterTorso",
+		"job": "SW,DWF",
+		"level": 40,
+		"icon": "WitchHunterTorso",
+		"armorbase": 55,
+		"armor": 125,
+		"life": 200,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterTorso_rng",
+		"langid": "WitchHunterTorso",
+		"job": "RNG",
+		"level": 40,
+		"icon": "WitchHunterTorso",
+		"armorbase": 69,
+		"armor": 125,
+		"life": 300,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulTorso_war",
+		"langid": "WitchHunterPowerfulTorso",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WitchHunterTorso",
+		"armorbase": 170,
+		"armor": 200,
+		"life": 500,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulTorso",
+		"langid": "WitchHunterPowerfulTorso",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "WitchHunterTorso",
+		"armorbase": 68,
+		"armor": 180,
+		"life": 300,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchHunterPowerfulTorso_rng",
+		"langid": "WitchHunterPowerfulTorso",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WitchHunterTorso",
+		"armorbase": 85,
+		"armor": 180,
+		"life": 400,
+		"damagemaxboost": 0.15,
+		"damageminboost": -0.1
+	},{
+		"unic": true,
+		"id": "WitchChaserTorso_war",
+		"langid": "WitchChaserTorso",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WitchHunterTorso",
+		"armorbase": 70,
+		"armor": 111,
+		"life": 333,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "WitchChaserTorso",
+		"langid": "WitchChaserTorso",
+		"job": "SW,DWF",
+		"level": 45,
+		"icon": "WitchHunterTorso",
+		"armorbase": 70,
+		"armor": 111,
+		"life": 333,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "WitchChaserTorso_rng",
+		"langid": "WitchChaserTorso",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WitchHunterTorso",
+		"armorbase": 70,
+		"armor": 111,
+		"life": 333,
+		"damagemax": 33
+	},{
+		"unic": true,
+		"id": "EssenceTorso",
+		"langid": "EssenceTorso",
+		"job": "WAR,SW,DWF,RNG",
+		"level": 45,
+		"icon": "EssenceTorso",
+		"armorbase": 54,
+		"armor": 260,
+		"life": 260,
+		"damage": 31
+	}],
+
+"gloves":[{
+		"id": "Gloves40WAR",
+		"langid": "Gloves40WAR",
+		"job": "WAR",
+		"level": 40,
+		"icon": "gloves40WAR",
+		"armorbase": 39
+	},{
+		"id": "Gloves45WAR",
+		"langid": "Gloves45WAR",
+		"job": "WAR",
+		"level": 45,
+		"icon": "gloves45WAR",
+		"armorbase": 52
+	},{
+		"id": "Gloves40SW",
+		"langid": "Gloves40SW",
+		"job": "SW",
+		"level": 40,
+		"icon": "gloves40SW",
+		"armorbase": 16
+	},{
+		"id": "Gloves45SW",
+		"langid": "Gloves45SW",
+		"job": "SW",
+		"level": 45,
+		"icon": "gloves45SW",
+		"armorbase": 20
+	},{
+		"id": "Gloves40RNG",
+		"langid": "Gloves40RNG",
+		"job": "RNG",
+		"level": 40,
+		"icon": "gloves40RNG",
+		"armorbase": 19
+	},{
+		"id": "Gloves45RNG",
+		"langid": "Gloves45RNG",
+		"job": "RNG",
+		"level": 45,
+		"icon": "gloves45RNG",
+		"armorbase": 26
+	},{
+		"id": "Gloves45DWF",
+		"langid": "Gloves45DWF",
+		"job": "DWF",
+		"level": 45,
+		"icon": "gloves45DWF",
+		"armorbase": 20
+	},{
+		"unic": true,
+		"id": "DarkGloves_war",
+		"langid": "DarkGloves",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DarkGloves",
+		"armorbase": 40,
+		"armor": 200,
+		"speed": 0.1
+	},{
+		"unic": true,
+		"id": "DarkGloves",
+		"langid": "DarkGloves",
+		"job": "SW,DWF",
+		"level": 40,
+		"icon": "DarkGloves",
+		"armorbase": 20,
+		"armor": 150,
+		"speed": 0.1
+	},{
+		"unic": true,
+		"id": "DarkGloves_rng",
+		"langid": "DarkGloves",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DarkGloves",
+		"armorbase": 25,
+		"armor": 160,
+		"speed": 0.1
+	},{
+		"unic": true,
+		"id": "AmmonForgottenGlovesWAR",
+		"langid": "AmmonForgottenGloves",
+		"job": "WAR",
+		"level": 40,
+		"icon": "AmmonGlovesWAR",
+		"armorbase": 40,
+		"critrate": 350
+	},{
+		"unic": true,
+		"id": "AmmonForgottenGlovesSW",
+		"langid": "AmmonForgottenGloves",
+		"job": "SW",
+		"level": 40,
+		"icon": "AmmonGlovesSW",
+		"armorbase": 15,
+		"critrate": 350
+	},{
+		"unic": true,
+		"id": "AmmonForgottenGlovesRNG",
+		"langid": "AmmonForgottenGloves",
+		"job": "RNG",
+		"level": 40,
+		"icon": "AmmonGlovesRNG",
+		"armorbase": 20,
+		"critrate": 350
+	},{
+		"unic": true,
+		"id": "AmmonForgottenGlovesDWF",
+		"langid": "AmmonForgottenGloves",
+		"job": "DWF",
+		"level": 40,
+		"icon": "AmmonGlovesDWF",
+		"armorbase": 15,
+		"critrate": 350
+	},{
+		"unic": true,
+		"id": "AmmonGlovesWAR",
+		"langid": "AmmonGloves",
+		"job": "WAR",
+		"level": 45,
+		"icon": "AmmonGlovesWAR",
+		"armorbase": 49,
+		"life": 399,
+		"andermagic":189,
+		"speed": 0.06
+	},{
+		"unic": true,
+		"id": "AmmonGlovesSW",
+		"langid": "AmmonGloves",
+		"job": "SW",
+		"level": 45,
+		"icon": "AmmonGlovesSW",
+		"armorbase": 19,
+		"life": 229,
+		"andermagic":189,
+		"speed": 0.06
+	},{
+		"unic": true,
+		"id": "AmmonGlovesRNG",
+		"langid": "AmmonGloves",
+		"job": "RNG",
+		"level": 45,
+		"icon": "AmmonGlovesRNG",
+		"armorbase": 25,
+		"life": 314,
+		"andermagic":189,
+		"speed": 0.06
+	},{
+		"unic": true,
+		"id": "AmmonGlovesDWF",
+		"langid": "AmmonGloves",
+		"job": "DWF",
+		"level": 45,
+		"icon": "AmmonGlovesDWF",
+		"armorbase": 19,
+		"life": 229,
+		"andermagic":189,
+		"speed": 0.06
+	},{
+		"unic": true,
+		"id": "KeenFist",
+		"langid": "KeenFist",
+		"job": "WAR",
+		"level": 40,
+		"icon": "KeenFist",
+		"armorbase": 40,
+		"armor": 300,
+		"life": 300
+	},{
+		"unic": true,
+		"id": "RoshanGloves",
+		"langid": "RoshanGloves",
+		"job": "SW",
+		"level": 40,
+		"icon": "RoshanGloves",
+		"armorbase": 15,
+		"armor": 225,
+		"life": 225
+	},{
+		"unic": true,
+		"id": "YachakInsight",
+		"langid": "YachakInsight",
+		"job": "RNG",
+		"level": 40,
+		"icon": "YachakInsight",
+		"armorbase": 20,
+		"armor": 250,
+		"life": 250
+	},{
+		"unic": true,
+		"id": "SparksFist",
+		"langid": "SparksFist",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SparksFists",
+		"armorbase": 15,
+		"armor": 225,
+		"life": 225
+	},{
+		"unic": true,
+		"id": "EssenceGloves",
+		"langid": "EssenceGloves",
+		"job": "WAR,SW,DWF,RNG",
+		"level": 45,
+		"icon": "EssenceGloves",
+		"armorbase": 6,
+		"armor": 260,
+		"life": 260,
+		"damage": 31
+	}],
+
+"boots":[{
+		"id": "Boots39WAR",
+		"langid": "Boots39WAR",
+		"job": "WAR",
+		"level": 39,
+		"icon": "boots39WAR",
+		"armorbase": 37
+	},{
+		"id": "Boots45WAR",
+		"langid": "Boots45WAR",
+		"job": "WAR",
+		"level": 45,
+		"icon": "boots45WAR",
+		"armorbase": 52
+	},{
+		"id": "Boots39SW",
+		"langid": "Boots39SW",
+		"job": "SW",
+		"level": 39,
+		"icon": "boots39SW",
+		"armorbase": 15
+	},{
+		"id": "Boots45SW",
+		"langid": "Boots45SW",
+		"job": "SW",
+		"level": 45,
+		"icon": "boots45SW",
+		"armorbase": 20
+	},{
+		"id": "Boots39RNG",
+		"langid": "Boots39RNG",
+		"job": "RNG",
+		"level": 39,
+		"icon": "boots39RNG",
+		"armorbase": 19
+	},{
+		"id": "Boots45RNG",
+		"langid": "Boots45RNG",
+		"job": "RNG",
+		"level": 45,
+		"icon": "boots45RNG",
+		"armorbase": 26
+	},{
+		"id": "Boots45DWF",
+		"langid": "Boots45DWF",
+		"job": "DWF",
+		"level": 45,
+		"icon": "boots45DWF",
+		"armorbase": 20
+	},{
+		"unic": true,
+		"id": "AmmonForgottenBootsWAR",
+		"langid": "AmmonForgottenBoots",
+		"job": "WAR",
+		"level": 40,
+		"icon": "AmmonBootsWAR",
+		"armorbase": 40,
+		"life": 475
+	},{
+		"unic": true,
+		"id": "AmmonForgottenBootsSW",
+		"langid": "AmmonForgottenBoots",
+		"job": "SW",
+		"level": 40,
+		"icon": "AmmonBootsSW",
+		"armorbase": 15,
+		"life": 250
+	},{
+		"unic": true,
+		"id": "AmmonForgottenBootsRNG",
+		"langid": "AmmonForgottenBoots",
+		"job": "RNG",
+		"level": 40,
+		"icon": "AmmonBootsRNG",
+		"armorbase": 20,
+		"life": 350
+	},{
+		"unic": true,
+		"id": "AmmonForgottenBootsDWF",
+		"langid": "AmmonForgottenBoots",
+		"job": "DWF",
+		"level": 40,
+		"icon": "AmmonBootsDWF",
+		"armorbase": 15,
+		"life": 250
+	},{
+		"unic": true,
+		"id": "AmmonBootsWAR",
+		"langid": "AmmonBoots",
+		"job": "WAR",
+		"level": 45,
+		"icon": "AmmonBootsWAR",
+		"armorbase": 49,
+		"life": 399,
+		"poison": 189,
+		"movspeed": 0.06
+	},{
+		"unic": true,
+		"id": "AmmonBootsSW",
+		"langid": "AmmonBoots",
+		"job": "SW",
+		"level": 45,
+		"icon": "AmmonBootsSW",
+		"armorbase": 19,
+		"life": 229,
+		"poison": 189,
+		"movspeed": 0.06
+	},{
+		"unic": true,
+		"id": "AmmonBootsRNG",
+		"langid": "AmmonBoots",
+		"job": "RNG",
+		"level": 45,
+		"icon": "AmmonBootsRNG",
+		"armorbase": 25,
+		"life": 314,
+		"poison": 189,
+		"movspeed": 0.06
+	},{
+		"unic": true,
+		"id": "AmmonBootsDWF",
+		"langid": "AmmonBoots",
+		"job": "DWF",
+		"level": 45,
+		"icon": "AmmonBootsDWF",
+		"armorbase": 19,
+		"life": 229,
+		"poison": 189,
+		"movspeed": 0.06
+	},{
+		"unic": true,
+		"id": "DarkBoots_war",
+		"langid": "DarkBoots",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DarkBoots",
+		"armorbase": 40,
+		"armor": 200,
+		"movspeed": 0.1
+	},{
+		"unic": true,
+		"id": "DarkBoots_sw",
+		"langid": "DarkBoots",
+		"job": "SW",
+		"level": 40,
+		"icon": "DarkBoots",
+		"armorbase": 20,
+		"armor": 150,
+		"movspeed": 0.1
+	},{
+		"unic": true,
+		"id": "DarkBoots_rng",
+		"langid": "DarkBoots",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DarkBoots",
+		"armorbase": 25,
+		"armor": 160,
+		"movspeed": 0.1
+	},{
+		"unic": true,
+		"id": "KeenSteps",
+		"langid": "KeenSteps",
+		"job": "WAR",
+		"level": 40,
+		"icon": "KeenSteps",
+		"armorbase": 40,
+		"armor": 350,
+		"life": 250
+	},{
+		"unic": true,
+		"id": "RoshanPath",
+		"langid": "RoshanPath",
+		"job": "SW",
+		"level": 40,
+		"icon": "RoshanPath",
+		"armorbase": 15,
+		"armor": 250,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "YachakWay",
+		"langid": "YachakWay",
+		"job": "RNG",
+		"level": 40,
+		"icon": "YachakWay",
+		"armorbase": 20,
+		"armor": 300,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "SparksPathfinder",
+		"langid": "SparksPathfinder",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SparksPathfinder",
+		"armorbase": 15,
+		"armor": 250,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "EssenceBoots",
+		"langid": "EssenceBoots",
+		"job": "WAR,SW,DWF,RNG",
+		"level": 45,
+		"icon": "EssenceBoots",
+		"armorbase": 6,
+		"armor": 260,
+		"life": 260,
+		"damage": 31
+	}],
+
+"mantles":[{
+		"unic": true,
+		"id": "ManteauSagesse",
+		"langid": "ManteauSagesse",
+		"job": "WAR,SW,RNG,DWF",
+		"level": 40,
+		"icon": "ManteauSagesse",
+		"armorbase": 25,
+		"life": 93,
+		"damage": 8
+	},{
+		"unic": true,
+		"id": "ManteauIllumination",
+		"langid": "ManteauIllumination",
+		"job": "WAR,SW,RNG,DWF",
+		"level": 40,
+		"icon": "ManteauIllumination",
+		"armorbase": 25,
+		"armor": 97,
+		"life": 98,
+		"damage": 10
+	},{
+		"unic": true,
+		"id": "ManteauPouvoir",
+		"langid": "ManteauPouvoir",
+		"job": "WAR,SW,RNG,DWF",
+		"level": 40,
+		"icon": "ManteauPouvoir",
+		"armorbase": 25,
+		"armor": 110,
+		"life": 112,
+		"damage": 12,
+		"critrate": 130
+	},{
+		"unic": true,
+		"id": "GloomCloak",
+		"langid": "GloomCloak",
+		"job": "WAR,SW,RNG,DWF",
+		"level": 40,
+		"icon": "GloomCloak",
+		"armorbase": 25,
+		"lifeboost": 0.03,
+		"speed": 0.03,
+		"movspeed": 0.03,
+        "andermagic": 333
+	},{
+		"unic": true,
+		"id": "BlackWarLordCape",
+		"langid": "BlackWarLordCape",
+		"job": "WAR,SW,RNG",
+		"level": 45,
+		"icon": "BlackWarLordCape",
+		"armorbase": 30,
+		"movspeed": 0.05,
+		"resistboost": 0.05,
+		"resist": 100
+	},{
+		"unic": true,
+		"id": "BlackWarLordCapeDWF",
+		"langid": "BlackWarLordCapeDWF",
+		"job": "DWF",
+		"level": 45,
+		"icon": "BlackWarLordCapeDWF",
+		"armorbase": 30,
+		"movspeed": 0.05,
+		"resistboost": 0.05,
+		"resist": 100
+	}],
+
+"weapons":[
+	// Common weapons
+	{
+		"id": "Sword40",
+		"langid": "Sword40",
+		"job": "WAR",
+		"level": 40,
+		"icon": "sword40",
+		"type": "sword",
+		"damageminbase": 43,
+		"damagemaxbase": 64,
+		"speedbase": 1.18
+	},{
+		"id": "Mace36",
+		"langid": "Mace36",
+		"job": "WAR",
+		"level": 36,
+		"icon": "mace36",
+		"type": "mace",
+		"damageminbase": 30,
+		"damagemaxbase": 71,
+		"speedbase": 1.05
+	},{
+		"id": "Axe38",
+		"langid": "Axe38",
+		"job": "WAR",
+		"level": 38,
+		"icon": "axe38",
+		"type": "axe",
+		"damageminbase": 36,
+		"damagemaxbase": 68,
+		"speedbase": 1.11
+	},{
+		"id": "GreatSword39",
+		"langid": "GreatSword39",
+		"job": "WAR",
+		"level": 39,
+		"icon": "greatsword39",
+		"type": "greatsword",
+		"damageminbase": 76,
+		"damagemaxbase": 114,
+		"speedbase": 0.95
+	},{
+		"id": "Hammer35",
+		"langid": "Hammer35",
+		"job": "WAR",
+		"level": 35,
+		"icon": "hammer35",
+		"type": "hammer",
+		"damageminbase": 53,
+		"damagemaxbase": 123,
+		"speedbase": 0.87
+	},{
+		"id": "GreatAxe37",
+		"langid": "GreatAxe37",
+		"job": "WAR",
+		"level": 37,
+		"icon": "greataxe37",
+		"type": "greataxe",
+		"damageminbase": 64,
+		"damagemaxbase": 119,
+		"speedbase": 0.91
+	},{
+		"id": "Sword45",
+		"langid": "Sword45",
+		"job": "WAR",
+		"level": 45,
+		"icon": "sword45",
+		"type": "sword",
+		"damageminbase": 57,
+		"damagemaxbase": 85,
+		"speedbase": 1.18
+	},{
+		"id": "Mace45",
+		"langid": "Mace45",
+		"job": "WAR",
+		"level": 45,
+		"icon": "mace45",
+		"type": "mace",
+		"damageminbase": 47,
+		"damagemaxbase": 111,
+		"speedbase": 1.05
+	},{
+		"id": "Axe45",
+		"langid": "Axe45",
+		"job": "WAR",
+		"level": 45,
+		"icon": "axe45",
+		"type": "axe",
+		"damageminbase": 53,
+		"damagemaxbase": 98,
+		"speedbase": 1.11
+	},{
+		"id": "GreatSword45",
+		"langid": "GreatSword45",
+		"job": "WAR",
+		"level": 45,
+		"icon": "greatsword45",
+		"type": "greatsword",
+		"damageminbase": 105,
+		"damagemaxbase": 158,
+		"speedbase": 1.05
+	},{
+		"id": "Hammer45",
+		"langid": "Hammer45",
+		"job": "WAR",
+		"level": 45,
+		"icon": "hammer45",
+		"type": "hammer",
+		"damageminbase": 86,
+		"damagemaxbase": 201,
+		"speedbase": 0.87
+	},{
+		"id": "GreatAxe45",
+		"langid": "GreatAxe45",
+		"job": "WAR",
+		"level": 45,
+		"icon": "greataxe45",
+		"type": "greataxe",
+		"damageminbase": 97,
+		"damagemaxbase": 178,
+		"speedbase": 0.91
+	},{
+		"id": "Wand39",
+		"langid": "Wand39",
+		"job": "SW",
+		"level": 39,
+		"icon": "wand39",
+		"type": "wand",
+		"damageminbase": 41,
+		"damagemaxbase": 61,
+		"speedbase": 1.00
+	},{
+		"id": "Staff36",
+		"langid": "Staff36",
+		"job": "SW",
+		"level": 36,
+		"icon": "staff36",
+		"type": "staff",
+		"damageminbase": 65,
+		"damagemaxbase": 98,
+		"speedbase": 0.83
+	},{
+		"id": "Wand45",
+		"langid": "Wand45",
+		"job": "SW",
+		"level": 45,
+		"icon": "wand45",
+		"type": "wand",
+		"damageminbase": 56,
+		"damagemaxbase": 85,
+		"speedbase": 1.00
+	},{
+		"id": "Staff45",
+		"langid": "Staff45",
+		"job": "SW",
+		"level": 45,
+		"icon": "staff45",
+		"type": "staff",
+		"damageminbase": 102,
+		"damagemaxbase": 154,
+		"speedbase": 0.83
+	},{
+		"id": "ShortBow37",
+		"langid": "ShortBow37",
+		"job": "RNG",
+		"level": 37,
+		"icon": "shortbow37",
+		"type": "shortbow",
+		"damageminbase": 29,
+		"damagemaxbase": 53,
+		"speedbase": 1.05
+	},{
+		"id": "LongBow39",
+		"langid": "LongBow39",
+		"job": "RNG",
+		"level": 39,
+		"icon": "longbow39",
+		"type": "longbow",
+		"damageminbase": 61,
+		"damagemaxbase": 92,
+		"speedbase": 0.83
+	},{
+		"id": "ShortBow45",
+		"langid": "ShortBow45",
+		"job": "RNG",
+		"level": 45,
+		"icon": "shortbow45",
+		"type": "shortbow",
+		"damageminbase": 47,
+		"damagemaxbase": 87,
+		"speedbase": 1.05
+	},{
+		"id": "LongBow45",
+		"langid": "LongBow45",
+		"job": "RNG",
+		"level": 45,
+		"icon": "longbow45",
+		"type": "longbow",
+		"damageminbase": 85,
+		"damagemaxbase": 127,
+		"speedbase": 0.83
+	},{
+		"id": "Pistol45",
+		"langid": "Pistol45",
+		"job": "DWF",
+		"level": 45,
+		"icon": "pistol45",
+		"type": "pistol",
+		"damageminbase": 53,
+		"damagemaxbase": 89,
+		"speedbase": 1
+	},{
+		"id": "Rifle45",
+		"langid": "Rifle45",
+		"job": "DWF",
+		"level": 45,
+		"icon": "rifle45",
+		"type": "rifle",
+		"damageminbase": 96,
+		"damagemaxbase": 160,
+		"speedbase": 0.83
+	},
+	// war unics
+	{
+		"unic": true,
+		"id": "ArgeirGreatAxe",
+		"langid": "ArgeirGreatAxe",
+		"job": "WAR",
+		"level": 28,
+		"icon": "ArgeirGreatAxe",
+		"type": "greataxe",
+		"damageminbase": 41,
+		"damagemaxbase": 77,
+		"speedbase": 0.83,
+		"damage": 6
+	},{
+		"unic": true,
+		"id": "BearachTorturer",
+		"langid": "BearachTorturer",
+		"job": "WAR",
+		"level": 25,
+		"icon": "BearachTorturer",
+		"type": "hammer",
+		"damageminbase": 34,
+		"damagemaxbase": 79,
+		"speedbase": 0.87,
+		"damage": 13,
+		"critboost": 0.5
+	},{
+		"unic": true,
+		"id": "HengistRevenge",
+		"langid": "HengistRevenge",
+		"job": "WAR",
+		"level": 25,
+		"icon": "HengistRevenge",
+		"type": "axe",
+		"damageminbase": 20,
+		"damagemaxbase": 38,
+		"speedbase": 1.11,
+		"damage": 8,
+		"critrate": 55,
+		"speed": 0.07
+	},{
+		"unic": true,
+		"id": "SpiderAxe",
+		"langid": "SpiderAxe",
+		"job": "WAR",
+		"level": 27,
+		"icon": "SpiderAxe",
+		"type": "axe",
+		"damageminbase": 22,
+		"damagemaxbase": 40,
+		"speedbase": 1.11,
+		"damage": 8,
+		"critrate": 40
+	},{
+		"unic": true,
+		"id": "HeraldMorningStar",
+		"langid": "HeraldMorningStar",
+		"job": "WAR",
+		"level": 40,
+		"icon": "HeraldMorningStar",
+		"type": "hammer",
+		"damageminbase": 65,
+		"damagemaxbase": 152,
+		"speedbase": 0.87,
+		"damage": 25,
+		"weapondamageboost": 0.5
+	},{
+		"unic": true,
+		"id": "Legend",
+		"langid": "Legend",
+		"job": "WAR",
+		"level": 40,
+		"icon": "Legend",
+		"type": "greataxe",
+		"damageminbase": 73,
+		"damagemaxbase": 135,
+		"speedbase": 0.91,
+		"damage": 180
+	},{
+		"unic": true,
+		"id": "CloakedWrath",
+		"langid": "CloakedWrath",
+		"job": "WAR",
+		"level": 40,
+		"icon": "CloakedWrath",
+		"type": "sword",
+		"damageminbase": 43,
+		"damagemaxbase": 64,
+		"speedbase": 1.18,
+		"damage": 40,
+		"critboost": 0.65
+	},{
+		"unic": true,
+		"id": "EndTimeAxe",
+		"langid": "EndTimeAxe",
+		"job": "WAR",
+		"level": 45,
+		"icon": "EndTimeAxe",
+		"type": "axe",
+		"damageminbase": 40,
+		"damagemaxbase": 74,
+		"speedbase": 1.11,
+		"weapondamageboost": 0.2,
+		"damagepve": 0.05,
+		"speed": 0.2
+	},{
+		"unic": true,
+		"id": "DestructionAxe",
+		"langid": "DestructionAxe",
+		"job": "WAR",
+		"level": 45,
+		"icon": "DestructionAxe",
+		"type": "axe",
+		"damageminbase": 53,
+		"damagemaxbase": 98,
+		"speedbase": 1.06,
+		"speed": 0.1,
+        "fire": 200,
+		"damage": 100
+	},{
+		"unic": true,
+		"id": "Damnation",
+		"langid": "Damnation",
+		"job": "WAR",
+		"level": 40,
+		"icon": "Damnation",
+		"type": "greatsword",
+		"damageminbase": 79,
+		"damagemaxbase": 119,
+		"speedbase": 0.95,
+		"critboost": 1,
+		"movspeed": 0.15
+	},{
+		"unic": true,
+		"id": "DeepSeaSword",
+		"langid": "DeepSeaSword",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DeepSeaSword",
+		"type": "sword",
+		"damageminbase": 46,
+		"damagemaxbase": 69,
+		"speedbase": 1.18,
+		"damage": 25,
+		"speed": 0.15
+	},{
+		"unic": true,
+		"id": "Tiamat",
+		"langid": "Tiamat",
+		"job": "WAR",
+		"level": 40,
+		"icon": "Tiamat",
+		"type": "greatsword",
+		"damageminbase": 85,
+		"damagemaxbase": 128,
+		"speedbase": 0.95,
+		"critboost": 0.6,
+		"speed": 0.2
+	},{
+		"unic": true,
+		"id": "WerewolfMace",
+		"langid": "WerewolfMace",
+		"job": "WAR",
+		"level": 40,
+		"icon": "WerewolfMace",
+		"type": "mace",
+		"damageminbase": 39,
+		"damagemaxbase": 90,
+		"speedbase": 1.05,
+		"damage": 50,
+		"speed": 0.1,
+		"life": 500
+	},{
+		"unic": true,
+		"id": "GarulfMace",
+		"langid": "GarulfMace",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WerewolfMace",
+		"type": "mace",
+		"damageminbase": 48,
+		"damagemaxbase": 111,
+		"speedbase": 1.05,
+		"critboost": 0.3,
+		"speed": 0.15,
+		"life": 250
+	},{
+		"unic": true,
+		"id": "SargonMace",
+		"langid": "SargonMace",
+		"job": "WAR",
+		"level": 40,
+		"icon": "SargonMace",
+		"type": "mace",
+		"damageminbase": 39,
+		"damagemaxbase": 90,
+		"speedbase": 1.05,
+		"movspeed": -0.10,
+		"damage": 110
+	},{
+		"unic": true,
+		"id": "SargonPowerfulMace",
+		"langid": "SargonPowerfulMace",
+		"job": "WAR",
+		"level": 45,
+		"icon": "SargonMace",
+		"type": "mace",
+		"damageminbase": 48,
+		"damagemaxbase": 111,
+		"speedbase": 1.05,
+		"movspeed": -0.10,
+		"damage": 135
+	},{
+		"unic": true,
+		"id": "WitchHunterAxe",
+		"langid": "WitchHunterAxe",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WitchHunterAxe",
+		"type": "axe",
+		"damageminbase": 53,
+		"damagemaxbase": 98,
+		"speedbase": 1.11,
+		"damage": 66,
+		"critrate": 666,
+		"ice":111
+	},
+	// SW unics
+	{
+		"unic": true,
+		"id": "WoodenWand",
+		"langid": "WoodenWand",
+		"job": "SW",
+		"level": 25,
+		"icon": "WoodenWand",
+		"type": "wand",
+		"damageminbase": 22,
+		"damagemaxbase": 33,
+		"speedbase": 1.00,
+		"damage": 10,
+		"critrate": 55,
+		"speed": 0.07
+	},{
+		"unic": true,
+		"id": "BearachStaff",
+		"langid": "BearachStaff",
+		"job": "SW",
+		"level": 25,
+		"icon": "BearachStaff",
+		"type": "staff",
+		"damageminbase": 40,
+		"damagemaxbase": 60,
+		"speedbase": 0.83,
+		"damage": 10,
+		"critboost": 0.5
+	},{
+		"unic": true,
+		"id": "SpiderWand",
+		"langid": "SpiderWand",
+		"job": "SW",
+		"level": 27,
+		"icon": "SpiderWand",
+		"type": "wand",
+		"damageminbase": 22,
+		"damagemaxbase": 33,
+		"speedbase": 1.00,
+		"damage": 9,
+		"critrate": 40
+	},{
+		"unic": true,
+		"id": "GandurStaff",
+		"langid": "GandurStaff",
+		"job": "SW",
+		"level": 28,
+		"icon": "GandurStaff",
+		"type": "staff",
+		"damageminbase": 46,
+		"damagemaxbase": 69,
+		"speedbase": 0.83,
+		"damage": 8
+	},{
+		"unic": true,
+		"id": "HeraldStaff",
+		"langid": "HeraldStaff",
+		"job": "SW",
+		"level": 40,
+		"icon": "HeraldStaff",
+		"type": "staff",
+		"damageminbase": 77,
+		"damagemaxbase": 116,
+		"speedbase": 0.83,
+		"weapondamageboost": 0.25,
+		"speed": 0.25
+	},{
+		"unic": true,
+		"id": "DimensionalRift",
+		"langid": "DimensionalRift",
+		"job": "SW",
+		"level": 40,
+		"icon": "DimensionalRift",
+		"type": "staff",
+		"damageminbase": 77,
+		"damagemaxbase": 116,
+		"speedbase": 0.83,
+		"critboost": 1.4
+	},{
+		"unic": true,
+		"id": "Starlight",
+		"langid": "Starlight",
+		"job": "SW",
+		"level": 40,
+		"icon": "Starlight",
+		"type": "wand",
+		"damageminbase": 42,
+		"damagemaxbase": 64,
+		"speedbase": 1.00,
+		"damage": 60
+	},{
+		"unic": true,
+		"id": "EndTimeWand",
+		"langid": "EndTimeWand",
+		"job": "SW",
+		"level": 45,
+		"icon": "EndTimeWand",
+		"type": "wand",
+		"damageminbase": 57,
+		"damagemaxbase": 85,
+		"speedbase": 1.00,
+		"weapondamageboost": 0.2,
+		"damagepve": 0.05,
+		"speed": 0.2
+	},{
+		"unic": true,
+		"id": "Disaster",
+		"langid": "Disaster",
+		"job": "SW",
+		"level": 40,
+		"icon": "Disaster",
+		"type": "staff",
+		"damageminbase": 77,
+		"damagemaxbase": 116,
+		"speedbase": 0.83,
+		"damage": 150
+	},{
+		"unic": true,
+		"id": "DeepSeaWand",
+		"langid": "DeepSeaWand",
+		"job": "SW",
+		"level": 40,
+		"icon": "DeepSeaWand",
+		"type": "wand",
+		"damageminbase": 46,
+		"damagemaxbase": 69,
+		"speedbase": 1,
+		"damage": 25,
+		"speed": 0.15
+	},{
+		"unic": true,
+		"id": "Kraken",
+		"langid": "Kraken",
+		"job": "SW",
+		"level": 40,
+		"icon": "Kraken",
+		"type": "staff",
+		"damageminbase": 83,
+		"damagemaxbase": 125,
+		"speedbase": 0.83,
+		"critboost": 0.6,
+		"speed": 0.2
+	},{
+		"unic": true,
+		"id": "WerewolfWand",
+		"langid": "WerewolfWand",
+		"job": "SW",
+		"level": 40,
+		"icon": "WerewolfWand",
+		"type": "wand",
+		"damageminbase": 46,
+		"damagemaxbase": 68,
+		"speedbase": 1.00,
+		"critboost": 0.45,
+		"speed": 0.1,
+		"damage": 25
+	},{
+		"unic": true,
+		"id": "GarulfWand",
+		"langid": "GarulfWand",
+		"job": "SW",
+		"level": 45,
+		"icon": "WerewolfWand",
+		"type": "wand",
+		"damageminbase": 57,
+		"damagemaxbase": 85,
+		"speedbase": 1.00,
+		"critboost": 0.3,
+		"speed": 0.15,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "SargonWand",
+		"langid": "SargonWand",
+		"job": "SW",
+		"level": 40,
+		"icon": "SargonWand",
+		"type": "wand",
+		"damageminbase": 46,
+		"damagemaxbase": 68,
+		"speedbase": 1.00,
+		"damage": 110
+	},{
+		"unic": true,
+		"id": "SargonPowerfulWand",
+		"langid": "SargonPowerfulWand",
+		"job": "SW",
+		"level": 45,
+		"icon": "SargonWand",
+		"type": "wand",
+		"damageminbase": 56,
+		"damagemaxbase": 84,
+		"speedbase": 1.00,
+		"damage": 135
+	},{
+		"unic": true,
+		"id": "DestructionWand",
+		"langid": "DestructionWand",
+		"job": "SW",
+		"level": 45,
+		"icon": "DestructionWand",
+		"type": "wand",
+		"damageminbase": 56,
+		"damagemaxbase": 84,
+		"speedbase": 1.00,
+		"critrate": 400,
+		"speed": 0.08,
+		"damage": 80
+	},{
+		"unic": true,
+		"id": "WitchHunterWand",
+		"langid": "WitchHunterWand",
+		"job": "SW",
+		"level": 45,
+		"icon": "WitchHunterWand",
+		"type": "wand",
+		"damageminbase": 57,
+		"damagemaxbase": 85,
+		"speedbase": 1.00,
+		"damage": 66,
+		"critrate": 666,
+		"ice":111
+	},
+	// RNG unics
+	{
+		"unic": true,
+		"id": "Windrunner",
+		"langid": "Windrunner",
+		"job": "RNG",
+		"level": 25,
+		"icon": "Windrunner",
+		"type": "shortbow",
+		"damageminbase": 18,
+		"damagemaxbase": 34,
+		"speedbase": 1.05,
+		"speed": 0.25,
+		"critrate": 75
+	},{
+		"unic": true,
+		"id": "BearachTormentor",
+		"langid": "BearachTormentor",
+		"job": "RNG",
+		"level": 25,
+		"icon": "BearachTormentor",
+		"type": "longbow",
+		"damageminbase": 33,
+		"damagemaxbase": 49,
+		"speedbase": 0.83,
+		"damage": 8,
+		"critboost": 0.35
+	},{
+		"unic": true,
+		"id": "SpiderBow",
+		"langid": "SpiderBow",
+		"job": "RNG",
+		"level": 27,
+		"icon": "SpiderBow",
+		"type": "shortbow",
+		"damageminbase": 20,
+		"damagemaxbase": 40,
+		"speedbase": 1.05,
+		"damage": 4,
+		"critrate": 100
+	},{
+		"unic": true,
+		"id": "EldfarisBow",
+		"langid": "EldfarisBow",
+		"job": "RNG",
+		"level": 30,
+		"icon": "EldfarisRuneBow",
+		"type": "longbow",
+		"damageminbase": 45,
+		"damagemaxbase": 65,
+		"speedbase": 0.83,
+		"damage": 17
+	},{
+		"unic": true,
+		"id": "HeraldBow",
+		"langid": "HeraldBow",
+		"job": "RNG",
+		"level": 40,
+		"icon": "HeraldBow",
+		"type": "longbow",
+		"damageminbase": 64,
+		"damagemaxbase": 96,
+		"speedbase": 0.83,
+		"damage": 50,
+		"critrate": 250
+	},{
+		"unic": true,
+		"id": "AegisBow",
+		"langid": "AegisBow",
+		"job": "RNG",
+		"level": 40,
+		"icon": "AegisBow",
+		"type": "longbow",
+		"damageminbase": 64,
+		"damagemaxbase": 96,
+		"speedbase": 0.83,
+		"damage": 20,
+		"armor": 600,
+		"resist": 300
+	},{
+		"unic": true,
+		"id": "Predator",
+		"langid": "Predator",
+		"job": "RNG",
+		"level": 40,
+		"icon": "Predator",
+		"type": "shortbow",
+		"damageminbase": 42,
+		"damagemaxbase": 66,
+		"speedbase": 1.05,
+		"damage": 35,
+		"speed": 0.3
+	},{
+		"unic": true,
+		"id": "EndTimeBow",
+		"langid": "EndTimeBow",
+		"job": "RNG",
+		"level": 45,
+		"icon": "EndTimeBow",
+		"type": "shortbow",
+		"damageminbase": 35,
+		"damagemaxbase": 66,
+		"speedbase": 1.05,
+		"weapondamageboost": 0.2,
+		"damagepve": 0.05,
+		"speed": 0.2
+	},{
+		"unic": true,
+		"id": "Silence",
+		"langid": "Silence",
+		"job": "RNG",
+		"level": 40,
+		"icon": "Silence",
+		"type": "longbow",
+		"damageminbase": 64,
+		"damagemaxbase": 96,
+		"speedbase": 0.83,
+		"damage": 85
+	},{
+		"unic": true,
+		"id": "DeepSeaBow",
+		"langid": "DeepSeaBow",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DeepSeaBow",
+		"type": "shortbow",
+		"damageminbase": 38,
+		"damagemaxbase": 70,
+		"speedbase": 1.05,
+		"damage": 25,
+		"speed": 0.15
+	},{
+		"unic": true,
+		"id": "Macrocheira",
+		"langid": "Macrocheira",
+		"job": "RNG",
+		"level": 40,
+		"icon": "Macrocheira",
+		"type": "longbow",
+		"damageminbase": 68,
+		"damagemaxbase": 103,
+		"speedbase": 0.83,
+		"critboost": 0.6
+	},{
+		"unic": true,
+		"id": "WerewolfBow",
+		"langid": "WerewolfBow",
+		"job": "RNG",
+		"level": 40,
+		"icon": "WerewolfBow",
+		"type": "longbow",
+		"damageminbase": 68,
+		"damagemaxbase": 103,
+		"speedbase": 0.83,
+		"critboost": 0.45,
+		"speed": 0.1,
+		"damage": 25
+	},{
+		"unic": true,
+		"id": "GarulfBow",
+		"langid": "GarulfBow",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WerewolfBow",
+		"type": "longbow",
+		"damageminbase": 84,
+		"damagemaxbase": 127,
+		"speedbase": 0.83,
+		"critboost": 0.3,
+		"speed": 0.15,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "SargonBow",
+		"langid": "SargonBow",
+		"job": "RNG",
+		"level": 40,
+		"icon": "SargonBow",
+		"type": "longbow",
+		"damageminbase": 68,
+		"damagemaxbase": 103,
+		"speedbase": 0.83,
+		"speed": -0.10,
+		"damage": 110
+	},{
+		"unic": true,
+		"id": "SargonPowerfulBow",
+		"langid": "SargonPowerfulBow",
+		"job": "RNG",
+		"level": 45,
+		"icon": "SargonBow",
+		"type": "longbow",
+		"damageminbase": 84,
+		"damagemaxbase": 127,
+		"speedbase": 0.83,
+		"speed": -0.10,
+		"damage": 135
+	},{
+		"unic": true,
+		"id": "DestructionBow",
+		"langid": "DestructionBow",
+		"job": "RNG",
+		"level": 45,
+		"icon": "DestructionBow",
+		"type": "shortbow",
+		"damageminbase": 47,
+		"damagemaxbase": 87,
+		"speedbase": 1.05,
+		"critboost": 0.4,
+		"critrate": 150,
+		"damage": 50
+	},{
+		"unic": true,
+		"id": "WitchHunterBow",
+		"langid": "WitchHunterBow",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WitchHunterBow",
+		"type": "shortbow",
+		"damageminbase": 47,
+		"damagemaxbase": 87,
+		"speedbase": 1.05,
+		"damage": 66,
+		"critrate": 666,
+		"ice":111
+	},
+	// DWF unics
+	{
+		"unic": true,
+		"id": "HognisThornfist",
+		"langid": "HognisThornfist",
+		"job": "DWF",
+		"level": 25,
+		"icon": "HognisThornfist",
+		"type": "pistol",
+		"damageminbase": 31,
+		"damagemaxbase": 45,
+		"speedbase": 1,
+		"speed": 0.07,
+		"damage": 10,
+		"critrate": 55
+	},{
+		"unic": true,
+		"id": "BearachStorm",
+		"langid": "BearachStorm",
+		"job": "DWF",
+		"level": 25,
+		"icon": "BearachStorm",
+		"type": "rifle",
+		"damageminbase": 37,
+		"damagemaxbase": 62,
+		"speedbase": 0.83,
+		"damage": 10,
+		"critboost": 0.5
+	},{
+		"unic": true,
+		"id": "SpiderGun",
+		"langid": "SpiderGun",
+		"job": "DWF",
+		"level": 27,
+		"icon": "SpiderGun",
+		"type": "pistol",
+		"damageminbase": 23,
+		"damagemaxbase": 38,
+		"speedbase": 1,
+		"damage": 9,
+		"critrate": 40
+	},{
+		"unic": true,
+		"id": "HeraldGat",
+		"langid": "HeraldGat",
+		"job": "DWF",
+		"level": 40,
+		"icon": "HeraldGat",
+		"type": "rifle",
+		"damageminbase": 78,
+		"damagemaxbase": 130,
+		"speedbase": 0.83,
+		"weapondamageboost": 0.25,
+		"speed": 0.25
+	},{
+		"unic": true,
+		"id": "Leviathon",
+		"langid": "Leviathon",
+		"job": "DWF",
+		"level": 40,
+		"icon": "Leviathon",
+		"type": "rifle",
+		"damageminbase": 78,
+		"damagemaxbase": 130,
+		"speedbase": 0.83,
+		"critboost": 0.6,
+		"speed": 0.2
+	},{
+		"unic": true,
+		"id": "Avenger",
+		"langid": "Avenger",
+		"job": "DWF",
+		"level": 40,
+		"icon": "Avenger",
+		"type": "pistol",
+		"damageminbase": 43,
+		"damagemaxbase": 72,
+		"speedbase": 1,
+		"damage": 60
+	},{
+		"unic": true,
+		"id": "DeepSeaStarGun",
+		"langid": "DeepSeaStarGun",
+		"job": "DWF",
+		"level": 40,
+		"icon": "DeepSeaStarGun",
+		"type": "pistol",
+		"damageminbase": 43,
+		"damagemaxbase": 72,
+		"speedbase": 1,
+		"damage": 25,
+		"speed": 0.15
+	},{
+		"unic": true,
+		"id": "SteamUzi",
+		"langid": "SteamUzi",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SteamUzi",
+		"type": "rifle",
+		"damageminbase": 78,
+		"damagemaxbase": 130,
+		"speedbase": 0.83,
+		"damage": 180
+	},{
+		"unic": true,
+		"id": "EndTimeShotGun",
+		"langid": "EndTimeShotGun",
+		"job": "DWF",
+		"level": 45,
+		"icon": "EndTimeShotGun",
+		"type": "rifle",
+		"damageminbase": 148,
+		"damagemaxbase": 246,
+		"speedbase": 0.83,
+		"weapondamageboost": 0.2,
+		"damagepve": 0.05,
+		"speed": 0.2
+	},{
+		"unic": true,
+		"id": "DestructionPistol",
+		"langid": "DestructionPistol",
+		"job": "DWF",
+		"level": 45,
+		"icon": "DestructionPistol",
+		"type": "pistol",
+		"damageminbase": 53,
+		"damagemaxbase": 89,
+		"speedbase": 1,
+		"speed": 0.08,
+		"critrate": 400,
+		"damage": 80
+	},{
+		"unic": true,
+		"id": "WitchHunterPistol",
+		"langid": "WitchHunterPistol",
+		"job": "DWF",
+		"level": 45,
+		"icon": "WitchHunterPistol",
+		"type": "pistol",
+		"damageminbase": 53,
+		"damagemaxbase": 89,
+		"speedbase": 1,
+		"damage": 66,
+		"critrate": 666,
+		"ice":111
+	},{
+		"unic": true,
+		"id": "SargonPistol",
+		"langid": "SargonPistol",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SargonPistol",
+		"type": "pistol",
+		"damageminbase": 43,
+		"damagemaxbase": 72,
+		"speedbase": 1,
+		"damage": 110
+	},{
+		"unic": true,
+		"id": "SargonPowerfulPistol",
+		"langid": "SargonPowerfulPistol",
+		"job": "DWF",
+		"level": 45,
+		"icon": "SargonPistol",
+		"type": "pistol",
+		"damageminbase": 53,
+		"damagemaxbase": 89,
+		"speedbase": 1,
+		"damage": 135
+	},{
+		"unic": true,
+		"id": "Infestation",
+		"langid": "Infestation",
+		"job": "DWF",
+		"level": 40,
+		"icon": "Infestation",
+		"type": "rifle",
+		"damageminbase": 78,
+		"damagemaxbase": 130,
+		"speedbase": 0.83,
+		"damage": 150
+	},{
+		"unic": true,
+		"id": "WerewolfPistol",
+		"langid": "WerewolfPistol",
+		"job": "DWF",
+		"level": 40,
+		"icon": "WerewolfPistol",
+		"type": "pistol",
+		"damageminbase": 43,
+		"damagemaxbase": 72,
+		"speedbase": 1.00,
+		"critboost": 0.45,
+		"speed": 0.1,
+		"damage": 25
+	},{
+		"unic": true,
+		"id": "GarulfPistol",
+		"langid": "GarulfPistol",
+		"job": "DWF",
+		"level": 45,
+		"icon": "WerewolfPistol",
+		"type": "pistol",
+		"damageminbase": 53,
+		"damagemaxbase": 89,
+		"speedbase": 1.00,
+		"critboost": 0.3,
+		"speed": 0.15,
+		"life": 200
+	}],
+
+"offhands":[
+	// Common offhands
+	{
+		"id": "Shield40WAR",
+		"langid": "Shield40WAR",
+		"job": "WAR",
+		"level": 40,
+		"icon": "shield40WAR",
+		"type": "shield",
+		"armorbase": 323,
+		"blockratebase": 389,
+		"blockeddmgbase": 389
+	},{
+		"id": "Shield45WAR",
+		"langid": "Shield45WAR",
+		"job": "WAR",
+		"level": 45,
+		"icon": "shield45WAR",
+		"type": "shield",
+		"armorbase": 428,
+		"blockratebase": 516,
+		"blockeddmgbase": 516
+	},{
+		"id": "Orb40",
+		"langid": "Orb40",
+		"job": "SW",
+		"level": 40,
+		"icon": "orb40",
+		"type": "orb",
+		"armorbase": 323,
+		"blockratebase": 389,
+		"blockeddmgbase": 389
+	},{
+		"id": "Book36",
+		"langid": "Book36",
+		"job": "SW",
+		"level": 36,
+		"icon": "book36",
+		"type": "book",
+		"armorbase": 8,
+		"critratebase": 625
+	},{
+		"id": "Orb45",
+		"langid": "Orb45",
+		"job": "SW",
+		"level": 45,
+		"icon": "orb45",
+		"type": "orb",
+		"armorbase": 428,
+		"blockratebase": 516,
+		"blockeddmgbase": 516
+	},{
+		"id": "Book45",
+		"langid": "Book45",
+		"job": "SW",
+		"level": 45,
+		"icon": "book45",
+		"type": "book",
+		"armorbase": 13,
+		"critratebase": 979
+	},{
+		"id": "Shield36RNG",
+		"langid": "Shield36RNG",
+		"job": "RNG",
+		"level": 36,
+		"icon": "shield36RNG",
+		"type": "shield",
+		"armorbase": 273,
+		"blockratebase": 329,
+		"blockeddmgbase": 329
+	},{
+		"id": "Quiver39",
+		"langid": "Quiver39",
+		"job": "RNG",
+		"level": 39,
+		"icon": "quiver39",
+		"type": "quiver",
+		"armorbase": 11,
+		"critratebase": 597
+	},{
+		"id": "Shield45RNG",
+		"langid": "Shield45RNG",
+		"job": "RNG",
+		"level": 45,
+		"icon": "shield45RNG",
+		"type": "shield",
+		"armorbase": 428,
+		"blockratebase": 516,
+		"blockeddmgbase": 516
+	},{
+		"id": "Quiver45",
+		"langid": "Quiver45",
+		"job": "RNG",
+		"level": 45,
+		"icon": "quiver45",
+		"type": "quiver",
+		"armorbase": 15,
+		"critratebase": 826
+	},{
+		"id": "Absorber45",
+		"langid": "Absorber45",
+		"job": "DWF",
+		"level": 45,
+		"icon": "absorber45",
+		"type": "shield",
+		"armorbase": 428,
+		"blockratebase": 516,
+		"blockeddmgbase": 516
+	},{
+		"id": "Wrench45",
+		"langid": "Wrench45",
+		"job": "DWF",
+		"level": 45,
+		"icon": "wrench45",
+		"type": "wrench",
+		"armorbase": 12,
+		"critratebase": 688
+	},
+	// WAR unics
+	{
+		"unic": true,
+		"id": "HeredurBarrage",
+		"langid": "HeredurBarrage",
+		"job": "WAR",
+		"level": 17,
+		"icon": "HeredurBarrage",
+		"type": "shield",
+		"armorbase": 96,
+		"blockratebase": 115,
+		"blockeddmgbase": 115,
+		"blockeddmgboost": 0.25,
+		"life": 42,
+		"armor": 35
+	},{
+		"unic": true,
+		"id": "ButcherSign",
+		"langid": "ButcherSign",
+		"job": "WAR",
+		"level": 30,
+		"icon": "ButchersShield",
+		"type": "shield",
+		"armorbase": 210,
+		"blockratebase": 253,
+		"blockeddmgbase": 253,
+		"damagemax": 49,
+		"critrate": 187,
+		"blockrate": -200
+	},{
+		"unic": true,
+		"id": "GorgaScale",
+		"langid": "GorgaScale",
+		"job": "WAR",
+		"level": 40,
+		"icon": "GorgaScale",
+		"type": "shield",
+		"armorbase": 325,
+		"blockratebase": 400,
+		"blockeddmgbase": 400,
+		"life": 280,
+		"armor": 240
+	},{
+		"unic": true,
+		"id": "Justice",
+		"langid": "Justice",
+		"job": "WAR",
+		"level": 40,
+		"icon": "Justice",
+		"type": "shield",
+		"armorbase": 325,
+		"blockratebase": 400,
+		"blockeddmgbase": 400,
+		"life": 1000,
+		"blockrate": 100
+	},{
+		"unic": true,
+		"id": "DeepSeaShield_war",
+		"langid": "DeepSeaShield",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DeepSeaShield_war",
+		"type": "shield",
+		"armorbase": 347,
+		"blockratebase": 418,
+		"blockeddmgbase": 418,
+		"armor": 200,
+		"blockeddmgboost": 0.6
+	},{
+		"unic": true,
+		"id": "WerewolfShield",
+		"langid": "WerewolfShield",
+		"job": "WAR",
+		"level": 40,
+		"icon": "WerewolfShield",
+		"type": "shield",
+		"armorbase": 347,
+		"blockratebase": 418,
+		"blockeddmgbase": 418,
+		"blockrate": 0.8,
+		"life": 200,
+		"resist":200
+	},{
+		"unic": true,
+		"id": "GarulfShield",
+		"langid": "GarulfShield",
+		"job": "WAR",
+		"level": 45,
+		"icon": "WerewolfShield",
+		"type": "shield",
+		"armorbase": 428,
+		"blockratebase": 516,
+		"blockeddmgbase": 516,
+		"blockrateboost": 1.5,
+		"damage": 30,
+		"lightning":250
+	},{
+		"unic": true,
+		"id": "SargonShield",
+		"langid": "SargonShield",
+		"job": "WAR",
+		"level": 40,
+		"icon": "SargonShield",
+		"type": "shield",
+		"armorbase": 347,
+		"blockratebase": 418,
+		"blockeddmgbase": 418,
+		"blockrateboost": -0.50,
+		"damageboost": 0.2
+	},{
+		"unic": true,
+		"id": "SargonPowerfulShield",
+		"langid": "SargonPowerfulShield",
+		"job": "WAR",
+		"level": 45,
+		"icon": "SargonShield",
+		"type": "shield",
+		"armorbase": 428,
+		"blockratebase": 516,
+		"blockeddmgbase": 516,
+		"blockrateboost": -0.50,
+		"damageboost": 0.2
+	},
+	// RNG unics
+	{
+		"unic": true,
+		"id": "HeredurBuckler",
+		"langid": "HeredurBuckler",
+		"job": "RNG",
+		"level": 17,
+		"icon": "HeredurSteelBuckler",
+		"type": "shield",
+		"armorbase": 110,
+		"blockratebase": 130,
+		"blockeddmgbase": 130,
+		"blockeddmgboost": 0.5,
+		"armor": 50
+	},{
+		"unic": true,
+		"id": "ValetiaQuiver",
+		"langid": "ValetiaQuiver",
+		"job": "RNG",
+		"level": 30,
+		"icon": "BouilloireValetias",
+		"type": "quiver",
+		"armorbase": 8,
+		"critratebase": 405,
+		"damagemax": 27,
+		"speed": 0.1
+	},{
+		"unic": true,
+		"id": "GorgaQuiver",
+		"langid": "GorgaQuiver",
+		"job": "RNG",
+		"level": 40,
+		"icon": "GorgaQuiver",
+		"type": "quiver",
+		"armorbase": 12,
+		"critratebase": 625,
+		"damage": 25,
+		"critrate": 250,
+		"critboost": 0.1
+	},{
+		"unic": true,
+		"id": "Beast",
+		"langid": "Beast",
+		"job": "RNG",
+		"level": 40,
+		"icon": "Beast",
+		"type": "shield",
+		"armorbase": 325,
+		"blockratebase": 400,
+		"blockeddmgbase": 400,
+		"damage": 35,
+		"life": 350
+	},{
+		"unic": true,
+		"id": "DeepSeaShield_rng",
+		"langid": "DeepSeaShield",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DeepSeaShield_rng",
+		"type": "shield",
+		"armorbase": 347,
+		"blockratebase": 418,
+		"blockeddmgbase": 418,
+		"armor": 200,
+		"blockeddmgboost": 0.6
+	},{
+		"unic": true,
+		"id": "WerewolfQuiver",
+		"langid": "WerewolfQuiver",
+		"job": "RNG",
+		"level": 40,
+		"icon": "WerewolfQuiver",
+		"type": "quiver",
+		"armorbase": 13,
+		"critratebase": 669,
+		"damage": 20,
+		"life": 200
+	},{
+		"unic": true,
+		"id": "GarulfQuiver",
+		"langid": "GarulfQuiver",
+		"job": "RNG",
+		"level": 45,
+		"icon": "WerewolfQuiver",
+		"type": "quiver",
+		"armorbase": 16,
+		"critratebase": 632,
+		"damage": 30,
+		"life": 100
+	},{
+		"unic": true,
+		"id": "SargonQuiver",
+		"langid": "SargonQuiver",
+		"job": "RNG",
+		"level": 40,
+		"icon": "SargonQuiver",
+		"type": "quiver",
+		"armorbase": 13,
+		"critratebase": 669,
+		"damageboost": 0.2,
+		"lifeboost": -0.15
+	},{
+		"unic": true,
+		"id": "SargonPowerfulQuiver",
+		"langid": "SargonPowerfulQuiver",
+		"job": "RNG",
+		"level": 45,
+		"icon": "SargonQuiver",
+		"type": "quiver",
+		"armorbase": 15,
+		"critratebase": 825,
+		"damageboost": 0.2,
+		"lifeboost": -0.15
+	},
+	// SW unics
+	{
+		"unic": true,
+		"id": "HeredurOrb",
+		"langid": "HeredurOrb",
+		"job": "SW",
+		"level": 17,
+		"icon": "HeredurOrb",
+		"type": "orb",
+		"armorbase": 96,
+		"blockratebase": 115,
+		"blockeddmgbase": 115,
+		"blockeddmgboost": 0.25,
+		"armor": 31,
+		"life": 21
+	},{
+		"unic": true,
+		"id": "DamnationBook",
+		"langid": "DamnationBook",
+		"job": "SW",
+		"level": 30,
+		"icon": "BookDamnation",
+		"type": "book",
+		"armorbase": 7,
+		"critratebase": 405,
+		"damagemax": 41,
+		"speed": 0.05
+	},{
+		"unic": true,
+		"id": "BitingTome",
+		"langid": "BitingTome",
+		"job": "SW",
+		"level": 40,
+		"icon": "GorgaTome",
+		"type": "book",
+		"armorbase": 10,
+		"critratebase": 680,
+		"damage": 25,
+		"critrate": 250,
+		"critboost": 0.1
+	},{
+		"unic": true,
+		"id": "Riddle",
+		"langid": "Riddle",
+		"job": "SW",
+		"level": 40,
+		"icon": "Enigma",
+		"type": "orb",
+		"armorbase": 325,
+		"blockratebase": 400,
+		"blockeddmgbase": 400,
+		"armor": 400,
+		"critboost": 0.4
+	},{
+		"unic": true,
+		"id": "DeepSeaOrb",
+		"langid": "DeepSeaOrb",
+		"job": "SW",
+		"level": 40,
+		"icon": "DeepSeaOrb",
+		"type": "orb",
+		"armorbase": 379,
+		"blockratebase": 418,
+		"blockeddmgbase": 418,
+		"armor": 200,
+		"blockeddmgboost": 0.6
+	},{
+		"unic": true,
+		"id": "WerewolfBook",
+		"langid": "WerewolfBook",
+		"job": "SW",
+		"level": 40,
+		"icon": "WerewolfBook",
+		"type": "book",
+		"armorbase": 10,
+		"critratebase": 795,
+		"damage": 24,
+		"life": 160
+	},{
+		"unic": true,
+		"id": "GarulfBook",
+		"langid": "GarulfBook",
+		"job": "SW",
+		"level": 45,
+		"icon": "WerewolfBook",
+		"type": "book",
+		"armorbase": 12,
+		"critratebase": 825,
+		"damage": 30,
+		"life": 100
+	},{
+		"unic": true,
+		"id": "SargonBook",
+		"langid": "SargonBook",
+		"job": "SW",
+		"level": 40,
+		"icon": "SargonBook",
+		"type": "book",
+		"armorbase": 10,
+		"critratebase": 669,
+		"damageboost": 0.2,
+		"lifeboost": -0.15
+	},{
+		"unic": true,
+		"id": "SargonPowerfulBook",
+		"langid": "SargonPowerfulBook",
+		"job": "SW",
+		"level": 45,
+		"icon": "SargonBook",
+		"type": "book",
+		"armorbase": 12,
+		"critratebase": 825,
+		"damageboost": 0.2,
+		"lifeboost": -0.15
+	},
+	// DWF unics
+	{
+		"unic": true,
+		"id": "HeredurAgony",
+		"langid": "HeredurAgony",
+		"job": "DWF",
+		"level": 17,
+		"icon": "HeredurAgony",
+		"type": "shield",
+		"armorbase": 96,
+		"blockratebase": 115,
+		"blockeddmgbase": 115,
+		"blockeddmgboost": 0.25,
+		"armor": 31,
+		"life": 21
+	},{
+		"unic": true,
+		"id": "EternalGuardian",
+		"langid": "EternalGuardian",
+		"job": "DWF",
+		"level": 30,
+		"icon": "EternalGuardian",
+		"type": "shield",
+		"armorbase": 210,
+		"blockratebase": 253,
+		"blockeddmgbase": 253,
+		"blockrate": -200,
+		"critrate": 187,
+		"damagemax": 49
+	},{
+		"unic": true,
+		"id": "GorgaAbsorber",
+		"langid": "GorgaAbsorber",
+		"job": "DWF",
+		"level": 40,
+		"icon": "GorgaAbsorber",
+		"type": "shield",
+		"armorbase": 325,
+		"blockratebase": 400,
+		"blockeddmgbase": 400,
+		"damage": 40,
+		"critboost": 0.04,
+		"regen": 4
+	},{
+		"unic": true,
+		"id": "DeepSeaStarShield",
+		"langid": "DeepSeaStarShield",
+		"job": "DWF",
+		"level": 40,
+		"icon": "DeepSeaStarShield",
+		"type": "shield",
+		"armorbase": 347,
+		"blockratebase": 418,
+		"blockeddmgbase": 418,
+		"armor": 200,
+		"blockeddmgboost": 0.6
+	},{
+		"unic": true,
+		"id": "Mechanicum",
+		"langid": "Mechanicum",
+		"job": "DWF",
+		"level": 40,
+		"icon": "Mechanicum",
+		"type": "shield",
+		"armorbase": 347,
+		"blockratebase": 417,
+		"blockeddmgbase": 417,
+		"life": 250,
+		"critboost": 0.5
+	},{
+		"unic": true,
+		"id": "SargonWrench",
+		"langid": "SargonWrench",
+		"job": "DWF",
+		"level": 40,
+		"icon": "SargonWrench",
+		"type": "wrench",
+		"armorbase": 10,
+		"critratebase": 558,
+		"damageboost": 0.2,
+		"lifeboost": -0.15
+	},{
+		"unic": true,
+		"id": "SargonPowerfulWrench",
+		"langid": "SargonPowerfulWrench",
+		"job": "DWF",
+		"level": 45,
+		"icon": "SargonWrench",
+		"type": "wrench",
+		"armorbase": 15,
+		"critratebase": 688,
+		"damageboost": 0.2,
+		"lifeboost": -0.15
+	},{
+		"unic": true,
+		"id": "WerewolfAbsorber",
+		"langid": "WerewolfAbsorber",
+		"job": "DWF",
+		"level": 40,
+		"icon": "WerewolfShield",
+		"type": "shield",
+		"armorbase": 347,
+		"blockratebase": 417,
+		"blockeddmgbase": 417,
+		"blockrateboost": 0.8,
+		"life": 115,
+		"resist":200
+	},{
+		"unic": true,
+		"id": "GarulfAbsorber",
+		"langid": "GarulfAbsorber",
+		"job": "DWF",
+		"level": 45,
+		"icon": "WerewolfShield",
+		"type": "shield",
+		"armorbase": 428,
+		"blockratebase": 516,
+		"blockeddmgbase": 516,
+		"blockrateboost": 1.5,
+		"damage": 30,
+		"lightning":250
+	}],
+
+"sets":[{
+		"id": "AmmonForgottenGleam",
+		"langid": "AmmonForgottenGleam",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "AmmonHead,AmmonWings,AmmonTorso,AmmonGloves,AmmonBoots",
+		"setbonus": [
+			{ "nbpieces":2, "critrateboost":0.10 },
+			{ "nbpieces":3, "movspeed":0.10 },
+			{ "nbpieces":4, "lifeboost":0.10 },
+			{ "nbpieces":5, "speed":0.10 }
+		]
+	},{
+		"id": "AmmonGleamWAR",
+		"langid": "AmmonGleam",
+		"job": "WAR",
+		"setpieces": "AmmonHead,AmmonWings,AmmonTorso,AmmonGloves,AmmonBoots",
+		"setbonus": [
+			{ "nbpieces":2, "damagepve":0.05 },
+			{ "nbpieces":3, "skill":"IronBrow", "damageboost":0.60 },
+			{ "nbpieces":4, "armorboost":0.05 },
+			{ "nbpieces":5, "lifeboost":0.10 },
+			{ "nbpieces":5, "skill":"StunCharge", "damageboost":0.60 }
+		]
+	},{
+		"id": "AmmonGleamSW",
+		"langid": "AmmonGleam",
+		"job": "SW",
+		"setpieces": "AmmonHead,AmmonWings,AmmonTorso,AmmonGloves,AmmonBoots",
+		"setbonus": [
+			{ "nbpieces":2, "damagepve":0.05 },
+			{ "nbpieces":3, "skill":"MagicMissile", "damageboost":0.11 },
+			{ "nbpieces":4, "armorboost":0.05 },
+			{ "nbpieces":5, "lifeboost":0.10 },
+			{ "nbpieces":5, "skill":"Destruction", "damageboost":0.33 }
+		]
+	},{
+		"id": "AmmonGleamRNG",
+		"langid": "AmmonGleam",
+		"job": "RNG",
+		"setpieces": "AmmonHead,AmmonWings,AmmonTorso,AmmonGloves,AmmonBoots",
+		"setbonus": [
+			{ "nbpieces":2, "damagepve":0.05 },
+			{ "nbpieces":3, "skill":"DeathSwing", "damageboost":0.66 },
+			{ "nbpieces":4, "armorboost":0.05 },
+			{ "nbpieces":5, "lifeboost":0.10 },
+			{ "nbpieces":5, "skill":"Falcon", "damageboost":0.33 }
+		]
+	},{
+		"id": "AmmonGleamDWF",
+		"langid": "AmmonGleam",
+		"job": "DWF",
+		"setpieces": "AmmonHead,AmmonWings,AmmonTorso,AmmonGloves,AmmonBoots",
+		"setbonus": [
+			{ "nbpieces":2, "damagepve":0.05 },
+			{ "nbpieces":3, "skill":"HeavyShot", "damageboost":0.20 },
+			{ "nbpieces":4, "armorboost":0.05 },
+			{ "nbpieces":5, "lifeboost":0.10 },
+			{ "nbpieces":5, "skill":"Rocket", "damageboost":0.60 }
+		]
+	},{
+		"id": "FellowshipFateWAR",
+		"langid": "FellowshipFate",
+		"job": "WAR",
+		"setpieces": "RingLifeOld,RingDeathOld",
+		"setbonus": [
+			{ "nbpieces":2, "damage":15 },
+			{ "nbpieces":2, "life":175 }
+		]
+	},{
+		"id": "FellowshipFateSW",
+		"langid": "FellowshipFate",
+		"job": "SW",
+		"setpieces": "RingLifeOld,RingDeathOld",
+		"setbonus": [
+			{ "nbpieces":2, "damage":15 },
+			{ "nbpieces":2, "life":100 }
+		]
+	},{
+		"id": "FellowshipFateRNG",
+		"langid": "FellowshipFate",
+		"job": "RNG",
+		"setpieces": "RingLifeOld,RingDeathOld",
+		"setbonus": [
+			{ "nbpieces":2, "damage":15 },
+			{ "nbpieces":2, "life":125 }
+		]
+	},{
+		"id": "FellowshipFateDWF",
+		"langid": "FellowshipFate",
+		"job": "DWF",
+		"setpieces": "RingLifeOld,RingDeathOld",
+		"setbonus": [
+			{ "nbpieces":2, "damage":15 },
+			{ "nbpieces":2, "life":0 }
+		]
+	},{
+		"id": "Defender",
+		"langid": "Defender",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "DefenderAmulet,DefenderBelt,DefenderWDEC,DedicatedDefenderRing,PunctualDefenderRing",
+		"setbonus": [
+			{ "nbpieces":2, "armorboost":0.15 },
+			{ "nbpieces":3, "resistboost":0.15 },
+			{ "nbpieces":4, "lifeboost":0.15 },
+			{ "nbpieces":5, "armorboost":0.05 },
+			{ "nbpieces":5, "resistboost":0.05 },
+			{ "nbpieces":5, "lifeboost":0.05 }
+		]
+	},{
+		"id": "Dragonache",
+		"langid": "Dragonache",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "BloodTooth,TearHolder,DragonShackles",
+		"setbonus": [
+			{ "nbpieces":2, "damage":25 },
+			{ "nbpieces":3, "damage":100 }
+		]
+	},{
+		"id": "DarkEquipWAR",
+		"langid": "DarkEquip",
+		"job": "WAR",
+		"setpieces": "DarkHelm,DarkWings,DarkHeart,DarkGloves,DarkBoots",
+		"setbonus": [
+			{ "nbpieces":2, "damage":10 },
+			{ "nbpieces":3, "critrate":200 },
+			{ "nbpieces":4, "damage":20 },
+			{ "nbpieces":5, "critrate":400 }
+		]
+	},{
+		"id": "DarkEquip",
+		"langid": "DarkEquip",
+		"job": "SW,RNG,DWF",
+		"setpieces": "DarkHelm,DarkWings,DarkHeart,DarkGloves,DarkBoots",
+		"setbonus": [
+			{ "nbpieces":2, "damage":15 },
+			{ "nbpieces":3, "critrate":200 },
+			{ "nbpieces":4, "damage":30 },
+			{ "nbpieces":5, "critrate":400 }
+		]
+	},{
+		"id": "DeepSeaTreasures",
+		"langid": "DeepSeaTreasures",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "DeepSea",
+		"setbonus": [
+			{ "nbpieces":2, "lifeboost":0.10 },
+			{ "nbpieces":3, "armorboost":0.20 },
+			{ "nbpieces":4, "blockrateboost":0.60 },
+			{ "nbpieces":5, "critboost":1 }
+		]
+	},{
+		"id": "RoshanWisdom",
+		"langid": "RoshanWisdom",
+		"job": "SW",
+		"setpieces": "RoshanPath,RoshanGloves,RoshanCircle",
+		"setbonus": [
+			{ "nbpieces":2, "life":500 },
+			{ "nbpieces":3, "damage":25 },
+			{ "nbpieces":3, "movspeed":0.10 }
+		]
+	},{
+		"id": "YachakDream",
+		"langid": "YachakDream",
+		"job": "RNG",
+		"setpieces": "YachakWay,YachakInsight,YachakAwakening",
+		"setbonus": [
+			{ "nbpieces":2, "life":500 },
+			{ "nbpieces":3, "damage":25 },
+			{ "nbpieces":3, "movspeed":0.10 }
+		]
+	},{
+		"id": "KeenMight",
+		"langid": "KeenMight",
+		"job": "WAR",
+		"setpieces": "KeenSteps,KeenFist,KeenPower",
+		"setbonus": [
+			{ "nbpieces":2, "life":500 },
+			{ "nbpieces":3, "damage":25 },
+			{ "nbpieces":3, "critrateboost":0.10 },
+			{ "nbpieces":3, "movspeed":0.10 }
+		]
+	},{
+		"id": "SparkTools",
+		"langid": "SparkTools",
+		"job": "DWF",
+		"setpieces": "SparksBelt,SparksFist,SparksPathfinder",
+		"setbonus": [
+			{ "nbpieces":2, "life":500 },
+			{ "nbpieces":3, "damage":25 },
+			{ "nbpieces":3, "critrateboost":0.10 },
+			{ "nbpieces":3, "movspeed":0.10 }
+		]
+	},{
+		"id": "SargonArmor",
+		"langid": "SargonArmor",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "SargonHead,SargonPauldrons,SargonTorso",
+		"setbonus": [
+			{ "nbpieces":2, "life":333 },
+			{ "nbpieces":3, "life":222 },
+			{ "nbpieces":3, "damage":55 },
+			{ "nbpieces":3, "regen":11 }
+		]
+	},{
+		"id": "SargonPowerfulArmor",
+		"langid": "SargonPowerfulArmor",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "SargonPowerfulHead,SargonPowerfulPauldrons,SargonPowerfulTorso",
+		"setbonus": [
+			{ "nbpieces":2, "life":333 },
+			{ "nbpieces":3, "life":222 },
+			{ "nbpieces":3, "damage":55 },
+			{ "nbpieces":3, "regen":11 }
+		]
+	},{
+		"id": "SargonWeaponry",
+		"langid": "SargonWeaponry",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "SargonMace,SargonWand,SargonBow,SargonPistol,SargonClaw,SargonCristal,SargonArrow,SargonAmmo,SargonShield,SargonQuiver,SargonBook,SargonWrench",
+		"setbonus": [
+			{ "nbpieces":2, "damage":15 },
+			{ "nbpieces":3, "damage":35 }
+		]
+	},{
+		"id": "SargonPowerfulWeaponry",
+		"langid": "SargonPowerfulWeaponry",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "SargonPowerfulMace,SargonPowerfulWand,SargonPowerfulBow,SargonPowerfulPistol,SargonPowerfulClaw,SargonPowerfulCristal,SargonPowerfulArrow,SargonPowerfulAmmo,SargonPowerfulShield,SargonPowerfulQuiver,SargonPowerfulBook,SargonPowerfulWrench",
+		"setbonus": [
+			{ "nbpieces":2, "damage":15 },
+			{ "nbpieces":3, "damage":35 }
+		]
+	},{
+		"id": "SteamPower",
+		"langid": "SteamPower",
+		"job": "WAR",
+		"setpieces": "SteamAmulet,SteamBelt,AutoMechaSteamRing,SteamWeaponDecoration",
+		"setbonus": [
+			{ "nbpieces":2, "critboost":0.05 },
+			{ "nbpieces":3, "critboost":0.10 },
+			{ "nbpieces":4, "critboost":0.20 }
+		]
+	},{
+		"id": "AutomationSet",
+		"langid": "AutomationSet",
+		"job": "SW",
+		"setpieces": "AutomatedAmulet,AutomatedBelt,AutoMechaSteamRing,AutomatedWeaponDecoration",
+		"setbonus": [
+			{ "nbpieces":2, "critboost":0.05 },
+			{ "nbpieces":3, "critboost":0.10 },
+			{ "nbpieces":4, "critboost":0.20 }
+		]
+	},{
+		"id": "MechanicalSet",
+		"langid": "MechanicalSet",
+		"job": "RNG",
+		"setpieces": "MechanicalAmulet,MechanicalBelt,AutoMechaSteamRing,MechanicalWeaponDecoration",
+		"setbonus": [
+			{ "nbpieces":2, "critboost":0.05 },
+			{ "nbpieces":3, "critboost":0.10 },
+			{ "nbpieces":4, "critboost":0.20 }
+		]
+	},{
+		"id": "MachineSet",
+		"langid": "MachineSet",
+		"job": "DWF",
+		"setpieces": "MachineAmulet,MachineBelt,AutoMechaSteamRing,MachineWeaponDecoration",
+		"setbonus": [
+			{ "nbpieces":2, "critboost":0.05 },
+			{ "nbpieces":3, "critboost":0.10 },
+			{ "nbpieces":4, "critboost":0.20 }
+		]
+	},{
+		"id": "WitchChaserSet",
+		"langid": "WitchHunterSet",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "WitchChaserHat,WitchChaserShoulders,WitchChaserTorso",
+		"setbonus": [
+			{ "nbpieces":3, "speed":0.111 },
+			{ "nbpieces":3, "damagemaxboost":0.222 },
+			{ "nbpieces":3, "critrateboost":0.333 }
+		]
+	},{
+		"id": "WitchHunterSet",
+		"langid": "WitchHunterSet",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "WitchHunterHat,WitchHunterShoulders,WitchHunterTorso",
+		"setbonus": [
+			{ "nbpieces":2, "critboost":0.15 },
+			{ "nbpieces":3, "speed":0.05 },
+			{ "nbpieces":3, "damagemax":40 }
+		]
+	},{
+		"id": "WitchHunterPowerfulSet",
+		"langid": "WitchHunterPowerfulSet",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "WitchHunterPowerfulHat,WitchHunterPowerfulShoulders,WitchHunterPowerfulTorso",
+		"setbonus": [
+			{ "nbpieces":2, "critboost":0.2 },
+			{ "nbpieces":3, "speed":0.1 },
+			{ "nbpieces":3, "critrateboost":0.2 },
+			{ "nbpieces":3, "damagemax":50 }
+		]
+	},{
+		"id": "GarulfSet",
+		"langid": "GarulfSet",
+		"job": "WAR,SW,RNG,DWF",
+		"setpieces": "GarulfHead,GarulfQuiver,GarulfShield,GarulfBook,GarulfAbsorber,GarulfMace,GarulfWand,GarulfBow,GarulfPistol",
+		"setbonus": [
+			{ "nbpieces":3, "movspeed":0.10 },
+			{ "nbpieces":3, "lifeboost":0.10 },
+			{ "nbpieces":3, "critboost":0.10 }
+		]
+	},{
+		"id": "BlackWarLordSet",
+		"langid": "BlackWarLordSet",
+		"job": "WAR,SW,DWF",
+		"setpieces": "BlackWarLordHead,BlackWarLordShoulders,BlackWarLordCape",
+		"setbonus": [
+			{ "nbpieces":2, "armorboost":0.15 },
+			{ "nbpieces":3, "blockrateboost":0.30 },
+			{ "nbpieces":3, "damage2H":0.30 }
+		]
+	},{
+		"id": "BlackWarLordSet",
+		"langid": "BlackWarLordSet",
+		"job": "RNG",
+		"setpieces": "BlackWarLordHead,BlackWarLordShoulders,BlackWarLordCape",
+		"setbonus": [
+			{ "nbpieces":2, "armorboost":0.15 },
+			{ "nbpieces":3, "blockrateboost":0.30 },
+			{ "nbpieces":3, "damage2H":0.15 }
+		]
+	},{
+		"id": "EssenceSet",
+		"langid": "EssenceSet",
+		"job": "WAR,SW,DWF,RNG",
+		"setpieces": "EssenceShoulders,EssenceTorso,EssenceGloves,EssenceBoots",
+		"setbonus": [{ "nbpieces":4, "damageboost":0.15 }]
+	}],
+
+"essences":[{
+		"id": "blank",
+		"langid": "blank",
+		"icon": "",
+		"color": "",
+		"damage": 0
+	},{
+		"id": "Green1",
+		"langid": "Green1",
+		"icon": "Verte1",
+		"color": "LimeGreen",
+		"damage": 5
+	},{
+		"id": "Green10",
+		"langid": "Green10",
+		"icon": "Verte10",
+		"color": "LimeGreen",
+		"level": 10,
+		"damage": 16
+	},{
+		"id": "Green20",
+		"langid": "Green20",
+		"icon": "Verte20",
+		"color": "LimeGreen",
+		"level": 20,
+		"damage": 26
+	},{
+		"id": "Green30",
+		"langid": "Green30",
+		"icon": "Verte30",
+		"color": "LimeGreen",
+		"level": 30,
+		"damage": 34
+	},{
+		"id": "Green40",
+		"langid": "Green40",
+		"icon": "Verte40",
+		"color": "LimeGreen",
+		"level": 40,
+		"damage": 40
+	},{
+		"id": "Blue",
+		"langid": "Blue",
+		"icon": "Bleue",
+		"color": "CornflowerBlue",
+		"damage": 1
+	},{
+		"id": "Violet",
+		"langid": "Violet",
+		"icon": "Violette",
+		"color": "DarkViolet",
+		"damage": 2
+	},{
+		"id": "Red",
+		"langid": "Red",
+		"icon": "Rouge",
+		"color": "Red",
+		"damage": 3
+	}],
+
+"skills":[
+	// WAR skills
+	{
+		"id": "AngryStrike",
+		"langid": "AngryStrike",
+		"job": "WAR",
+		"level": 1,
+		"icon": "AngryStrike",
+		"value": 0.75
+	},{
+		"id": "Smash",
+		"langid": "Smash",
+		"job": "WAR",
+		"level": 2,
+		"icon": "Smash",
+		"value": 2
+	},{
+		"id": "RagefulSwing",
+		"langid": "RagefulSwing",
+		"job": "WAR",
+		"level": 3,
+		"icon": "RagefulSwing",
+		"value": 1
+	},{
+		"id": "BloodySwing",
+		"langid": "BloodySwing",
+		"job": "WAR",
+		"level": 6,
+		"icon": "BloodySwing",
+		"nbdot": 5,
+		"value": 0.4
+	},{
+		"id": "RageJump",
+		"langid": "RageJump",
+		"job": "WAR",
+		"level": 9,
+		"icon": "RageJump",
+		"value": 0.75
+	},{
+		"id": "GroundBreaker",
+		"langid": "GroundBreaker",
+		"job": "WAR",
+		"level": 12,
+		"icon": "GroundBreaker",
+		"value": 0.75
+	},{
+		"id": "IronBrow",
+		"langid": "IronBrow",
+		"job": "WAR",
+		"level": 18,
+		"icon": "IronBrow",
+		"value": 0.5
+	},{
+		"id": "StunCharge",
+		"langid": "StunCharge",
+		"job": "WAR",
+		"level": 22,
+		"icon": "StunCharge",
+		"value": 0.5
+	},{
+		"id": "MightySwing",
+		"langid": "MightySwing",
+		"job": "WAR",
+		"level": 26,
+		"icon": "MightySwing",
+		"value": 2
+	},{
+		"id": "DragonFury",
+		"langid": "DragonFury",
+		"job": "WAR",
+		"level": 42,
+		"icon": "DragonFury",
+		"nbdot": 4,
+		"value": 1.5,
+		"magicshare": 1
+	},{
+		"id": "DeathWail",
+		"langid": "DeathWail",
+		"job": "WAR",
+		"pvpreqlvl": 40,
+		"level": 999,
+		"icon": "DeathWail",
+		"value": 0
+	},
+	// SW skills
+	{
+		"id": "MagicMissile",
+		"langid": "MagicMissile",
+		"job": "SW",
+		"level": 1,
+		"icon": "MagicMissile",
+		"value": 0.7
+	},{
+		"id": "Fireball",
+		"langid": "Fireball",
+		"job": "SW",
+		"level": 2,
+		"icon": "Fireball",
+		"value": 1.1,
+		"magicshare": 0.5
+	},{
+		"id": "IceMissile",
+		"langid": "IceMissile",
+		"job": "SW",
+		"level": 3,
+		"icon": "IceMissile",
+		"value": 0.30,
+		"magicshare": 1
+	},{
+		"id": "FrostNova",
+		"langid": "FrostNova",
+		"job": "SW",
+		"level": 6,
+		"icon": "FrostNova",
+		"value": 0,
+		"magicshare": 1
+	},{
+		"id": "LightningStrike",
+		"langid": "LightningStrike",
+		"job": "SW",
+		"level": 12,
+		"icon": "LightningStrike",
+		"value": 2.5,
+		"magicshare": 1
+	},{
+		"id": "ChainLightning",
+		"langid": "ChainLightning",
+		"job": "SW",
+		"level": 18,
+		"icon": "ChainLightning",
+		"value": 0.45,
+		"magicshare": 1
+	},{
+		"id": "Destruction",
+		"langid": "Destruction",
+		"job": "SW",
+		"level": 26,
+		"icon": "Destruction",
+		"value": 4,
+		"magicshare": 0.25
+	},{
+		"id": "Singularity",
+		"langid": "Singularity",
+		"job": "SW",
+		"level": 30,
+		"icon": "Singularity",
+		"value": 0.25
+	},{
+		"id": "Meteor",
+		"langid": "Meteor",
+		"job": "SW",
+		"level": 35,
+		"icon": "Meteor",
+		"value": 3,
+		"magicshare": 0.5
+	},{
+		"id": "Supernova",
+		"langid": "Supernova",
+		"job": "SW",
+		"pvpreqlvl": 40,
+		"level": 999,
+		"icon": "Supernova",
+		"value": 0
+	},
+	// RNG skills
+	{
+		"id": "HuntingArrow",
+		"langid": "HuntingArrow",
+		"job": "RNG",
+		"level": 1,
+		"icon": "HuntingArrow",
+		"value": 0.6
+	},{
+		"id": "PrecisionShot",
+		"langid": "PrecisionShot",
+		"job": "RNG",
+		"level": 2,
+		"icon": "PrecisionShot",
+		"value": 1.25,
+		"magicshare": 0.25,
+        "markable": true
+	},{
+		"id": "DeathSwing",
+		"langid": "DeathSwing",
+		"job": "RNG",
+		"level": 3,
+		"icon": "DeathSwing",
+		"nbdot": 4,
+		"value": 0.35
+	},{
+		"id": "HuntingTrap",
+		"langid": "HuntingTrap",
+		"job": "RNG",
+		"level": 6,
+		"icon": "HuntingTrap",
+		"value": 0
+	},{
+		"id": "ScatterShot",
+		"langid": "ScatterShot",
+		"job": "RNG",
+		"level": 15,
+		"icon": "ScatterShot",
+		"value": 0.6,
+        "markable": true
+	},{
+		"id": "DeadlyBlow",
+		"langid": "DeadlyBlow",
+		"job": "RNG",
+		"level": 18,
+		"icon": "DeadlyBlow",
+		"value": 0.6,
+        "markable": true
+	},{
+		"id": "Falcon",
+		"langid": "Falcon",
+		"job": "RNG",
+		"level": 22,
+		"icon": "Falcon",
+		"value": 2.5
+	},{
+		"id": "BladeDance",
+		"langid": "BladeDance",
+		"job": "RNG",
+		"level": 26,
+		"icon": "BladeDance",
+		"value": 0.65,
+        "markable": true
+	},{
+		"id": "ThicketThorns",
+		"langid": "ThicketThorns",
+		"job": "RNG",
+		"level": 42,
+		"icon": "ThicketThorns",
+		"value": 0.25,
+		"magicshare": 1
+	},{
+		"id": "ForestRevenge",
+		"langid": "ForestRevenge",
+		"job": "RNG",
+		"pvpreqlvl": 40,
+		"level": 999,
+		"icon": "ForestRevenge",
+		"value": 0
+	},
+	// DWF skills
+	{
+		"id": "SimpleShot",
+		"langid": "SimpleShot",
+		"job": "DWF",
+		"level": 1,
+		"icon": "SimpleShot",
+		"value": 0.6,
+		"magicshare": 1
+	},{
+		"id": "CombatTurret",
+		"langid": "CombatTurret",
+		"job": "DWF",
+		"level": 2,
+		"icon": "CombatTurret",
+		"value": 0.65
+	},{
+		"id": "Grenade",
+		"langid": "Grenade",
+		"job": "DWF",
+		"level": 3,
+		"icon": "Grenade",
+		"value": 0.5
+	},{
+		"id": "MGTurret",
+		"langid": "MGTurret",
+		"job": "DWF",
+		"level": 12,
+		"icon": "MGTurret",
+		"value": 0.5,
+		"magicshare": 1
+	},{
+		"id": "HeavyShot",
+		"langid": "HeavyShot",
+		"job": "DWF",
+		"level": 15,
+		"icon": "HeavyShot",
+		"value": 2.45
+	},{
+		"id": "Rocket",
+		"langid": "Rocket",
+		"job": "DWF",
+		"level": 22,
+		"icon": "Rocket",
+		"value": 1
+	},{
+		"id": "CoverTurret",
+		"langid": "CoverTurret",
+		"job": "DWF",
+		"level": 30,
+		"icon": "CoverTurret",
+		"value": ""
+	},{
+		"id": "PlumbRain",
+		"langid": "PlumbRain",
+		"job": "DWF",
+		"level": 35,
+		"icon": "PlumbRain",
+		"nbdot": 6,
+		"value": 6,
+		"magicshare": 1
+	},{
+		"id": "IronMan",
+		"langid": "IronMan",
+		"job": "DWF",
+		"level": 42,
+		"icon": "IronMan",
+		"value": 1
+	},{
+		"id": "VengeanceExplosive",
+		"langid": "VengeanceExplosive",
+		"job": "DWF",
+		"pvpreqlvl": 40,
+		"level": 999,
+		"icon": "VengeanceExplosive",
+		"value": 0
+	}],
+
+"talents":[
+	// WAR exp talents
+	{
+		"id": "SmashTalent",
+		"langid": "SmashTalent",
+		"category": "ExpTree",
+		"job": "WAR",
+		"level": 10,
+		"icon": "Smash",
+		"targetedskills": "Smash",
+		"damageboost": 0.2
+	},{
+		"id": "TwoHandedMaster",
+		"langid": "TwoHandedMaster",
+		"category": "ExpTree",
+		"job": "WAR",
+		"level": 30,
+		"icon": "TwoHandedMaster",
+		"weapondamageboost": 0.4
+	},{
+		"id": "BlockMaster",
+		"langid": "BlockMaster",
+		"category": "ExpTree",
+		"job": "WAR",
+		"level": 30,
+		"icon": "BlockMaster",
+		"blockrateboost": 0.4
+	},
+	// SW exp talents
+	{
+		"id": "EnergyTalent",
+		"langid": "EnergyTalent",
+		"category": "ExpTree",
+		"job": "SW",
+		"level": 10,
+		"icon": "Energy",
+		"targetedskills": "MagicMissile",
+		"damageboost": 0.4
+	},{
+		"id": "FrostNovaTalent",
+		"langid": "FrostNovaTalent",
+		"category": "ExpTree",
+		"job": "SW",
+		"level": 10,
+		"icon": "FrostNova",
+		"targetedskills": "FrostNova",
+		"damageboost": 0.8
+	},{
+		"id": "FireballTalent",
+		"langid": "FireballTalent",
+		"category": "ExpTree",
+		"job": "SW",
+		"level": 15,
+		"icon": "Fireball",
+		"targetedskills": "Fireball",
+		"damageboost": 0.25
+	},{
+		"id": "Pyromanie",
+		"langid": "Pyromanie",
+		"category": "ExpTree",
+		"job": "SW",
+		"level": 20,
+		"icon": "Pyromany",
+		"targetedskills": "Fireball",
+		"nbdot": 4,
+		"damageboost": 0.33
+	},{
+		"id": "ChainLightningTalent",
+		"langid": "ChainLightningTalent",
+		"category": "ExpTree",
+		"job": "SW",
+		"level": 20,
+		"icon": "ChainLightning",
+		"targetedskills": "ChainLightning,LightningStrike",
+		"damageboost": 0.33
+	},{
+		"id": "DestructionTalent",
+		"langid": "DestructionTalent",
+		"category": "ExpTree",
+		"job": "SW",
+		"level": 40,
+		"icon": "Destruction",
+		"targetedskills": "Destruction",
+		"damageboost": 0.4
+	},{
+		"id": "MeteorTalent",
+		"langid": "MeteorTalent",
+		"category": "ExpTree",
+		"job": "SW",
+		"level": 40,
+		"icon": "Meteor",
+		"targetedskills": "Meteor",
+		"nbdot": 4,
+		"damageboost": 0.5
+	},
+	// RNG exp talents
+	{
+		"id": "LongbowAce",
+		"langid": "LongbowAce",
+		"category": "ExpTree",
+		"job": "RNG",
+		"level": 15,
+		"icon": "LongbowAce",
+		"weapondamageboost": 0.25
+	},{
+		"id": "ShortbowAce",
+		"langid": "ShortbowAce",
+		"category": "ExpTree",
+		"job": "RNG",
+		"level": 15,
+		"icon": "ShortbowAce",
+		"weapondamageboost": 0.25
+	},{
+		"id": "ScatterShotTalent",
+		"langid": "ScatterShotTalent",
+		"category": "ExpTree",
+		"job": "RNG",
+		"level": 20,
+		"icon": "ScatterShot",
+		"targetedskills": "ScatterShot",
+		"damageboost": 0.25
+	},{
+		"id": "PrecisionShotTalent",
+		"langid": "PrecisionShotTalent",
+		"category": "ExpTree",
+		"job": "RNG",
+		"level": 20,
+		"icon": "PrecisionShot",
+		"targetedskills": "PrecisionShot",
+		"damageboost": 0.2
+	},{
+		"id": "FalconTalent",
+		"langid": "FalconTalent",
+		"category": "ExpTree",
+		"job": "RNG",
+		"level": 25,
+		"icon": "Falcon",
+		"targetedskills": "Falcon",
+		"damageboost": 0.25
+	},{
+		"id": "HuntingTrapTalent",
+		"langid": "HuntingTrapTalent",
+		"category": "ExpTree",
+		"job": "RNG",
+		"level": 30,
+		"icon": "HuntingTrap",
+		"targetedskills": "HuntingTrap",
+		"damageboost": 1
+	},{
+		"id": "DeadlyBlowTalent",
+		"langid": "DeadlyBlowTalent",
+		"category": "ExpTree",
+		"job": "RNG",
+		"level": 40,
+		"icon": "DeadlyBlow",
+		"targetedskills": "DeadlyBlow",
+		"damageboost": 0.6
+	},
+	// DWF exp talents
+	{
+		"id": "GrenadeTalent",
+		"langid": "GrenadeTalent",
+		"category": "ExpTree",
+		"job": "DWF",
+		"level": 5,
+		"icon": "Grenade",
+		"targetedskills": "Grenade",
+		"damageboost": 0.5
+	},{
+		"id": "ArmorBoost",
+		"langid": "ArmorBoost",
+		"category": "ExpTree",
+		"job": "DWF",
+		"level": 10,
+		"icon": "ArmorBoost",
+		"armorboost": 0.1
+	},{
+		"id": "MovmentBoost",
+		"langid": "MovmentBoost",
+		"category": "ExpTree",
+		"job": "DWF",
+		"level": 10,
+		"icon": "MovmentBoost",
+		"movspeed": 0.05
+	},
+	// PvP talents
+	{
+		"id": "BattleInstinct",
+		"langid": "BattleInstinct",
+		"category": "PvPtree",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 5,
+		"icon": "BattleInstinct",
+		"damagepvp": 0.15
+	},{
+		"id": "Steadfastness",
+		"langid": "Steadfastness",
+		"category": "PvPtree",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 5,
+		"icon": "Steadfastness",
+		"armorboost": 0.15,
+        "resistboost": 0.15
+	},{
+		"id": "TechniqueLionRNG",
+		"langid": "TechniqueLionRNG",
+		"category": "PvPtree",
+		"job": "RNG",
+		"level": 10,
+		"icon": "TechniqueLion",
+		"targetedskills": "PrecisionShot,DeadlyBlow",
+		"damageboost": 0.1
+	},{
+		"id": "TechniqueLionSW",
+		"langid": "TechniqueLionSW",
+		"category": "PvPtree",
+		"job": "SW",
+		"level": 10,
+		"icon": "TechniqueLion",
+		"targetedskills": "Fireball,LightningStrike",
+		"damageboost": 0.1
+	},{
+		"id": "TechniqueLionWAR",
+		"langid": "TechniqueLionWAR",
+		"category": "PvPtree",
+		"job": "WAR",
+		"level": 10,
+		"icon": "TechniqueLion",
+		"targetedskills": "Smash,BloodySwing",
+		"damageboost": 0.1
+	},{
+		"id": "TechniqueLionDWF",
+		"langid": "TechniqueLionDWF",
+		"category": "PvPtree",
+		"job": "DWF",
+		"level": 10,
+		"icon": "TechniqueLion",
+		"targetedskills": "CombatTurret,MGTurret,CoverTurret",
+		"damageboost": 0.2
+	},{
+		"id": "TechniqueLynxRNG",
+		"langid": "TechniqueLynxRNG",
+		"category": "PvPtree",
+		"job": "RNG",
+		"level": 10,
+		"icon": "TechniqueLynx",
+		"targetedskills": "HuntingArrow,DeathSwing",
+		"damageboost": 0.33
+	},{
+		"id": "TechniqueLynxSW",
+		"langid": "TechniqueLynxSW",
+		"category": "PvPtree",
+		"job": "SW",
+		"level": 10,
+		"icon": "TechniqueLynx",
+		"targetedskills": "MagicMissile,IceMissile,ChainLightning",
+		"damageboost": 0.33
+	},{
+		"id": "TechniqueLynxWAR",
+		"langid": "TechniqueLynxWAR",
+		"category": "PvPtree",
+		"job": "WAR",
+		"level": 10,
+		"icon": "TechniqueLynx",
+		"targetedskills": "AngryStrike,RagefulSwing",
+		"damageboost": 0.33
+	},{
+		"id": "TechniqueLynxDWF",
+		"langid": "TechniqueLynxDWF",
+		"category": "PvPtree",
+		"job": "DWF",
+		"level": 10,
+		"icon": "TechniqueLynx",
+		"targetedskills": "SimpleShot,HeavyShot",
+		"damageboost": 0.2
+	},{
+		"id": "Nimble",
+		"langid": "Nimble",
+		"category": "PvPtree",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 20,
+		"icon": "Nimble",
+		"speed": 0.15
+	},{
+		"id": "LightFooted",
+		"langid": "LightFooted",
+		"category": "PvPtree",
+		"job": "WAR, SW, RNG, DWF",
+		"level": 20,
+		"icon": "LightFooted",
+		"movspeed": 0.2
+	},{
+		"id": "BruteForce",
+		"langid": "BruteForce",
+		"category": "PvPtree",
+		"job": "WAR",
+		"level": 30,
+		"icon": "BruteForce",
+		"targetedskills": "RageJump,GroundBreaker,IronBrow",
+		"damageboost": 0.33
+	},{
+		"id": "ShrapnelTalent",
+		"langid": "ShrapnelTalent",
+		"category": "PvPtree",
+		"job": "DWF",
+		"level": 30,
+		"icon": "BruteForce",
+		"targetedskills": "Grenade,Rocket",
+		"damageboost": 0.33
+	},{
+		"id": "DeathWailTalent",
+		"langid": "DeathWail",
+		"category": "PvPtree",
+		"job": "WAR",
+		"level": 40,
+		"icon": "DeathWail",
+		"targetedskills": "DeathWail",
+		"damageboost": 4
+	},{
+		"id": "SupernovaTalent",
+		"langid": "Supernova",
+		"category": "PvPtree",
+		"job": "SW",
+		"level": 40,
+		"icon": "Supernova",
+		"targetedskills": "Supernova",
+		"damageboost": 10
+	},{
+		"id": "ForestRevengeTalent",
+		"langid": "ForestRevenge",
+		"category": "PvPtree",
+		"job": "RNG",
+		"level": 40,
+		"icon": "ForestRevenge",
+		"targetedskills": "ForestRevenge",
+		"damageboost": 1.5,
+		"nbdot": 4
+	},{
+		"id": "VengeanceExplosiveTalent",
+		"langid": "VengeanceExplosive",
+		"category": "PvPtree",
+		"job": "DWF",
+		"level": 40,
+		"icon": "VengeanceExplosive",
+		"targetedskills": "VengeanceExplosive",
+		"damageboost": 6
+	}],
+
+"gems":[{
+		"id": "FuryJewel",
+		"langid": "FuryJewel",
+		"critboost": 0.05,
+		"speed": 0.01,
+		"slots": "HeadArmors",
+		"icon": "FuryJewel"
+	},{
+		"id": "NorthernStar",
+		"langid": "NorthernStar",
+		"life": 0.01,
+		"slots": "HeadArmors",
+		"icon": "NorthernStar"
+	},{
+		"id": "InvincibleGem",
+		"langid": "InvincibleGem",
+		"damagemax": 15,
+		"critrate": 30,
+		"slots": "HeadArmors",
+		"icon": "InvincibleGem"
+	},{
+		"id": "ShadowStone",
+		"langid": "ShadowStone",
+		"life": 11,
+		"armor": 22,
+		"andermagic": 33,
+		"slots": "HeadArmors",
+		"icon": "ShadowStone"
+	},{
+		"id": "OnyxSkull",
+		"langid": "OnyxSkull",
+		"regen": 7.5,
+		"slots": "HeadArmors",
+		"icon": "OnyxSkull"
+	},{
+		"id": "FlawedRuby",
+		"langid": "FlawedRuby",
+		"damage": 1,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "FlawedRuby"
+	},{
+		"id": "SplinteredRuby",
+		"langid": "SplinteredRuby",
+		"damage": 2,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SplinteredRuby"
+	},{
+		"id": "SimpleRuby",
+		"langid": "SimpleRuby",
+		"damage": 3,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SimpleRuby"
+	},{
+		"id": "Ruby",
+		"langid": "Ruby",
+		"damage": 5,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "Ruby"
+	},{
+		"id": "PolishedRuby",
+		"langid": "PolishedRuby",
+		"damage": 10,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "PolishedRuby"
+	},{
+		"id": "RadiantRuby",
+		"langid": "RadiantRuby",
+		"damage": 15,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "RadiantRuby"
+	},{
+		"id": "PerfectRuby",
+		"langid": "PerfectRuby",
+		"damage": 20,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "PerfectRuby"
+	},{
+		"id": "SacredRuby",
+		"langid": "SacredRuby",
+		"damage": 25,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SacredRuby"
+	},{
+		"id": "FlawedSaphir",
+		"langid": "FlawedSaphir",
+		"speed": 0.005,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "FlawedSaphir"
+	},{
+		"id": "SplinteredSaphir",
+		"langid": "SplinteredSaphir",
+		"speed": 0.01,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SplinteredSaphir"
+	},{
+		"id": "SimpleSaphir",
+		"langid": "SimpleSaphir",
+		"speed": 0.015,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SimpleSaphir"
+	},{
+		"id": "Saphir",
+		"langid": "Saphir",
+		"speed": 0.025,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "Saphir"
+	},{
+		"id": "PolishedSaphir",
+		"langid": "PolishedSaphir",
+		"speed": 0.05,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "PolishedSaphir"
+	},{
+		"id": "RadiantSaphir",
+		"langid": "RadiantSaphir",
+		"speed": 0.065,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "RadiantSaphir"
+	},{
+		"id": "PerfectSaphir",
+		"langid": "PerfectSaphir",
+		"speed": 0.08,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "PerfectSaphir"
+	},{
+		"id": "SacredSaphir",
+		"langid": "SacredSaphir",
+		"speed": 0.1,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SacredSaphir"
+	},{
+		"id": "FlawedOnyx",
+		"langid": "FlawedOnyx",
+		"critrate": 8,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "FlawedOnyx"
+	},{
+		"id": "SplinteredOnyx",
+		"langid": "SplinteredOnyx",
+		"critrate": 16,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SplinteredOnyx"
+	},{
+		"id": "SimpleOnyx",
+		"langid": "SimpleOnyx",
+		"critrate": 24,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SimpleOnyx"
+	},{
+		"id": "Onyx",
+		"langid": "Onyx",
+		"critrate": 40,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "Onyx"
+	},{
+		"id": "PolishedOnyx",
+		"langid": "PolishedOnyx",
+		"critrate": 80,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "PolishedOnyx"
+	},{
+		"id": "RadiantOnyx",
+		"langid": "RadiantOnyx",
+		"critrate": 120,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "RadiantOnyx"
+	},{
+		"id": "PerfectOnyx",
+		"langid": "PerfectOnyx",
+		"critrate": 160,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "PerfectOnyx"
+	},{
+		"id": "SacredOnyx",
+		"langid": "SacredOnyx",
+		"critrate": 200,
+		"slots": "WeaponDecorations,Weapons",
+		"icon": "SacredOnyx"
+	},{
+		"id": "FlawedAmethyste",
+		"langid": "FlawedAmethyste",
+		"life": 3,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "FlawedAmethyste"
+	},{
+		"id": "SplinteredAmethyste",
+		"langid": "SplinteredAmethyste",
+		"life": 4,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SplinteredAmethyste"
+	},{
+		"id": "SimpleAmethyste",
+		"langid": "SimpleAmethyste",
+		"life": 7,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SimpleAmethyste"
+	},{
+		"id": "Amethyste",
+		"langid": "Amethyste",
+		"life": 16,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "Amethyste"
+	},{
+		"id": "PolishedAmethyste",
+		"langid": "PolishedAmethyste",
+		"life": 33,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "PolishedAmethyste"
+	},{
+		"id": "RadiantAmethyste",
+		"langid": "RadiantAmethyste",
+		"life": 50,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "RadiantAmethyste"
+	},{
+		"id": "PerfectAmethyste",
+		"langid": "PerfectAmethyste",
+		"life": 75,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "PerfectAmethyste"
+	},{
+		"id": "SacredAmethyste",
+		"langid": "SacredAmethyste",
+		"life": 100,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SacredAmethyste"
+	},{
+		"id": "FlawedCyanite",
+		"langid": "FlawedCyanite",
+		"armor": 2,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "FlawedCyanite"
+	},{
+		"id": "SplinteredCyanite",
+		"langid": "SplinteredCyanite",
+		"armor": 3,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SplinteredCyanite"
+	},{
+		"id": "SimpleCyanite",
+		"langid": "SimpleCyanite",
+		"armor": 4,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SimpleCyanite"
+	},{
+		"id": "Cyanite",
+		"langid": "Cyanite",
+		"armor": 10,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "Cyanite"
+	},{
+		"id": "PolishedCyanite",
+		"langid": "PolishedCyanite",
+		"armor": 22,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "PolishedCyanite"
+	},{
+		"id": "RadiantCyanite",
+		"langid": "RadiantCyanite",
+		"armor": 33,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "RadiantCyanite"
+	},{
+		"id": "PerfectCyanite",
+		"langid": "PerfectCyanite",
+		"armor": 45,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "PerfectCyanite"
+	},{
+		"id": "SacredCyanite",
+		"langid": "SacredCyanite",
+		"armor": 60,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SacredCyanite"
+	},{
+		"id": "FlawedDiamond",
+		"langid": "FlawedDiamond",
+		"resist": 3,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "FlawedDiamond"
+	},{
+		"id": "SplinteredDiamond",
+		"langid": "SplinteredDiamond",
+		"resist": 6,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SplinteredDiamond"
+	},{
+		"id": "SimpleDiamond",
+		"langid": "SimpleDiamond",
+		"resist": 9,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SimpleDiamond"
+	},{
+		"id": "Diamond",
+		"langid": "Diamond",
+		"resist": 19,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "Diamond"
+	},{
+		"id": "PolishedDiamond",
+		"langid": "PolishedDiamond",
+		"resist": 40,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "PolishedDiamond"
+	},{
+		"id": "RadiantDiamond",
+		"langid": "RadiantDiamond",
+		"resist": 60,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "RadiantDiamond"
+	},{
+		"id": "PerfectDiamond",
+		"langid": "PerfectDiamond",
+		"resist": 80,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "PerfectDiamond"
+	},{
+		"id": "SacredDiamond",
+		"langid": "SacredDiamond",
+		"resist": 100,
+		"slots": "Amulets,Waists,Ring1,Ring2,HeadArmors,Offhands,Shoulders,Torsos,Gloves,Boots,Mantles",
+		"icon": "SacredDiamond"
+	}],
+
+"companions":[{
+		"id": "nopet",
+		"langid": "nopet",
+		"icon": "nopet"
+	},{
+		"id": "LifePet",
+		"langid": "LifePet",
+		"icon": "LifePet",
+		"lifeboost": 0.05
+	},{
+		"id": "CritRateBlackBunny",
+		"langid": "CritRateBlackBunny",
+		"icon": "CritRateBlackBunny",
+		"critrateboost": 0.03
+	},{
+		"id": "CritRateBomb",
+		"langid": "CritRateBomb",
+		"icon": "CritRateBomb",
+		"critrateboost": 0.05
+	},{
+		"id": "MovSpeedSquire",
+		"langid": "MovSpeedSquire",
+		"icon": "MovSpeedSquire",
+		"movspeed": 0.05
+	},{
+		"id": "ResistCrow",
+		"langid": "ResistCrow",
+		"icon": "ResistCrow",
+		"resistboost": 0.05
+	}]
+}

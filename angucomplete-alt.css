@@ -1,0 +1,10 @@
+.angucomplete-holder{position:relative;}
+.angucomplete-dropdown{border:1px solid Black;width:100%;padding:5px;cursor:pointer;z-index:99;position:absolute;background-color:White;}
+.angucomplete-searching{color:#acacac;font-size:14px;}
+.angucomplete-description{font-size:14px;}
+.angucomplete-title{margin-top:5px;}
+.angucomplete-row{padding:5px;height:30px;clear:both;}
+.angucomplete-selected-row, .angucomplete-row:hover{background-color:CornFlowerBlue;color:#ffffff;}
+.angucomplete-image-holder{float:left;margin-right:10px;margin-left:5px;}
+.angucomplete-image{height:30px;width:30px;}
+.angucomplete-image-default{background-position:center;background-size:contain;height:30px;width:30px;}

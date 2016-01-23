@@ -1,0 +1,143 @@
+body{background-color:rgb(240,240,240);font-size:1.05em}
+body, h2, h3{margin:0;padding:0;}
+h2{font-size:1.3em;}
+h3{font-size:1.1em;}
+img{width:auto;height:auto;vertical-align:middle;}
+select,option{font-size:16px;font-family:serif;cursor:pointer;}
+optgroup{margin-top:5px;}
+fieldset{border-radius:10px;padding:5px;}
+legend{padding:0 10px;}
+header, footer{text-align:center;padding:7px;}
+header{border-bottom:1px solid;border-top-left-radius:10px;border-top-right-radius:10px;}
+nav{position:fixed;right:20px;top:80px;}
+nav>a{display:inline-block;margin-bottom:10px;}
+nav img{height:50px;}
+nav input{display:none;}
+footer{color:white;background-color:#202020;}
+table{margin:10px;white-space:nowrap;}
+input{text-align:center;border-radius:5px;width:50px;margin-left:5px;}
+input:hover{border-color:CornflowerBlue;}
+.main{display:table;margin-top:20px;margin-left:auto;margin-right:auto;}
+.halfOpac{opacity:0.5;}
+.red{color:Red;}
+.blue{color:CornflowerBlue;}
+.green{color:MediumSeaGreen;}
+.purple{color:DarkViolet;}
+.orange{color:Orange;}
+.grey{color:DarkGrey;}
+.yellow{color:Yellow;}
+.donate {
+	border:1px solid rgb(255,150,0);
+	border-radius:15px;
+	margin-top:5px;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+	color:Black;
+	transition:0.35s;
+}
+.donate:hover {background-color:rgb(255,185,0);}
+.bgWAR{background:-webkit-radial-gradient(50% 100px, white, rgb(255,185,0));background:-o-radial-gradient(50% 100px, white, rgb(255,185,0));background:-moz-radial-gradient(50% 100px, white, rgb(255,185,0));background:radial-gradient(50% 100px, white, rgb(255,185,0));}
+.table-row-WAR{background:linear-gradient(to right, rgba(255,185,0,0) 0%,rgba(255,185,0,0) 50%,rgba(255,185,0,0.8) 100%);}
+.bgSW{background:-webkit-radial-gradient(50% 100px, white, SteelBlue);background:-o-radial-gradient(50% 100px, white, SteelBlue);background:-moz-radial-gradient(50% 100px, white, SteelBlue);background:radial-gradient(50% 100px, white, SteelBlue);}
+.table-row-SW{background:linear-gradient(to right, rgba(70,130,180,0) 0%,rgba(70,130,180,0) 50%,rgba(70,130,180,0.8) 100%);}
+.bgRNG{background:-webkit-radial-gradient(50% 100px, white, ForestGreen);background:-o-radial-gradient(50% 100px, white, ForestGreen);background:-moz-radial-gradient(50% 100px, white, ForestGreen);background:radial-gradient(50% 100px, white, ForestGreen);}
+.table-row-RNG{background:linear-gradient(to right, rgba(34,139,34,0) 0%,rgba(34,139,34,0) 50%,rgba(34,139,34,0.8) 100%);}
+.bgDWF{background:-webkit-radial-gradient(50% 100px, white, DarkGrey);background:-o-radial-gradient(50% 100px, white, DarkGrey);background:-moz-radial-gradient(50% 100px, white, DarkGrey);background:radial-gradient(50% 100px, white, DarkGrey);}
+.table-row-DWF{background:linear-gradient(to right, rgba(169,169,169,0) 0%,rgba(169,169,169,0) 50%,rgba(169,169,169,0.8) 100%);}
+.bold{font-weight:bold;}
+.underline{text-decoration:underline;}
+.margTop10{margin-top:10px;}
+.margBottom20{margin-bottom:20px;}
+.fullWidth{width:100%;}
+.window{display:table;box-shadow:0 2px 8px rgba(0,0,0,0.6);border-radius:10px;min-width:330px;}
+.horizCenter{margin-left:auto;margin-right:auto;}
+.alignRight{padding-left:10px;text-align:right;white-space:nowrap;}
+.floatL{float:left;}
+.floatR{float:right;}
+.clear{clear:both;}
+.DropdownWrapper{position:relative;display:table;}
+.SelectionBox, .Selector{padding:5px;border:1px solid DarkGrey;border-radius:5px;background-color:White;}
+.SelectionBox{text-align:center;cursor:pointer;}
+.SelectionBox:hover{box-shadow:0 0 1px 2px DarkGrey inset;}
+.Selector{position:absolute;margin:0;z-index:1;max-height:300px;overflow-y:auto;overflow-x:hidden;min-width:calc(100% + 10px);box-shadow:2px 2px 3px black;}
+.Selector li{list-style:none;padding:3px;white-space:nowrap;}
+.Selector li div{vertical-align:middle;display:inline-block;margin-right:20px;}
+.Selector li:hover{background-color:cornflowerblue;text-align:center;}
+.Selector li:hover not(#editor .Selector li:hover){color:Black;}
+.Selector img, .SelectionBox img{margin-right:10px;}
+.DWFicon li:last-child img{margin-left:5px;margin-right:15px;}
+.Description{font-size:0.75em;}
+.Selector.overflow{max-height:auto;overflow:initial;}
+.Scale{transition:0.2s;}
+.Scale:hover{-webkit-transform:scale(1.2,1.2);transform:scale(1.2,1.2);cursor:pointer;}
+.Tooltip{display:none;position:absolute;color:white;}
+.Tooltip-arrow-left{width:0px;height:0px;border-top:15px solid transparent;border-bottom:15px solid transparent;border-right:15px solid black;opacity:0.9;}
+.Tooltip-arrow-right{width:0px;height:0px;border-top:15px solid transparent;border-bottom:15px solid transparent;border-left:15px solid black;opacity:0.9;}
+.Tooltip-arrow-bottom{width:0px;height:0px;border-left:15px solid transparent;border-right:15px solid transparent;border-top:15px solid black;opacity:0.9;}
+.Tooltip-inner{border-radius:10px;background-color:black;opacity:0.9;color:white;margin:0;padding:7px;text-align:left;}
+.Tooltip-inner img{margin-right:7px;}
+.Tooltip-inner tr:first-child{margin-right:7px;}
+.Tooltip-inner tr:nth-child(2){font-style:italic;}
+.emblem{position:absolute;bottom:10px;right:10px;height:100px;width:100px;background-image:url('Images/emblems.png');background-repeat:no-repeat;background-size:450%;}
+.emblem-WAR{background-position:-225px -5px;}
+.emblem-SW{background-position:-340px -5px;}
+.emblem-RNG{background-position:0 -5px;}
+.emblem-DWF{background-position:-110px -5px;}
+.animate-show {line-height: 20px;opacity: 1;}
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {-webkit-transition: all linear 0.35s;transition: all linear 0.35s;}
+.animate-show.ng-hide {opacity: 0;}
+#LeftPanel, #RightPanel{float:left;margin-bottom:20px;}
+#RightPanel{margin-left:20px;}
+#FanSiteLogo{position:absolute;left:20px;top:20px;height:85px;}
+#MainTitle{text-align:center;margin:20px 0 30px;font-family:Verdana;font-style:italic;}
+#LangSelector{position:absolute;right:20px;top:20px;}
+#LangSelector img{margin:2px;}
+#wrapper{max-width:600px;}
+#InitialData{padding-bottom:20px;}
+#InitialData p{max-width:700px;margin:10px auto;}
+#InitialData fieldset{padding:10px 15px 15px;}
+#PlayerInfos{position:relative;min-width:255px;}
+#PlayerInfos input:not(#LevelSelector), #OpponentInfos input:not(#OpponentLevel){margin:10px 0 0 5px;}
+#PlayerInfos .DropdownWrapper:last-child{margin-top:10px;}
+#JobSelector img{height:20px;}
+#LevelSelector{height:30px;}
+#AboutPopup{background-color:rgba(0,0,0,0.5);position:fixed;top:0;z-index:2;height:100%;width:100%;text-align:center;}
+#AboutPopup:before{content:'';display:inline-block;height:100%;vertical-align:middle;}
+#AboutPopup div{display:inline-block;border:1px solid black;border-radius:15px;padding:15px;background-color:white;white-space:pre-line;text-align:left;}
+#StatResults fieldset{margin:10px 20px 20px;}
+#StatResults fieldset table{margin-top:0;}
+#StatResults fieldset table td:nth-child(2){padding-left:10px;}
+#Efficiency{text-align:center;padding:5px 0 10px;}
+#Efficiency h2{display:inline;}
+#Efficiency img{height:30px;width:30px;margin-right:15px;margin-top:-5px;}
+#Skills {position:relative;}
+#Skills input{width:auto;margin:0;position:absolute;top:15px;right:15px;}
+#Skills table{border-collapse:collapse;width:calc(100% - 20px);}
+#Skills th:nth-child(2)>span{font-weight:normal;}
+#Skills td{padding:5px;}
+#Skills tr td:last-child, #Skills tr th:last-child {padding-left:15px;}
+#Talents table{width:135px;}
+#Talents td:nth-child(2){margin-left:10px;}
+#Talents input{width:auto;}
+#Talents caption{max-width:130px;white-space:normal;}
+#Portrait, #LeftGears, #RightGears{float:left;}
+#Portrait{width:200px;margin-top:10px;}
+#LeftGears, #RightGears{margin:10px;}
+#Portrait img{width:100%;}
+#Gears button{display:block;width:52px;height:52px;border-radius:10px;margin:1px;}
+#Gears fieldset{margin:0 12px 12px;}
+#LeftGears li{cursor:pointer;}
+#editorItemName{display:inline-block;width:80%;}
+#editorItemName_input{width:100%;}
+#editor tr:nth-child(2) td:first-child{vertical-align:top;}
+#editor tr:nth-child(2) td:nth-child(2){text-align:right;}
+#editor .Selector li{padding:0;width:100%;}
+#editor .Selector li:hover{background-color:white;cursor:default;text-align:left;}
+#editor .Selector h4{cursor:default;margin:5px;text-align:center;}
+#editor .Selector div{display:block;margin:0;padding:3px;}
+#editor .Selector div:hover{color:Black;background-color:CornflowerBlue;cursor:pointer;}
+#editor footer{border-top:1px solid;border-bottom-left-radius:10px;border-bottom-right-radius:10px;}
+#editor footer{color:black;background-color:transparent;}
+#editor footer button{min-width:100px;}

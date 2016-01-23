@@ -1,0 +1,185 @@
+<div id="Gears" class="window fullWidth margBottom20">
+    <header class='bg{{selectedJob}}'><h2>{{db.sysmess['Equipments']}}</h2></header>
+    <div id="LeftGears">
+        <button id="amulets" class="Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="waists" class="Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="weapondecorations" class="Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="ring1" class="floatL Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <div class="DropdownWrapper floatL" data-ng-mouseleave="toggleEss = false">
+            <button id="essences" class="SelectionBox Scale" data-ng-click="toggleEss = !toggleEss" title="{{Description(db.essences[selectedEss])}}"
+                    style="{{selectedEss=='blank' ? '' : 'background: url(Images/Essence'+db.essences[selectedEss].icon+'.png) no-repeat'}}"></button>
+            <ul class='Selector' data-ng-show="toggleEss">
+                <li data-ng-repeat="ess in db.essences | orderObjectBy:'damage'"
+                    data-ng-init="essColor={color:ess.color}" data-ng-mouseover="essColor={color:'black'}" data-ng-mouseleave="essColor={color:ess.color }"
+                    data-ng-click="$parent.toggleEss = false; $parent.$parent.selectedEss = ess.key; calculAll()">
+                    <img data-ng-show="ess.key!='blank'" data-ng-src="{{ess.key=='blank' ? '' : 'Images/Essence'+ess.icon+'.png'}}"
+                         alt='{{ess.icon}} icon'/>
+                    <div data-ng-style="essColor">
+                        <span>{{ess.name}}</span><br/>
+                        <span class="Description" data-ng-show="ess.key!='blank'">{{Description(ess)}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button id="ring2" class="floatL clear Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="weapons" class="floatL Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+    </div>
+    <div id="Portrait"><img data-ng-src="Images/Portrait{{selectedJob}}.png" alt="Job's portrait"/></div>
+    <div id="RightGears">
+        <button id="headarmors" class="floatR Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="shoulders" class="floatR clear Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="torsos" class="floatR clear Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="gloves" class="floatR clear Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="mantles" class="floatR" data-ng-class="{Scale:!mantleDisabled}" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-disabled="mantleDisabled" data-ng-Tooltip></button>
+        <button id="boots" class="floatR clear Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+        <button id="offhands" class="floatR Scale" data-ng-click="openEditor($event)" data-ng-right-click="delete($event)" data-ng-Tooltip></button>
+    </div>
+    <fieldset data-ng-show="SetsBonuses.length" class="clear">
+        <legend><h3>{{db.sysmess['SetsBonuses']}}</h3></legend>
+        <ul data-ng-repeat="set in SetsBonuses"><span class="underline">{{db.sets[set.key].name}} ({{set.count}}/{{set.maxcount}})</span>
+            <li data-ng-repeat="(property,value) in set" data-ng-hide="property=='count' || property=='maxcount' || property=='key'">
+                {{db.sysmess[(property | labelboost)]}} {{((property | labelboost)!='skill') ? ('+ '+(value|percentage:0)) : ('"'+db.skills[value[0]].name+'" + '+(value[1]|percentage:0))}}
+            </li>
+        </ul>
+    </fieldset>
+</div>
+
+<!--Item editor-->
+<div id='editor' data-ng-show='editMode' class="window horizCenter animate-show" data-ng-keypress="editor.kp($event)">
+    <header class='bg{{selectedJob}}'><h2>{{db.sysmess['EditorTitle']}}</h2></header>
+    <table>
+        <tr>
+            <td colspan="2">
+                <label>{{db.sysmess['Name']}} : </label>
+                <div angucomplete-alt id="editorItemName"
+                    place-holder="{{db.sysmess['sys57']}}"
+                    local-data="editordb"
+                    search-fields="name"
+                    title-field="name"
+                    image-field="icon"
+                    pause="100"
+                    minlength="1"
+                    selected-object="editor.onItemSelect">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>{{db.sysmess['Type']}} : </label>
+                <span data-ng-hide="editor.slot == 'weapons'">{{db.sysmess['Type_'+editor.dbtype]}}</span>
+                <span data-ng-show="editor.slot == 'weapons' && !editor.TwoHandedWeapon">{{db.sysmess['Type_1H']}}</span>
+                <span data-ng-show="editor.slot == 'weapons' && editor.TwoHandedWeapon">{{db.sysmess['Type_2H']}}</span>
+                <span data-ng-show="editor.slot == 'weapons'|| (editor.slot == 'offhands' && selectedJob!='WAR')">, <br/></span>
+                <select data-ng-show="editor.slot == 'weapons'" data-ng-model="editor.item.type" 
+                        data-ng-change="editor.onTypeSelect(editor.item.type);iconManager()" data-ng-disabled="editor.item.unic">
+                    <option value="">{{db.sysmess['sys56a']}}</option>
+                    <optgroup label="{{db.sysmess['Type_1H']}}">
+                        <option data-ng-show="selectedJob=='RNG'" value="shortbow">{{db.sysmess['shortbow']}}</option>
+                        <option data-ng-show="selectedJob=='SW'" value="wand">{{db.sysmess['wand']}}</option>
+                        <option data-ng-show="selectedJob=='DWF'" value="pistol">{{db.sysmess['pistol']}}</option>
+                        <option data-ng-show="selectedJob=='WAR'" value="axe">{{db.sysmess['axe']}}</option>
+                        <option data-ng-show="selectedJob=='WAR'" value="mace">{{db.sysmess['mace']}}</option>
+                        <option data-ng-show="selectedJob=='WAR'" value="sword">{{db.sysmess['sword']}}</option>
+                    </optgroup>
+                    <optgroup label="{{db.sysmess['Type_2H']}}">
+                        <option data-ng-show="selectedJob=='RNG'" value="longbow">{{db.sysmess['longbow']}}</option>
+                        <option data-ng-show="selectedJob=='SW'" value="staff">{{db.sysmess['staff']}}</option>
+                        <option data-ng-show="selectedJob=='DWF'" value="rifle">{{db.sysmess['rifle']}}</option>
+                        <option data-ng-show="selectedJob=='WAR'" value="greataxe">{{db.sysmess['greataxe']}}</option>
+                        <option data-ng-show="selectedJob=='WAR'" value="hammer">{{db.sysmess['hammer']}}</option>
+                        <option data-ng-show="selectedJob=='WAR'" value="greatsword">{{db.sysmess['greatsword']}}</option>
+                    </optgroup>
+                </select>
+                <span data-ng-show="editor.slot == 'offhands' && selectedJob == 'WAR'">, {{db.sysmess['shield']}}</span>
+                <select data-ng-show="editor.slot == 'offhands' && selectedJob!='WAR'" data-ng-disabled="editor.item.unic"
+                        data-ng-model="editor.item.type" data-ng-change="editor.onTypeSelect(editor.item.type);iconManager()">
+                    <option value="">{{db.sysmess['sys56b']}}</option>
+                    <option data-ng-show="selectedJob!='SW'" value="shield">{{db.sysmess['shield']}}</option>
+                    <option data-ng-show="selectedJob=='RNG'" value="quiver">{{db.sysmess['quiver']}}</option>
+                    <option data-ng-show="selectedJob=='SW'" value="orb">{{db.sysmess['orb']}}</option>
+                    <option data-ng-show="selectedJob=='SW'" value="book">{{db.sysmess['book']}}</option>
+                    <option data-ng-show="selectedJob=='DWF'" value="wrench">{{db.sysmess['wrench']}}</option>
+                </select>
+            </td>
+            <td>
+                <img data-ng-src="Images/{{editor.item.icon}}.png" alt="Item Icon"/>
+            </td>
+        </tr>
+        <tr data-ng-show="editor.BaseTemplate=='Armors'"><td colspan="2">
+                {{db.sysmess[editor.item.basestats[0].label]}}<input type="number" data-ng-model="editor.item.basestats[0].value"/>
+        </td></tr>
+        <tr data-ng-show="editor.BaseTemplate=='Shields'"><td colspan="2">
+                {{db.sysmess[editor.item.basestats[0].label]}}<input type="number" data-ng-model="editor.item.basestats[0].value"/>
+        </td></tr>
+        <tr data-ng-show="editor.BaseTemplate=='Shields'"><td colspan="2">
+                {{db.sysmess[editor.item.basestats[1].label]}}<input type="number" data-ng-model="editor.item.basestats[1].value"/>
+        </td></tr>
+        <tr data-ng-show="editor.BaseTemplate=='Shields'"><td colspan="2">
+                {{db.sysmess[editor.item.basestats[2].label]}}<input type="number" data-ng-model="editor.item.basestats[2].value"/>
+        </td></tr>
+        <tr data-ng-show="editor.BaseTemplate=='Weapons'"><td colspan="2">
+                {{db.sysmess[editor.item.basestats[0].label]}}<input type="number" data-ng-model="editor.item.basestats[0].value"/> - <input type="number" data-ng-model="editor.item.basestats[1].value"/>
+        </td></tr>
+        <tr data-ng-show="editor.BaseTemplate=='Weapons'"><td colspan="2">
+                {{db.sysmess[editor.item.basestats[2].label]}}<input type="number" step="0.01" data-ng-model="editor.item.basestats[2].value"/>
+        </td></tr>
+        <tr data-ng-show="editor.BaseTemplate=='Attack'"><td colspan="2">
+                {{db.sysmess[editor.item.basestats[0].label]}}<input type="number" data-ng-model="editor.item.basestats[0].value"/>
+        </td></tr>
+        <tr data-ng-show="editor.BaseTemplate=='Attack'"><td colspan="2">
+                {{db.sysmess[editor.item.basestats[1].label]}}<input type="number" data-ng-model="editor.item.basestats[1].value"/>
+        </td></tr>
+        <tr data-ng-repeat="ench in editor.item.enchants" data-ng-hide="editor.item.unic && ench.label==''">
+            <td colspan="2"> 
+                <select data-ng-model="ench.label" class="floatL" data-ng-disabled="editor.item.unic" 
+                    data-ng-change="iconManager()" data-ng-Labelboost>
+                    <option value="">{{db.sysmess['sys58']}}</option>
+                    <optgroup label="{{db.sysmess['sys64']}}">
+                        <option value="damage">{{db.sysmess['damage']}}</option>
+                        <option value="damagepve">{{db.sysmess['damagepve']}}</option>
+                        <option value="damagepvp">{{db.sysmess['damagepvp']}}</option>
+                        <option value="damagemin">{{db.sysmess['damagemin']}}</option>
+                        <option value="damagemax">{{db.sysmess['damagemax']}}</option>
+                        <option value="weapondamageboost">{{db.sysmess['weapondamageboost']}}</option>
+                        <option value="speed">{{db.sysmess['speed']}}</option>
+                        <option value="critrate">{{db.sysmess['critrate']}}</option>
+                        <option value="critboost">{{db.sysmess['critboost']}}</option>
+                    </optgroup>
+                    <optgroup label="{{db.sysmess['sys65']}}">
+                        <option value="armor">{{db.sysmess['armor']}}</option>
+                        <option value="itemarmorboost">{{db.sysmess['itemarmorboost']}}</option>
+                        <option value="life">{{db.sysmess['life']}}</option>
+                        <option value="regen">{{db.sysmess['regen']}}</option>
+                        <option value="blockrate">{{db.sysmess['blockrate']}}</option>
+                        <option value="blockeddmg">{{db.sysmess['blockeddmg']}}</option>
+                        <option value="movspeed">{{db.sysmess['movspeed']}}</option>
+                        <option value="resist">{{db.sysmess['resist']}}</option>
+                        <option value="fire">{{db.sysmess['fire']}}</option>
+                        <option value="ice">{{db.sysmess['ice']}}</option>
+                        <option value="lightning">{{db.sysmess['lightning']}}</option>
+                        <option value="poison">{{db.sysmess['poison']}}</option>
+                        <option value="andermagic">{{db.sysmess['andermagic']}}</option>
+                    </optgroup>
+                </select>
+                <input type='text' data-ng-model="ench.value" class="floatR" data-ng-change="iconManager()" data-ng-Percentage/>
+            </td>
+        </tr>
+        <tr data-ng-repeat="g in editor.item.gems" data-ng-hide="editor.slot == 'mantles'">
+            <td colspan="2">
+                <div gem-Selector></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>{{db.sysmess['RequiredLevel']}} : </label>
+                <input data-ng-model="editor.item.reqlvl" type="number" step="1" min="1">
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <button data-ng-click="editor.save()">{{db.sysmess['Register']}}</button>
+        <button data-ng-click="editor.cancel()">{{db.sysmess['Cancel']}}</button>
+        <button data-ng-click="editor.reset()">{{db.sysmess['Reset']}}</button>
+    </footer>
+</div>

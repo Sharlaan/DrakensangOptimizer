@@ -1,0 +1,23 @@
+<div class="DropdownWrapper" data-ng-mouseleave="toggle = false">
+    <div class='SelectionBox' data-ng-click="toggle = !toggle" title="{{editor.item.gems[$index].key=='nogem' ? '' : Description((db.gems | findByPropertyValue:'key':editor.item.gems[$index].key)) }}">
+        <img data-ng-show="editor.item.gems[$index].key!='nogem'" alt='{{editor.item.gems[$index].key}}'
+             data-ng-src="{{editor.item.gems[$index].key=='nogem' ? '' : 'Images/'+ ((db.gems | findByPropertyValue:'key':editor.item.gems[$index].key).icon) +'.png'}}"/>
+        <span>{{db.sysmess[editor.item.gems[$index].key] || (db.gems | findByPropertyValue:'key':editor.item.gems[$index].key).name}}</span>
+    </div>
+    <ul class='Selector animate-show' data-ng-show="toggle">
+        <li data-ng-click="editor.item.gems[$index].key = 'nogem'; toggle = false">
+            <div>{{db.sysmess['nogem']}}</div>
+        </li>
+		<li data-ng-repeat="cat in ['Other','Ruby','Saphir','Onyx','Amethyste','Cyanite','Diamond']" 
+			data-ng-init="CategoryDisplay=0" data-ng-show="CategoryDisplay" 
+			data-ng-class="{red:(cat=='Ruby'),blue:(cat=='Saphir'),grey:(cat=='Diamond'),purple:(cat=='Amethyste'),green:(cat=='Cyanite')}">
+			<h4>{{cat}}</h4>
+			<div data-ng-repeat="gem in db.gems | filter:{category:cat} | orderBy:'key'" title="{{Description(gem)}}" 
+				data-ng-init="$parent.CategoryDisplay = $parent.CategoryDisplay + ([gem.slots] | filter:editor.slot).length"
+				data-ng-show="([gem.slots] | filter:editor.slot).length"
+				data-ng-click="$parent.$parent.editor.item.gems[$parent.$parent.$index].key = gem.key; $parent.$parent.toggle = false">
+				<img data-ng-src='Images/{{gem.icon}}.png' alt="{{gem.icon}}"/>{{gem.name}}
+			</div>
+		</li>
+    </ul>
+</div>
